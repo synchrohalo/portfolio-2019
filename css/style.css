@@ -84,7 +84,7 @@ nav {
 }
 
 .mobile-menu {
-    /*display: none;*/
+    display: none;
     position: fixed;
     z-index: 4;
     top: 0;
@@ -212,9 +212,9 @@ nav {
 }
 
 .menu ul, #home, .menu li{
-    padding-right: 1.5rem;
-    line-height: 5rem;
-    display: inline-block;
+    /*padding-right: 1.5rem;
+    line-height: 5rem;*/
+    
 }
 
 .menu ul {
@@ -226,7 +226,14 @@ nav {
 }
 
 .desktop-menu {
-    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+}
+
+.desktop-menu li {
+    display: inline-block;
 }
 
 .desktop-menu p {
