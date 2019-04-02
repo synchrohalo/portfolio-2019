@@ -84,7 +84,7 @@ nav {
 }
 
 .mobile-menu {
-    /*display: none;*/
+    display: none;
     position: fixed;
     z-index: 4;
     top: 0;
