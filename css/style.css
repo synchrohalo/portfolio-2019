@@ -90,13 +90,12 @@ nav {
     top: 0;
     left: 0;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: var(--neutral-dark);
 }
 
 .mobile-menu .icon {
     /*float: right;*/
-    height: 48px;
     /*padding-top: 2.5rem; 
     right: 16px;*/
     /*padding-right: 36px;*/
@@ -107,9 +106,13 @@ nav {
 }
 
 .mobile-menu ul {
-    position: static;
-    display: block;
+    width: 105%; /* what is adding the extra width? */
+    height: 100vh;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /**** BODY ****/
