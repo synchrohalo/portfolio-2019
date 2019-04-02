@@ -51,9 +51,10 @@ nav {
 }
 
 #home {
-    position: absolute;
+    /*position: absolute;*/
+    width: 100%;
+    text-align: center;
     margin-top: 1.5rem;
-    left: 50%;
 }
 
 #home img{
@@ -75,13 +76,18 @@ nav {
 .menu .icon {
     position: absolute;
     right: 0;
+    top: 0;
+    /*position: absolute;
+    right: 0;
+    padding-top: 2.5rem;*/
     height: 48px;
-    padding-top: 2.5rem; 
 }
 
 .mobile-menu {
+    /*display: none;*/
     position: fixed;
     z-index: 4;
+    top: 0;
     left: 0;
     height: 100vh;
     width: 100vw;
@@ -91,8 +97,8 @@ nav {
 .mobile-menu .icon {
     /*float: right;*/
     height: 48px;
-    padding-top: 2.5rem; 
-    right: 16px;
+    /*padding-top: 2.5rem; 
+    right: 16px;*/
     /*padding-right: 36px;*/
 }
 
@@ -164,7 +170,7 @@ footer p {
     color: white;
 }
 
-@media only screen and (min-width: 416px) {
+@media only screen and (min-width: 320px) {
 
 
 /**** NAV BAR ****/
