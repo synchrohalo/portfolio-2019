@@ -124,20 +124,29 @@ header .text {
 }
 
 header .clouds {
+    z-index: 2;
+    width: 100%;
+}
+
+/*header .clouds {
     padding: 0;
     margin: 0;
     position: absolute;
     bottom: -1.333rem;
-    /*background-color: white;*/
-}
+}*/
 
-header .clouds .right {
-    display: none;
+header .clouds .right, header .clouds .left {
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
 }
 
 header .clouds .left {
-    width: 100vw;
-    max-width: 24rem;
+    width: 100%;
+}
+
+header .clouds .right {
+    visibility: hidden;
 }
 
 /**** NAV BAR ****/
@@ -373,6 +382,10 @@ nav {
     header {
        background-size: 13rem;
    }
+
+   header .clouds .left {
+       width: 75%;
+   }
 }
 
 @media only screen and (min-width: 500px) {
@@ -387,6 +400,11 @@ nav {
         background-image: url("../img/planet.svg");
         background-size: 14rem;
         background-position: 90% calc(var(--nav-bar-height) - 2rem);
+    }
+
+    header .clouds .left {
+        width: 55%;    
+        max-height: cacl( 50% * 40rem);
     }
 
     /**** PROJECTS ****/
@@ -408,11 +426,22 @@ nav {
         margin-bottom: -0.1em;
     }
 
+
     /**** HERO ****/
     header {
-        max-height: 40rem;
+        max-height: 44rem;
         background-size: 16rem;
         background-position: 90% calc(var(--nav-bar-height) - 1rem);
+    }
+
+    header .clouds .left {
+        width: 45%;
+    }
+
+    header .clouds .right {
+        visibility: visible;
+        width: 65%;
+        right: 0;
     }
 
     /*header .clouds .right {
