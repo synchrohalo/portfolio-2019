@@ -160,7 +160,6 @@ nav {
 
 nav .link:hover {
     background: var(--primary-color);
-    text-decoration: none;
 }
 
 #home {
@@ -429,6 +428,7 @@ nav {
 
     /**** HERO ****/
     header {
+        min-height: 36rem;
         max-height: 44rem;
         background-size: 16rem;
         background-position: 90% calc(var(--nav-bar-height) - 1rem);
@@ -545,4 +545,16 @@ nav {
        background-size: 20rem;
        background-position: 90% calc(var(--nav-bar-height) + 3rem);
    }
+}
+
+@media only screen and (min-width: 1500px) {
+   
+    /**** HERO ****/
+   header .clouds .right {
+        max-width: 60rem;
+    }
+
+    header .clouds .left {
+        max-width: 40rem;
+    }
 }

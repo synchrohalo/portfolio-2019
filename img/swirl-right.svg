@@ -9,6 +9,8 @@
 	.st3{fill:url(#SVGID_2_);}
 	.st4{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-linejoin:round;}
 	.st5{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linejoin:round;}
+	.st6{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel;}
+	.st7{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;}
 </style>
 <g>
 	
@@ -28,4 +30,34 @@
 		c46.7,17.3,82.1,11.7,114.2-5.8c27.3-14.9,52.3-38.5,79.8-64.6c5-4.8,10.1-9.6,15.4-14.5c33.8-31.5,72.2-64.7,123.1-88.4
 		C771.2,11.7,834.5-2.6,918.1,3.3l1.9,0.1v1.9"/>
 </g>
+<g>
+	<g>
+		
+			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-962.3825" y1="1661.4281" x2="-1.6439" y2="979.0554" gradientTransform="matrix(1 0 0 -1 0 1492)">
+			<stop  offset="0" style="stop-color:#2378BA"/>
+			<stop  offset="0.1492" style="stop-color:#916DBF"/>
+			<stop  offset="0.4862" style="stop-color:#FFFFFF"/>
+		</linearGradient>
+		<path class="st3" d="M-927.2-168.2l-1.8,0.1v1.8v301.9v2h2h704.3h4.5l-3-3.3c-5.2-5.8-11.5-14.3-19.1-24.6c-1.9-2.5-3.8-5.2-5.8-8
+			c-6.1-8.3-12.7-17.5-20-27.2c-19.4-25.7-43.1-54.9-71-80.3c-55.6-50.8-127.9-87-214.3-50.3c-36.2,15.4-61.4,14.8-82.8,5.8
+			c-18.8-7.9-34.8-22.2-53-38.5c-2.8-2.5-5.6-5-8.5-7.5c-21.8-19.3-47.3-39.9-83.6-54.5C-815.5-165.1-862.5-173.4-927.2-168.2z"/>
+		<path class="st4" d="M-926.1-129.4c258.1-20.9,220.2,151.3,366.6,89c170.7-72.6,293.6,128,335.7,175.4"/>
+		<path class="st5" d="M-910.1-50.4c196.8-60,177.3,129.3,323.7,67"/>
+	</g>
+	<path class="st1" d="M-219.5,137.2l-3-3.3c-5.2-5.8-11.5-14.3-19.1-24.6c-1.9-2.5-3.8-5.2-5.8-8c-6.1-8.3-12.7-17.5-20-27.2
+		c-19.4-25.7-43.1-54.9-71-80.3C-394-57-466.2-93.2-552.6-56.4c-36.2,15.4-61.4,14.8-82.8,5.8c-18.8-7.9-34.8-22.2-53-38.5
+		c-2.8-2.5-5.6-5-8.5-7.5c-21.8-19.3-47.3-39.9-83.6-54.5c-36.3-14.5-83.2-22.8-148-17.6l-1.8,0.1v1.8"/>
+</g>
+<path class="st6" d="M-852.1,45.2v38"/>
+<path class="st6" d="M-833.1,64.2h-38"/>
+<path class="st6" d="M-838.6,77.6l-26.9-26.9"/>
+<path class="st6" d="M-865.5,77.6l26.9-26.9"/>
+<path class="st6" d="M796.1,229.2v18.3"/>
+<path class="st6" d="M805.2,238.4h-18.3"/>
+<path class="st6" d="M802.5,244.8l-12.9-12.9"/>
+<path class="st6" d="M789.6,244.8l12.9-12.9"/>
+<path class="st7" d="M838.9,258.6v24.1"/>
+<path class="st7" d="M850.9,270.6h-24.1"/>
+<path class="st7" d="M847.4,279.1l-17-17"/>
+<path class="st7" d="M830.4,279.1l17-17"/>
 </svg>
