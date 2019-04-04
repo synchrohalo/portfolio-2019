@@ -6,19 +6,20 @@
     <title>Joanne Arboleda | Portfolio</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animated.css">
     <link href="https://fonts.googleapis.com/css?family=Chivo|Space+Mono:400,400i,700,700i" rel="stylesheet">
   </head>
   <body>
-    <nav>
+    <nav class="">
         <div id="home">
-            <a href="index.html"><img src="img/logo.svg" /></a>
+            <a href="index.html" ><img src="img/logo.svg" /></a>
         </div>
         <div class="menu">
 
             <div class="desktop-menu">
                 <ul>
                     <li><p class="link">About</p></li>
-                    <li><p class="link">Contact</p></li>
+                    <li><a href="#contact"><p class="link">Contact</p></a></li>
                     <li><p class="link">Resume</p></li>
                 </ul>
             </div>
@@ -26,29 +27,31 @@
             <div class="mobile-menu">
                 <img class="icon" src="img/close.svg" />
                 <ul>
-                    <li><p class="link">Work</p></li>
                     <li><p class="link">About</p></li>
                     <li><p class="link">Contact</p></li>
+                    <li><p class="link">Resume</p></li>
                 </ul>
             </div>
 
-            <img class="icon" src="img/menu.svg" />
+            <img class="icon" id="menu-icon" src="img/menu.svg" />
         </div>
     </nav>
 
     <header>
         <div class="text">
-            <h1>Joanne Arboleda</h1>
-            <h2>UX/UI Designer, Doodler, & Occasional Coder</h2>
-            <h5>While you're around, I'd be happy to show you what I've made.</h5>
+            <h1 class="fade-in one">Greetings, I'm Joanne.</h1>
+            <h2 class="fade-in two">UX/UI Designer & Doodler in the SF Bay Area</h2>
+            <h5 class="fade-in three">While you're around, I'd be happy to show you what I've made.</h5>
         </div>
 
+        <span id="scroll-down" class="italic"><h5>See my works</h5></span>
+
         <div class="clouds">
-            <div class="left">
+            <div class="left fade-in three">
                 <img src="img/swirl-left.svg" />
             </div>
 
-            <div class="right">
+            <div class="right fade-in four">
                 <img src="img/swirl-right.svg" />
             </div>
         </div>
@@ -69,9 +72,22 @@
                     <div class="project-desc">
                         <h3>Snapsack</h3>
                         <p class="italic">UX Design, UI Design, Branding</p>
-                        <p>Snapsack is a cloud storage app with organization in mind. With the addition of labels, users can sort and filter their files efficiently and with precision.</p>
+                        <p>Snapsack is a <em>cloud storage app</em> with organization in mind. With the addition of labels, users can sort and filter their files efficiently and with precision.</p>
 
-                        <button>View case study</button>
+                        <button class="active animated">View case study</button>
+                    </div>
+                </li>
+
+                <li class="project" id="assorted">
+                    <div class="project-img">
+                        <img src="img/assorted/assorted-thumbnail.png">
+                    </div>
+                    <div class="project-desc">
+                        <h3>Assorted projects</h3>
+                        <p class="italic">Illustration, Branding</p>
+                        <p>For a client or simply for fun: Here are some projects, illustrations, and miscellaneous branding work that I’ve done in the past.</p>
+
+                        <button class="inactive">Coming soon</button>
                     </div>
                 </li>
             </ul>
@@ -103,15 +119,15 @@
                 </div>
             </div>
 
-            <p>Like my work? Shoot me an email at <span class="link">joanne.b.arboleda@gmail.com</span> if you think I might be a good fit for your project or team.</p>
+            <p>Like my work? Shoot me an email at <a href="mailto:joanne.b.arboleda@gmail.com" target="_blank"><span class="link">joanne.b.arboleda@gmail.com</span></a> if you think I might be a good fit for your project or team.</p>
         </div>
 
         <div class="copyright">
-            <p>Hand-designed & hand-coded with all my 💖</p>
+            <p>Designed & coded with 💖 <br />by Joanne Arboleda &copy; 2019</p>
         </div>
     </footer>
   </body>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js.script.js"></script>
+  <script src="js/script.js"></script>
 </html>
