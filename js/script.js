@@ -12,19 +12,27 @@ $( document ).ready(function() {
     });
 
     var currentScroll = $(window).scrollTop();
+    var contactPos = $( "footer" ).scrollTop();
 
     $(window).scroll(function(){
         //$(".clouds .left").css("opacity", 1 - $(window).scrollTop() / 300);
         var newScroll = $(window).scrollTop();
-        console.log( currentScroll );
+        //console.log( currentScroll );
 
-        console.log( newScroll );
+        //console.log( newScroll );
 
         if( newScroll < currentScroll ) {
             $("nav").fadeIn( 200 );
         } else {
             $("nav").fadeOut( 200 );
         }
+
+        /*if( currentScroll == contactPos ) {
+            console.log(contactPos);
+            $( "#contact" ).addClass( "fade-in one" );
+        }
+
+        $( "#contact" ).removeClass( "fade-in one" );*/
 
         currentScroll = newScroll;
     });    

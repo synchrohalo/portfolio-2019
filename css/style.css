@@ -28,12 +28,12 @@ p {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: 'Chivo', sans-serif;
     line-height: 125%;
 }
 
-h4,
 h5,
 p {
     font-family: 'Space Mono', monospace;
@@ -88,17 +88,19 @@ p {
 }
 
 em {
-    font-weight: 700;
+    font-weight: 700;n
 }
 
 button {
-    font-size: 1em;
+    display: block;
+    font-size: 0.889em;
     font-style: italic;
     font-family: 'Space Mono', monospace;
     background: white;
     padding: 0.75rem 1.25rem 0.75rem 1.25rem;
     width: 60%;
     min-width: 16rem;
+    max-width: 18rem;
     margin: 0 auto;
 }
 
@@ -116,6 +118,15 @@ button.active:hover {
 button.inactive {
     color: var(--neutral-dark);
     border: 2px solid var(--neutral-dark);
+}
+
+.list ul {
+    list-style: initial;
+}
+
+.list li:before {
+    content: "+";
+    color: var(--secondary-color);padding-right: 8px;
 }
 
 /**** HERO ****/
@@ -272,7 +283,7 @@ main h2 {
     margin-bottom: 1.5rem;
 }
 
-#projects {
+section {
     margin-top: var(--in-between);
 }
 

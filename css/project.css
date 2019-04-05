@@ -1,0 +1,120 @@
+header.project-page {
+    height: initial;
+    max-height: initial;
+    background-image: none;   
+    background: var(--neutral-light); 
+    /*padding-top: calc(var(--nav-bar-height) + 2rem);
+    padding-bottom: 2rem;*/
+}
+
+header.project-page img {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: calc(var(--nav-bar-height) + 2rem);
+    padding-bottom: 2rem;
+}
+
+header.project-page .text {
+    width: 80%;
+    margin-bottom: 2.5rem;
+}
+
+header.project-page .text h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+header.project-page .text p {
+    margin-bottom: 2rem;
+}
+
+header.project-page button {
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+}
+
+.block {
+    width: 95%;
+    margin: 0 auto;
+}
+
+main img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+main button {
+    margin-bottom: 0.5rem;
+}
+
+main h3 {
+    margin-top: 2rem;
+}
+
+.block .text {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.raised {
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: var(--shadow);
+    padding: 2rem 0 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.step-title {
+    margin-bottom: 2rem;
+}
+
+.purple {
+    color: var(--secondary-color);
+}
+
+.blue {
+    color: var(--complement1);
+}
+
+.percent {
+    font-size: 3rem;
+}
+
+.highlights .text {
+    width: 70%;
+    max-width: 18rem;
+}
+
+.wide-img {
+    width: 100%;
+    height: 24rem;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 2rem;
+}
+
+#user-flows {
+    background-image: url("../img/snapsack/user-flows.png");
+}
+
+#dashboard-sketches {
+    background-image: url("../img/snapsack/dashboard-sketches.png");
+}
+
+#logo-sketches {
+    background-image: url("../img/snapsack/logo-sketches.png");
+    background-size: fill;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 500px) {
+    .raised {
+        width: 90%;
+    }
+
+    .block {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
