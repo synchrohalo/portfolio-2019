@@ -132,13 +132,12 @@ h4 {
 
 .wide-raised {
     max-width: 56rem;
+    display: flex;
 }
 
 .problem-solution {
     display: inline-flex;
     flex-wrap: wrap;
-    align-content: center;
-    align-items: flex-start;
     flex-direction: row;
     width: 100%;
 }
@@ -146,6 +145,11 @@ h4 {
 .raised .small-section {
     width: 85%;
     margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.small-section h3 {
+    margin-top: 0rem;
 }
 
 .step-title {
