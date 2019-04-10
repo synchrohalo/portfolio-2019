@@ -3,6 +3,11 @@ $( document ).ready(function() {
         $( ".mobile-menu" ).fadeIn( 200 );
 
         $( "body" ).css( "overflow", "hidden" );
+
+        $( ".mobile-menu .link" ).click(function() {
+            $( ".mobile-menu" ).fadeOut( 200 );
+            $( "body" ).css( "overflow", "visible" );
+        });
     });
 
     $( ".mobile-menu .icon" ).click(function() {
