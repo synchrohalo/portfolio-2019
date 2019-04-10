@@ -89,8 +89,7 @@ main h3 {
     display: block;
     text-align: center;
     margin: 0 auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 img.small-img {
