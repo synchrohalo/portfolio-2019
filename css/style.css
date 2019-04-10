@@ -146,6 +146,7 @@ ul.list li {
 ol.list li {
     list-style: decimal;
     color: var(--secondary-color);
+    padding-left: 0.75rem;
 }
 
 .list li p {

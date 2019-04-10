@@ -51,17 +51,6 @@ header.project-page button {
     line-height: 150%;
 }
 
-.list-in-text h4 {
-    margin-bottom: 1rem;
-}
-
-.list-in-text {
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
-}
-
 .block {
     width: 100%;
     margin: 0 auto;
@@ -77,7 +66,7 @@ main button {
 }
 
 main h3 {
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .block .text {
@@ -114,6 +103,17 @@ img.small-img {
 
 .list-in-text p {
     margin-top: -.5rem;
+}
+
+.list-in-text h4 {
+    margin-bottom: 1rem;
+}
+
+.list-in-text {
+    width: 90%;
+    margin: 0 auto;
+    /*margin-bottom: 1.5rem;
+    margin-top: 1.5rem;*/
 }
 
 h4 {
@@ -341,11 +341,25 @@ h4 {
         margin-bottom: 2rem;
         margin-top: 2rem;
     }
+
+    #problems-folders {
+        margin-top: -2rem;
+    }
 }
 
 @media only screen and (min-width: 1100px) {
+    .step {
+        position: absolute;
+    }
 
-    .wide-raised {
+    .step-title {
+        position: relative;
+        left: -3rem;
+        bottom: 4.1rem;
+    }
+
+    #hifi-title {
+        bottom: 2.1rem;
     }
 
     .raised .small-section {
