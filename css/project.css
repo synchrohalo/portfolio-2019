@@ -33,17 +33,9 @@ header.project-page button {
     margin-bottom: 0.5rem;
 }
 
-.back-to-top {
-    display: none;
-    z-index: 2;
-    position: fixed;
-    bottom: 1rem;
-    right: 2rem;
-}
-
 .back-to-top p{
     text-decoration: none;
-    color: var(--neutral-dark);
+    color: var(--secondary-color);
 }
 
 .summary-list {
@@ -324,7 +316,11 @@ h4 {
 
 @media only screen and (min-width: 720px) {
     .back-to-top {
-        display: initial;
+        display: initial;    z-index: 2;
+        position: fixed;
+        bottom: 1rem;
+        right: 2rem;
+        color: var(--secondary-color);
     }
 
     .summary-list {

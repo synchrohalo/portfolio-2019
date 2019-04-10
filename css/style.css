@@ -389,6 +389,10 @@ footer p {
     color: white;
 }
 
+footer h4 {
+    margin-bottom: 0rem;
+}
+
 .orbit {
     /*width: var(--mobile-margin);*/
     width: 16rem;
@@ -535,7 +539,7 @@ nav {
     }
 
     h4 {
-        font-size: 1.668em;
+        font-size: 1.5em;
     }
 
     .main-heading {
@@ -616,12 +620,13 @@ nav {
     /**** FOOTER ****/
     .orbit {
        float: right;
-       margin-top: -7rem;
+       margin-top: -9rem;
     }
 
     footer h4, footer h2, footer p {
         width: 45%;
-        max-width: 32rem;
+        min-width: 24rem;
+        max-width: 36rem;
     }
 }
 
@@ -662,6 +667,16 @@ nav {
     /**** FOOTER ****/
     #contact {
         max-width: 50rem;
+    }
+
+    .orbit {
+        float: right;
+        margin-top: -8rem;
+    }
+
+    footer h4, footer h2, footer p {
+        width: 45%;
+        min-width: 28rem;
     }
 }
 
