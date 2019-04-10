@@ -325,6 +325,7 @@ h4 {
         max-width: 40rem;
         display: flex;
         margin-bottom: 3rem;
+        margin-top: -3rem;
     }
 
     .inline-list {
