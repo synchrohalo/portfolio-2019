@@ -26,7 +26,7 @@ $( document ).ready(function() {
 
         //console.log( newScroll );
 
-        if( newScroll < currentScroll ) {
+        if( newScroll < (currentScroll) ) {
             $("nav").fadeIn( 200 );
         } else {
             $("nav").fadeOut( 200 );

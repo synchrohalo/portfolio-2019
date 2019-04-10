@@ -526,10 +526,26 @@ nav {
         margin-bottom: -0.1em;
     }
 
-    /*h2 {
+    h2 {
         font-size: 2.5em;
-        margin-bottom: -0.1em;
-    }*/
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    h4 {
+        font-size: 1.668em;
+    }
+
+    .main-heading {
+        margin-top: 8rem;
+    }
+
+    .heading-divider {
+        width: 8rem;
+        height: 4px;
+    }
 
 
     /**** HERO ****/

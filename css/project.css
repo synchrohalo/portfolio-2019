@@ -3,8 +3,6 @@ header.project-page {
     max-height: initial;
     background-image: none;   
     background: var(--neutral-light); 
-    /*padding-top: calc(var(--nav-bar-height) + 2rem);
-    padding-bottom: 2rem;*/
 }
 
 header.project-page img {
@@ -43,6 +41,11 @@ header.project-page button {
     right: 2rem;
 }
 
+.back-to-top p{
+    text-decoration: none;
+    color: var(--neutral-dark);
+}
+
 .summary-list {
     width: 20%;
     min-width: 10rem;
@@ -57,6 +60,10 @@ header.project-page button {
 
 .summary-list .list li p {
     line-height: 150%;
+}
+
+.list-container {
+    margin-bottom: 2rem;
 }
 
 .block {
@@ -114,7 +121,7 @@ img.small-img {
 }
 
 .list-in-text h4 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .list-in-text {
@@ -126,6 +133,7 @@ img.small-img {
 
 h4 {
     color: var(--secondary-color);
+    margin-bottom: 1rem;
 }
 
 .raised {
@@ -325,7 +333,7 @@ h4 {
         max-width: 40rem;
         display: flex;
         margin-bottom: 3rem;
-        margin-top: -3rem;
+        margin-top: 0rem;
     }
 
     .inline-list {
@@ -340,6 +348,7 @@ h4 {
 
     .list-container {
         margin: 0 auto;
+        margin-bottom: 1rem;
     }
     
     .stat {
@@ -367,13 +376,15 @@ h4 {
     }
 
     .step-title {
+        font-size: 1.668em;
         position: relative;
-        left: -2rem;
-        bottom: 4rem;
+        width: 16rem;
+        left: -4rem;
+        bottom: 3.75rem;
     }
 
     #hifi-title {
-        bottom: 2rem;
+        bottom: 1.75rem;
     }
 
     .raised .small-section {
