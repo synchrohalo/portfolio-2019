@@ -35,6 +35,13 @@ header.project-page button {
     margin-bottom: 0.5rem;
 }
 
+.back-to-top {
+    z-index: 3;
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+}
+
 .summary-list {
     width: 20%;
     min-width: 10rem;
@@ -82,7 +89,8 @@ main h3 {
     display: block;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 img.small-img {
