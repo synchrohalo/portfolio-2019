@@ -66,25 +66,49 @@
                     <div class="heading-divider"></div>
                 </div>
 
-                <!--<div class="summary-list">
-                    <ul class="list roles">
-                        <li><p>UX Designer</p></li>
-                        <li><p>UI Designer</p></li>
-                        <li><p>Illustrator</p></li>
-                    </ul>
-                </div>-->
-
+                <div class="summary-list">
+                    <div class="inline-list" id="roles">
+                        <h3>Roles</h3>
+                        <ul class="list">
+                            <li><p>UX Designer</p></li>
+                            <li><p>UI Designer</p></li>
+                            <li><p>Illustrator</p></li>
+                        </ul>
+                    </div>
+                    <div class="inline-list"  id="tools">
+                        <h3>Tools</h3>
+                        <ul class="list">
+                            <li><p>Paper & pen</p></li>
+                            <li><p>Figma</p></li>
+                            <li><p>Photoshop</p></li>
+                            <li><p>Illustrator</p></li>
+                            <li><p>Krita Paint</p></li>
+                        </ul>
+                    </div>
+                    <div class="inline-list"  id="deliverables">
+                        <h3>Deliverables</h3>
+                        <ul class="list">
+                            <li><p>User surveys</p></li>
+                            <li><p>Competitive analysis</p></li>
+                            <li><p>User personas</p></li>
+                            <li><p>User stories</p></li>
+                            <li><p>User flows</p></li>
+                        </ul>
+                    </div>
+                </div>
 
                 <!------ PROBLEM & SOLUTION ------>
                 <div class="raised">
-                    <div class="text left-col small-section">
+                    <div class="problem-solution">
+                    <div class="text small-section">
                         <h3>The problem</h3>
                         <p>Upon learning that users were not likely to sort their files into folders despite finding organization an important feature for cloud storage apps, I sought to find the answer to the question, <em>how can cloud storage platforms be improved such that users will be more likely keep their digital spaces organized?</em></p>
                     </div>
-                    <div class="text right-col small-section">
+                    <div class="text small-section">
                         <h3>The solution</h3>
                         <p>Enter Snapsack, a multi-purpose cloud storage app with a focus on organization. <em>A labeling system allows users to visually categorize their files and folders at a glance.</em> Filtering gives users the ability to sift through files that may be buried deep within nested folders or see all types of files and folders associated with a label.</p>
                     </div>
+                </div>
                 </div>
             </div>
         </section>
@@ -111,19 +135,33 @@
                     <p>I created a survey to learn about cloud storage apps and their users. I asked questions about which apps participants use and which features they found most important and used most frequently.</p>
                 </div>
 
-                <h4 class="purple text figure-title">Highlights</h4>
-                <div class="highlights raised">
-                    <div class="text small-section">
-                        <h1><span class="percent purple">100%</span></h1><p>use <em class="blue">Google Drive</em>, whether or not with another app.</p>
-                    </div>
+                
+                <div class="raised">
                     <div class="text">
-                        <h1><span class="percent purple">87.5%</span></h1><p>see <em class="blue">Uploading Files</em> as the most important feature.</p>
+                        <h4 class="purple text figure-title">Survey highlights</h4>
+                        
+                        <div class="highlights">
+                        
+                            <div class="stat">
+                                <h1><span class="percent purple">100%</span></h1>
+                                <p>use <em class="blue">Google Drive</em>, whether or not with another app.</p>
+                            </div>
+
+                            <div class="stat">
+                                <h1><span class="percent purple">87.5%</span></h1>
+                                <p>see <em class="blue">Uploading Files</em> as the most important feature.</p>
+                            </div>
+
+                            <div class="stat">
+                                <h1><span class="percent purple">69.2%</span></h1>
+                                <p>use <em class="blue">Content Creation</em> Frequently or Very Frequently, making it the most frequently used feature.</p>
+                            </div>
+
+                            <div class="stat">
+                                <h1><span class="percent purple">62.5%</span></h1>
+                                <p>see <em class="blue"> organizing content</em> as Important, despite the fact that a larger amount of people hardly organize their files.</p>
+                            </div>
                         </div>
-                    <div class="text">
-                        <h1><span class="percent purple">69.2%</span></h1><p>use <em class="blue">Content Creation</em> Frequently or Very Frequently, making it the most frequently used feature.</p>
-                    </div>
-                    <div class="text">
-                        <h1><span class="percent purple">62.5%</span></h1><p>see <em class="blue"> organizing content</em> as Important, despite the fact that a larger amount of people hardly organize their files.</p>
                     </div>
                 </div>
 
@@ -135,7 +173,7 @@
                 <!--- COMPETITIVE ANALYSIS --->
                 <div class="text">
                     <h3>Competitive Analysis</h3>
-                    <img class="text" src="../img/snapsack/competitive-analysis.png" />
+                    <img class="small-img" src="../img/snapsack/competitive-analysis.png" />
                     <p>To scope out the competition I selected two cloud storage platforms I was familiar with: Google Drive and Dropbox. The two function similarly, with the main differentiating factor being that <em>Dropbox sees itself as a productivity tool rather than a storage app</em>.</p>
                             
                     <p>I also saw that there was <em>no way to organize files in any other way than by moving them between folders (and by selecting folder colors in Drive)</em>. Could I improve a cloud storage app on this front? This fact was pertinent to my growing interest in how to encourage people to organize their digital spaces.</p>
@@ -154,7 +192,30 @@
                     <p>It was during this step that I began ideating ways to help with the organization. I thought about the <em>current problems with folders and the benefits of using color-coded labels</em>.</p>
                 </div>
 
-                <!------ LO-FI ------>
+                <div class="raised">
+                    <div class="text">
+                        <div class="list-in-text">
+                            <h4>Problems with folders</h4>
+                            <ol class="list">
+                                <li><p>Hard to access files deeply nested within many folders.</p></li> 
+                                <li><p>Can only associate a file with one folder and its encapsulating folders.</p></li>
+                            </ol>
+                        </div>
+    
+                        <div class="list-in-text">
+                            <h4>Benefits of labels</h4>
+                            <ol class="list">
+                                <li><p>Provide visual cues with the use of color.</p></li>
+                                <li><p>Files/folders can be associated with more than one label.
+                                </p></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------ LO-FI ------>
+            <div class="block">
                 <div class="text step">
                     <h3 class="step-title"><span class="purple">2.</span> Low-fidelity</h3>
                 </div>
@@ -175,11 +236,40 @@
                     <p>After creating about 12 quick roughs, I put together a more “refined” sketch based on which elements and layouts I liked best.</p>
                 </div>
 
-                <h4 class="purple text figure-title">Refined dashboard sketch</h4>
                 <div class="raised">
                     <div class="text">
-                        <img src="../img/snapsack/refined-dashboard.png" />
-                        <p>Text</p>
+                        <h4 class="purple text  figure-title">Refined dashboard sketch</h4>
+                        <img src="../img/snapsack/refined-dashboard.jpg" />
+                        <div class="list-in-text">
+                            <h4>Features</h4>
+                            <ul class="list">
+                                <li><p>Tab-like navigation</p></li>
+                                <li><p>Contextual menu containing actions appears on the right on file/folder select</p></li>
+                                <li><p>Filter files by labels by typing in a label name in the top right corner</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--- SKETCH FEEDBACK --->
+                <div class="text">
+                    <div class="list-in-text">
+                        <h4>Layout feedback</h4>
+                        <ul class="list">
+                            <li><p><span class="italic">"I like the idea of <em>having functions on the bottom."</em></span></p></li>
+                            <li><p><span class="italic">"It's not fighting your title, search bar, etc.”</span> (on the location of the “Upload file” button)</p></li>
+                            <li><p><span class="italic">“What I hate about Google Drive is that <em>it gathers all of its functionality on one side</em>. Makes it hard to navigate.”</span></p></li>
+                        </ul>
+                    </div>
+
+                    <div class="list-in-text">
+                        <h4>Comments on organization</h4>
+                        <ul class="list">
+                            <li><p><span class="italic">“It <em>bothers me</em> that my files are not organized.” </span></p></li>
+                            <li><p><span class="italic">“It <em>would be nice to organize on the fly</em>. As you upload, you can select tags for each of them.”</span></p></li>
+                            <li><p><span class="italic">“<em>I think labels along with folders would be useful.</em> Let's suppose I'm working on project, but I don't want to organize by client, I want to organize by date or by sprints. Each sprint would have its own folder, but each folder would have different labels for clients/projects.”</span> (on how you could use labels)</p></li>
+                        </ul>
                     </div>
                 </div>
 
@@ -188,11 +278,18 @@
                     <h3>Wireframes</h3>
                 </div>
 
-                <h4 class="purple text figure-title">Dashboard wireframe</h4>
                 <div class="raised">
                     <div class="text">
-                        <img src="../img/snapsack/dashboard-wireframe.png" />
-                        <p>Text</p>
+                        <h4 class="purple text figure-title">Dashboard wireframe</h4>
+                        <img class="img-border" src="../img/snapsack/dashboard-wireframe.png" />
+                        <div class="list-in-text">
+                            <h4>Main changes</h4>
+                            <ul class="list">
+                                <li><p>Upload/create functions placed within “Add to my Snapsack” button in the bottom right corner</p></li>
+                                <li><p>Filter by label is now shown as a list</p></li>
+                                <li><p>Folders are displayed first</p></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
@@ -200,6 +297,16 @@
 
                 <div class="text">
                     <p>I tested my wireframes with 3 participants, which revealed one commonality &mdash; that the labeling interactions needed some work:</p>
+
+                    <div class="list-in-text">
+                        <h4>Labels feedback</h4>
+                        <ul class="list">
+                            <li><p><span class="italic">“It feels like <em>it should be in the main UI section</em> (top) where search and sort are.”</span> (on where Filter by label should be located)</span></p></li>
+                            <li><p><span class="italic">“Sending someone <em>far off to the side of the screen</em> is strange.”</span> (on creating a new label)</p></li>
+                            <li><p><span class="italic">“Even though I like seeing the list of labels on the side, I suppose it’s <em>not scalable</em>.”</span> (on the vertical expansion of the labels list)</span></p></li>
+                            <li><p><span class="italic">“Use the <em>law of proximity</em> when you can. Add label should be an immediate option next to or over the item in question.”</span> (on adding a label to a file/folder)</p></li>
+                        </ul>
+                    </div>
 
                     <div class="step">
                         <h3 class="step-title"><span class="purple">3.</span> High-fidelity</h3>
@@ -211,30 +318,92 @@
                     <h3>Branding</h3>
 
                     <!--- LOGO SQUARE --->
-                    <img src="../img/snapsack/logo-square.svg" />
+                    <img id="snapsack-logo" src="../img/snapsack/logo-square.svg" />
 
                     <p>I developed the brand around the word Snapsack, a potential app name I had in mind early on. The name <em>Snapsack is a play on the word “knapsack” and the phrase “It’s a snap”</em>, a reference to the simplicity of the app and how easily accessible files and folders are with the new labeling system.</p>
                 </div>
             </div>
 
             <!--- LOGO SKETCHES IMG --->
-            <div id="logo-sketches" class="wide-img">
+            <!--<div id="logo-sketches" class="wide-img">
                 <img src="" />
-            </div>
+            </div>-->
 
             <div class="block">
                 <div class="text">
+                    <img class="small-img img-border" src="../img/snapsack/logo-sketches.jpg" />
+
                     <p><em>The idea of the backpack lent itself to a few metaphors to cloud storage</em>: a good backpack stores your belongings securely and is meant to be taken with you anywhere. The backpack became the logo, and the user’s storage space became their “Snapsack”.</p>
 
                     <p>I began making more associations with the backpack, my first thoughts being that of <em>traveling, adventure, and nature</em>. Imagery of the outdoors were forming in my head. It was at this time that I decided the product should feel warm and welcoming; nature isn't always cold and solitary, just as digital products for businesses don't have to be cool and corporate.</p>
                 </div>
 
+                <!--- MOODBOARD & COLOR PALETTE -->
+                <h4 class="purple text figure-title">Moodboard & color palette</h4>
+            </div>
+
+            <div class="half-page">
+                <div id="moodboard" class="wide-img">
+                    <img src="" />
+                </div>
+                    
+                <div class="raised">
+                    <div class="text">
+                        <ul class="palette">
+                            <li>
+                                <div class="color-circle" id="F6E022"></div>
+                                <div class="color-text">
+                                    <p>Hex: #F6E022</p>
+                                    <p>RGB: 246, 224, 34</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="color-circle" id="BF4D3C"></div> 
+                                <div class="color-text">
+                                    <p>Hex: #BF4D3C</p>
+                                    <p>RGB: 191, 77, 60</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="color-circle" id="c43045F"></div>
+                                <div class="color-text">
+                                    <p>Hex: #43045F</p>
+                                    <p>RGB: 67, 4, 95</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="color-circle" id="c77647A"></div>
+                                <div class="color-text">
+                                    <p>Hex: #77647A</p>
+                                    <p>RGB: 119, 100, 122</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="color-circle" id="FCF6C0"></div>
+                                <div class="color-text">
+                                    <p>Hex: #FCF6C0</p>
+                                    <p>RGB: 252, 246, 192</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="color-circle" id="c1D2B2B"></div>
+                                <div class="color-text">
+                                    <p>Hex: #1D2B2B</p>
+                                    <p>RGB: 29, 43, 43</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block">
                 <div class="text">
                     <p>I also illustrated a set of landing page graphics to accompany the nature-themed and friendly mood carried by the Snapsack brand.</p>
                 </div>
 
                 <!--- ILLUSTRATION SAMPLE --->
-                <img src="../img/snapsack/illustration.png" />
+                <img class="small-img" src="../img/snapsack/illustration.png" />
 
                 <a href="https://drive.google.com/file/d/1-0DL6m86oc76sVGgXJzdOR18fbMBD0FF/view?usp=sharing" target="_blank""><button class="active animated">View branding guide</button></a>
 
@@ -243,33 +412,69 @@
                     <h3>Mockups</h3>
                 </div>
 
-                <h4 class="purple text figure-title">Dashboard mockups</h4>
                 <div class="raised">
                     <div class="text">
+                        <h4 class="purple text figure-title">Desktop dashboard</h4>
                         <img src="../img/snapsack/dashboard-wireframe.png" />
-                        <p>Text</p>
+                        <div class="list-in-text">
+                            <h4>Main changes</h4>
+                            <ul class="list">
+                                <li><p>Filter by label moved to top near navigation and above files</p></li>
+                                <li><p>Removal of “Add to Snapsack” button in favor of placing all upload actions on the sidebar</p></li>
+                                <li><p>Prompt user to choose a folder upon upload</p></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <h4 class="purple text figure-title">Mobile mockups</h4>
+                <!--- MOBILE --->
                 <div class="raised">
                     <div class="text">
-                        <img src="../img/snapsack/dashboard-wireframe.png" />
-                        <p>Text</p>
+                        <h4 class="purple text figure-title">Mobile dashboard</h4>
+                        <div class="mobile-img">
+                            <img class="img-border" src="../img/snapsack/mobile-landing.png" />
+                            <img class="img-border" src="../img/snapsack/mobile-dashboard.png" />
+                        </div>
+                        <p>I applied <em>Material Design principles</em> for Snapsack’s mobile web app, using a floating action button for the Upload/Create functions and a navigation drawer for access to different parts of the screen.</p>
                     </div>
                 </div>
 
+                <!--- MOCKUP FEEDBACK --->
                 <div class="text">
-                    <p>I applied <em>Material Design principles</em> for Snapsack’s mobile web app, using a floating action button for the Upload/Create functions and a navigation drawer for access to different parts of the screen.</p>
+                    <div class="list-in-text">
+                        <h4>User testing feedback</h4>
+                        <ul class="list">
+                            <li><p><span class="italic">“Make your page in such a way that I can scan it in 3 seconds. <em>[When] actions appear on the other side [it’s confusing]</em>.”</span></p></li>
+                            <li><p><span class="italic">“It’s interesting, and <em>I feel amazed that other labeling systems don’t have this inclusive, exclusive filtering</em>. Usually people don’t have this kind of need.”</span></p></li>
+                        </ul>
+                    </div>
                 </div>
 
-                <!--- FEEDBACK -->
+                <!--- POSITIVE FEEDBACK -->
                 <div class="text">
                     <p>In spite of these criticisms, I’ve received some positive comments regarding the organizational features of Snapsack.</p>
-                </div>
 
-                <!--- SELECT FOLDER --->
-                <img src="../img/snapsack/illustration.png" />
+                    <div class="list-in-text">
+                        <h4>Labels feedback</h4>
+                        <ul class="list">
+                            <li><p><span class="italic">“This looks like it has a lot of color, colored labels, categories, which <em>help me to organize better</em>.”</span></p></li>
+                            <li><p><span class="italic">“<em>It would make me more likely to use [a labeling system]</em>. Your design is nice and easy to use.”</span></p></li>
+                            <li><p><span class="italic">“I would totally use this app. <em>I’ve always wanted to use labels to help me organize my files</em>.” </span></p></li>
+                        </ul>
+                    </div>
+
+                    <div class="list-in-text">
+                        <h4>On selecting a folder upon upload</h4>
+                        <ul class="list">
+                            <li><p><span class="italic">“I feel that if it didn’t ask me to [choose a folder], I would’ve been lost. <em>It makes sense that it asks me to choose a folder.</em>” </span></p></li>
+                            <li><p><span class="italic">“I like this idea of having to select a folder so <em>I know where I’m uploading the file to</em>.”</span></p></li>
+                        </ul>
+                    </div>
+
+                    <!--- SELECT FOLDER --->
+                    <img class="small-img" src="../img/snapsack/folder-select.png" />
+
+                </div>
 
                 <!--- FINAL --->
                 <div class="text">
@@ -278,7 +483,7 @@
                 </div>
 
                 <!--- IMG: FILE MENU --->
-                <img src="../img/snapsack/illustration.png" />
+                <img class="small-img img-border" src="../img/snapsack/folder-menu.png" />
 
                 <a href="https://www.figma.com/proto/z9SxR1o3QCLH4OvyBTIHBf/Snapsack-Mockups-Revised?node-id=88%3A0&viewport=32%2C27%2C0.0625&scaling=contain" target="_blank"><button class="active animated">View desktop prototype</button></a>
                 <a href="https://www.figma.com/proto/z9SxR1o3QCLH4OvyBTIHBf/Snapsack-Mockups-Revised?node-id=88%3A0&viewport=32%2C27%2C0.0625&scaling=contain" target="_blank""><button class="active animated">View mobile prototype</button></a>
@@ -304,14 +509,35 @@
                 <div class="text">
                     <h3>Next steps</h3>
                     <p>Moving forward, the specifics of filtering with labels needs a bit more research. <em>Would users ever need to use more than one label to locate what they need?</em> If so, how often would this use case even apply?</p>
+
+                    <div class="list-in-text">
+                        <h4>What I learned</h4>
+                        <ul class="list">
+                            <li><p><em>Establishing goals for survey writing is important.</em> “Cloud storage app” is a vague term, and my survey reflected that I, too, was unsure of which direction to take with my project. As a result, my survey was weak, and the results I got revealed too many gaps of information that I had to “fill in” myself by making assumptions about my audience.</p></li>
+                            <li><p><em>Proximity is key.</em> People are more likely to associate two separate items if they are in close proximity with one another. It’s a basic principle of design, but it can be easy to forget when dealing with a large application.</p></li>
+                            <li><p><em>Don’t use too many components in Figma.</em> Though specific to the design tool I used, this proved to be detrimental to my progress, as Figma was not meant to handle this amount of components and nesting. When designing my high-fidelity mockups, I nested components within components so that my working file would be as modular as possible (think classes in object-oriented programming). As a result, copying one screen took the app upwards of 2 minutes to complete, and loading each screen of my prototype was painfully slow as well.</p></li>
+                        </ul>
+                    </div>
+
+                    <div class="list-in-text">
+                        <h4>What I would do differently</h4>
+                        <ul class="list">
+                            <li><p><em>Focus on the organization aspect of the app.</em> I got too caught up in other features like notes and previewing files that weren’t really fleshed out in the end. </p></li>
+                            <li><p><em>Conduct more follow-up research about cloud storage app users and their organization habits.</em> I feel that my survey data wasn’t sufficient due to low participant numbers and lack of foresight regarding the direction the product would take. </p></li>
+                            <li><p><em>Consider options on making labels accessible.</em> At the moment, labels are entirely reliant on the user’s ability to perceive colors accurately.</p></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <!--- END -->
                 <div class="text">
-                    <p>In spite of the setbacks, the positive comments I received post-testing reaffirmed that I was doing something right. A labeling system is a relatively simple feature that cloud storage apps could use to encourage their users to keep their digital spaces neat. Folders are “enough” but provide very little in the way of visual cues or non-linear access to files. Filtering by labels could be the answer to finding files easily.</p>
+                    <p>In spite of the setbacks, the positive comments I received post-testing reaffirmed that I was doing something right. <em>A labeling system is a relatively simple feature that cloud storage apps could use to encourage their users to keep their digital spaces neat.</em> Folders are “enough” but provide very little in the way of visual cues or non-linear access to files. Filtering by labels could be the answer to finding files easily.</p>
  
 
                     <p>Thanks for reading.</p>
+
+                    <h3>Attributions</h3>
+                    <p>I used iPhone mockups from <a href="" class="link" target="_blank">here</a>. Macbook Pro mockups are from <a href="" class="link" target="_blank">here</a>. Icons were provided by <a href="" class="link" target="_blank">FontAwesome</a>, <a href="" class="link" target="_blank">Icons8</a>, and material.io</a>. The label color palette was borrowed from <a href="" class="link" target="_blank">here</a>.</p>
                 </div>
             </div>
          </section>

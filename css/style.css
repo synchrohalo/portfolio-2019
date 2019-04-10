@@ -29,7 +29,8 @@ p {
 h1,
 h2,
 h3,
-h4 {
+h4,
+ol.list li {
     font-family: 'Chivo', sans-serif;
     line-height: 125%;
 }
@@ -74,12 +75,16 @@ a {
 
 .link {
     text-decoration: underline;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     cursor: pointer;
 }
 
 .link:hover {
     color: var(--complement1);
+}
+
+footer .link {
+    color: var(--primary-color);
 }
 
 p {
@@ -120,14 +125,44 @@ button.inactive {
     border: 2px solid var(--neutral-dark);
 }
 
-.list ul {
+
+
+ul.list, ol.list {
+    display: initial;
+    padding: 0;
     list-style: initial;
 }
 
-.list li:before {
-    content: "+";
-    color: var(--secondary-color);padding-right: 8px;
+ul.list, ol.list {
+    display: initial;
+    padding: 0;
+    list-style: initial;
 }
+
+ul.list li {
+    color: var(--secondary-color);
+}
+
+ol.list li {
+    list-style: decimal;
+    color: var(--secondary-color);
+}
+
+.list li p {
+    line-height: 175%;
+}
+
+/*.list li {
+    margin-left: 1rem;
+}
+
+.list li::before {
+    content: "+";
+    color: var(--secondary-color);
+    display: inline-block; 
+    width: 0.5em; 
+    margin-left: -1rem; 
+}*/
 
 /**** HERO ****/
 header {
@@ -196,6 +231,7 @@ nav {
     position: fixed;
     width: 100%;
     height: var(--nav-bar-height);
+    color: var(--secondary-color);
     background-color: var(--white);
 }
 
@@ -298,7 +334,7 @@ section {
     margin-bottom: var(--in-between);
 }
 
-#projects li {
+li.project {
     margin-bottom: 3rem;
 }
 
