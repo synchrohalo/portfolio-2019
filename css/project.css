@@ -118,8 +118,8 @@ img.small-img {
 }*/
 
 .raised {
-    width: 100%;
-    max-width: 56rem;
+    width: 90%;
+    max-width: 44rem;
     margin: 0 auto;
     box-shadow: var(--shadow);
     padding-top: 2rem;
@@ -127,18 +127,21 @@ img.small-img {
     margin-bottom: 2rem;
 }
 
+.wide-raised {
+    max-width: 56rem;
+}
+
 .problem-solution {
     display: inline-flex;
     flex-wrap: wrap;
     align-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
     width: 100%;
 }
 
 .raised .small-section {
-    width: 40%;
-    min-width: 12rem;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -323,7 +326,16 @@ img.small-img {
     }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1100px) {
+
+    .wide-raised {
+    }
+
+    .raised .small-section {
+        width: 40%;
+        min-width: 12rem;
+        margin: 0 auto;
+    }
 
     /*#moodboard {
         width: 75%;
