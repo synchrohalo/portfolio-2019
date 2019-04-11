@@ -570,6 +570,10 @@ nav {
         right: 0;
     }
 
+    header h2 {
+        width: 90%;
+    }
+
     /*header .clouds .right {
         display: block;
         position: absolute;
@@ -636,6 +640,14 @@ nav {
    header {
        background-size: 18rem;
    }
+
+   header h2 {
+       width: 100%;
+   }
+
+   header .clouds .left {
+        max-width: 32rem;
+    }
 
 
     /**** BODY ****/

@@ -201,6 +201,7 @@ h4 {
     background-size: cover;
     background-attachment: fixed;
     margin-bottom: 2rem;
+    background-repeat: no-repeat;
 }
 
 #user-flows {
@@ -363,6 +364,13 @@ h4 {
 
     #problems-folders {
         margin-top: -2rem;
+    }
+
+    #moodboard {
+        background-size: contain;
+        background-position: center;
+        width: 75%;
+        margin: 0 auto;
     }
 }
 
