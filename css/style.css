@@ -93,7 +93,7 @@ p {
 }
 
 em {
-    font-weight: 700;n
+    font-weight: 700;
 }
 
 button {
@@ -143,6 +143,20 @@ ul.list li {
     color: var(--secondary-color);
 }
 
+ul.list {
+	position: relative;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 1.5rem;
+}
+ul.list li:before {
+    content: "+";
+    font-weight: 700;
+	position: absolute;
+    left: -1.5rem;
+    margin-top: 0.25rem;
+}
+
 ol.list li {
     list-style: decimal;
     color: var(--secondary-color);
@@ -150,7 +164,7 @@ ol.list li {
 }
 
 .list li p {
-    line-height: 150%;
+    line-height: 175%;
 }
 
 /*.list li {
