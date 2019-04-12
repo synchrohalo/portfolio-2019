@@ -2,7 +2,11 @@ header.project-page, header.about {
     height: initial;
     max-height: initial;
     background-image: none;   
-    background: var(--neutral-light); 
+    background: var(--white); 
+}
+
+header.project-page {
+    /*background: #f6e022;*/
 }
 
 header.project-page img {
@@ -96,6 +100,10 @@ img.small-img {
     max-width: 28rem;
 }
 
+img.smallest-img {
+    max-width: 20rem;
+}
+
 #snapsack-logo {
     max-width: 24rem;
 }
@@ -141,6 +149,7 @@ h4 {
     padding-bottom: 1rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    background: var(--white);
 }
 
 .wide-raised {
@@ -206,6 +215,16 @@ h4 {
     background-attachment: fixed;
     margin-bottom: 2rem;
     background-repeat: no-repeat;
+}
+
+.wide-img#user-flows {
+    height: auto;
+    display: flex;
+}
+
+.wide-img .raised {
+    width: 80%;
+    padding: 2rem;
 }
 
 #user-flows {
@@ -397,7 +416,7 @@ h4 {
     }
 
     .list-in-text {
-        margin-bottom: 2.5rem;
+        margin-bottom: -1rem;
         margin-top: 2.5rem;
     }
 
@@ -427,7 +446,7 @@ h4 {
     }
 
     #hifi-title {
-        bottom: 1.75rem;
+        bottom: 2.25rem;
     }
 
     .raised .small-section {

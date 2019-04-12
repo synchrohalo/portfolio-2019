@@ -87,6 +87,24 @@ footer .link {
     color: var(--primary-color);
 }
 
+#scroll-down {
+    position: absolute;
+    z-index: 3;
+    width: 14rem;
+    text-align: center;
+    left: 50%;
+    top: 70%;
+    margin-left: -7rem;
+}
+
+#scroll-down.link {
+    text-decoration: none; 
+}
+
+#scroll-down.link p {
+    color: var(--secondary-color);
+}
+
 p {
     line-height: 175%;
     margin-bottom: 1rem;
@@ -185,7 +203,7 @@ header {
     min-height: 32rem;
     max-height: 44rem;
     width: 100%;
-    background-color: var(--primary-color);
+    background: var(--primary-color);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -196,22 +214,12 @@ header {
     background-repeat: no-repeat; 
     background-position: center 20%;
     background-size: 10rem;
-
 }
 
 header .text {
     width: 80%;
     margin: 0 auto;
     /*padding-top: var(--nav-bar-height);*/
-}
-
-#scroll-down {
-    display: none;
-    width: 14rem;
-    margin: 0 auto;
-    margin-top: 3rem;
-    text-align: center;
-    color: var(--secondary-color);
 }
 
 header .clouds {
@@ -242,7 +250,7 @@ header .clouds .right {
 
 /**** NAV BAR ****/
 nav {
-    z-index: 3;
+    z-index: 4;
     position: fixed;
     width: 100%;
     height: var(--nav-bar-height);
@@ -354,7 +362,7 @@ li.project {
 }
 
 #snapsack .project-img {
-    background: var(--snapsack-bg)
+    background: var(--snapsack-bg);
 }
 
 #assorted .project-img{
@@ -463,9 +471,17 @@ footer h4 {
 
 @media only screen and (min-width: 320px) {
 
- /**** HERO ****/
- header {
+/**** HERO ****/
+header {
     background-position: 80% 18%;
+}
+
+header .clouds .left {
+    width: 80%;
+}
+
+#scroll-down {
+    top: 78%;
 }
 
 /**** NAV BAR ****/
@@ -499,7 +515,7 @@ nav {
     /**** HERO ****/
     header {
        background-size: 13rem;
-   }
+    }
 
    header .clouds .left {
        width: 75%;
@@ -518,6 +534,10 @@ nav {
         background-image: url("../img/planet.svg");
         background-size: 14rem;
         background-position: 90% calc(var(--nav-bar-height) - 2rem);
+    }
+
+    #scroll-down {
+        top: 72%;
     }
 
     header .clouds .left {
@@ -574,6 +594,10 @@ nav {
         background-position: 90% calc(var(--nav-bar-height) - 1rem);
     }
 
+    #scroll-down {
+        top: 70%;
+    }
+
     header .clouds .left {
         width: 45%;
     }
@@ -586,6 +610,10 @@ nav {
 
     header h2 {
         width: 90%;
+    }
+
+    header h5 {
+        max-width: 36rem;
     }
 
     /*header .clouds .right {
@@ -651,16 +679,24 @@ nav {
 @media only screen and (min-width: 900px) {
    
     /**** HERO ****/
-   header {
+    header {
        background-size: 18rem;
-   }
+    }
 
-   header h2 {
+    header h2 {
        width: 100%;
-   }
+    }
 
-   header .clouds .left {
+    header .clouds .left {
         max-width: 32rem;
+    }
+
+    header h5 {
+        max-width: 42rem;
+    }
+
+    header .clouds .right {
+        max-width: 48rem;
     }
 
 

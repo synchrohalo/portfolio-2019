@@ -193,37 +193,43 @@
             </div>
 
             <!--- USER FLOWS --->
-            <div id="user-flows" class="wide-img">
-                <img src="" />
-            </div>
-
             <div class="block">
                 <div class="text">
                     <h3>User stories & flows</h3>
                     <p>Now I needed to determine which tasks were most vital to include in the app, based on which features people use frequently and which features they consider important.</p>
                     <p>It was during this step that I began ideating ways to help with the organization. I thought about the <em>current problems with folders and the benefits of using color-coded labels</em>.</p>
                 </div>
+            </div class="block">
 
-                <div class="raised">
-                    <div id="problems-folders" class="text">
-                        <div class="list-in-text ordered">
-                            <h4>Problems with folders</h4>
-                            <ol class="list">
-                                <li><p>Hard to access files deeply nested within many folders.</p></li> 
-                                <li><p>Can only associate a file with one folder and its encapsulating folders.</p></li>
-                            </ol>
-                        </div>
-    
-                        <div class="list-in-text ordered">
-                            <h4>Benefits of labels</h4>
-                            <ol class="list">
-                                <li><p>Provide visual cues with the use of color.</p></li>
-                                <li><p>Files/folders can be associated with more than one label.
-                                </p></li>
-                            </ol>
+            <div id="user-flows" class="wide-img cont">
+                    <div class="raised">
+                        <div id="problems-folders" class="text">
+                            <div class="list-in-text ordered">
+                                <h4>Problems with folders</h4>
+                                <ol class="list">
+                                    <li><p>Hard to access files deeply nested within many folders.</p></li> 
+                                    <li><p>Can only associate a file with one folder and its encapsulating folders.</p></li>
+                                </ol>
+                            </div>
+        
+                            <div class="list-in-text ordered">
+                                <h4>Benefits of labels</h4>
+                                <ol class="list">
+                                    <li><p>Provide visual cues with the use of color.</p></li>
+                                    <li><p>Files/folders can be associated with more than one label.
+                                    </p></li>
+                                </ol>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+            <div class="block">
+                <div class="text">
+                    <p>I drafted this filtering user flow based on the the labelling system I was starting to develop. The idea was to used color-coded labels so that users could have a visual cue with which to identify the files and folders on their app.</p>
+                </div>
+                <!--<img class="" src="../img/snapsack/organize-flow.png" />-->
+                <img class="small-img" src="../img/snapsack/filter-flow.png" />
             </div>
 
             <!------ LO-FI ------>
@@ -263,14 +269,17 @@
                     </div>
                 </div>
 
+                <div class="text">
+                    <p>I interviewed a peer for feedback on this layout.</p>
+                </div>
+
 
                 <!--- SKETCH FEEDBACK --->
                 <div class="text">
                     <div class="list-in-text">
-                        <h4>Layout feedback</h4>
+                        <h4>Comments on the current layout</h4>
                         <ul class="list">
-                            <li><p><span class="italic">"I like the idea of <em>having functions on the bottom."</em></span></p></li>
-                            <li><p><span class="italic">"It's not fighting your title, search bar, etc.”</span> (on the location of the “Upload file” button)</p></li>
+                            <li><p><span class="italic">"I like the idea of <em>having functions on the bottom.</em> It's not fighting your title, search bar, etc.”</span> (on the location of the “Upload file” button)</p></li>
                             <li><p><span class="italic">“What I hate about Google Drive is that <em>it gathers all of its functionality on one side</em>. Makes it hard to navigate.”</span></p></li>
                         </ul>
                     </div>
@@ -288,6 +297,17 @@
                 <!--- WIREFRAMES --->
                 <div class="text">
                     <h3>Wireframes</h3>
+
+                    <p>I started working on digital wireframes based on the previous suggestions. I moved all of the the upload and create functions into a button labeled “Add to my Snapsack” and placed it in the bottom right corner for easy access.</p> 
+
+                    <p>I also shifted around some of the other elements on the menu bar. During this process, I had the idea of displaying the labels in a list à la Projects on the app <a href="https://todoist.com/?lang=en" target="_blank"><span class="link">Todoist</span></a>:</p>
+
+                    <img class="smallest-img" src="../img/snapsack/todoist.png" />
+
+                    <p>I wanted the labels to be visible so that the user had a visual key with which to reference the labels attached to their files and folders. The user would be able to check off labels on the side to filter their view. Because this would take an indefinite amount of vertical space, I switched <span class="italic">Filter by label</span> with the contextual file menu so that it would have more space to expand.
+
+                    <p>The side menu was looking a bit empty with just Filter by label, so I decided to move the user profile picture and storage space to the top right, giving the top left of the dashboard more breathing room.</p>
+                    </p>
                 </div>
 
                 <div class="raised">
@@ -307,6 +327,13 @@
 
                 <a href="https://projects.invisionapp.com/share/YTQ7OI63FK5#/screens" target="_blank"><button class="active animated">View lo-fi prototype</button></a>
 
+
+                <div class="text">
+                    <p>As I started considering the labeling functionality, some questions came to mind. Would the user be limited to filtering their files with only one label? What if the user wanted to filter by multiple labels? </p>
+                    <p>While digging deeper into those scenarios, I ran into a problem. Would selecting two labels mean that the user wants to see files/folders that include either label or would they prefer to see files/folders that include BOTH labels? I threw both of these options into the mix.</p>
+                    <p>Something else I thought about was how labels relate to folders. Would a file necessarily have the same labels as its parent folders? Not so, but would a user like the option to do that as soon as they add a file to a folder? Perhaps. I added that feature as well.</p>
+                </div>
+
                 <div class="text">
                     <p>I tested my wireframes with 3 participants, which revealed one commonality &mdash; that the labeling interactions needed some work:</p>
 
@@ -319,6 +346,14 @@
                             <li><p><span class="italic">“Use the <em>law of proximity</em> when you can. Add label should be an immediate option next to or over the item in question.”</span> (on adding a label to a file/folder)</p></li>
                         </ul>
                     </div>
+
+                    <p>It was back to the drawing board for me. I proceeded to sketch more solutions for the label functions.</p>
+
+                    <p>I started to consider how editing labels for a file/folder would work. I imagined a small popup next to the selected file might do the trick.</p>
+
+                    <p>I moved Filter by label to the top in proximity with the search bar because they have similar functions. Because of this, the sidebar was beginning to look too empty. I then thought it would be a perfect place to position the upload functions. I removed the “Add to my Snapsack” button and placed all of the upload/new functions in the bottom left corner as a list. </p>
+
+                    <p>Upon this change, a peer commented, “It’s nice to be able to see the upload options. It’s more explicit this way.” With this approval, I moved on to working on high-fidelity mockups.</p>
                 </div>
 
                 <!------ RESEARCH ------>
