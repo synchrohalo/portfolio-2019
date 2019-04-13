@@ -1,13 +1,13 @@
 :root {
     --primary-color: #FAD9DB;
-    --secondary-color: #8866B2;
+    --secondary-color: #6D4D96;
     --complement1: #49ADA4;
     --complement2: #2378BA;
     --neutral-dark :#29232F;
-    --neutral-light: #DDD8E3;
+    --neutral-light: #FAF3F0;
     --white: #fff;
     --snapsack-bg: #FCF6C0;
-    --shadow: 0px 2px 12px rgba(41, 25, 47, 0.25);
+    --shadow: 0px 2px 4px rgba(41, 25, 47, 0.25);
     --nav-bar-height: 8rem;
     --mobile-margin: 80%;
     --in-between: 4rem;
@@ -15,6 +15,8 @@
 
 body {
     width: 100%;
+    font-size: 11pt;
+    background: var(--neutral-light);
 }
 
 h1, 
@@ -41,8 +43,8 @@ p {
 }
 
 h1 {
-    font-size: 2em;
-    font-weight: 700;
+    font-size: 2.25em;
+    /*font-weight: 700;*/
 }
 
 h2 {
@@ -87,13 +89,31 @@ footer .link {
     color: var(--primary-color);
 }
 
+#scroll-down {
+    position: absolute;
+    z-index: 3;
+    width: 14rem;
+    text-align: center;
+    left: 50%;
+    top: 70%;
+    margin-left: -7rem;
+}
+
+#scroll-down.link {
+    text-decoration: none; 
+}
+
+#scroll-down.link p {
+    color: var(--primary-color);
+}
+
 p {
     line-height: 175%;
     margin-bottom: 1rem;
 }
 
 em {
-    font-weight: 700;n
+    font-weight: 700;
 }
 
 button {
@@ -101,7 +121,7 @@ button {
     font-size: 0.889em;
     font-style: italic;
     font-family: 'Space Mono', monospace;
-    background: white;
+    background: var(--neutral-light);
     padding: 0.75rem 1.25rem 0.75rem 1.25rem;
     width: 60%;
     min-width: 16rem;
@@ -125,8 +145,6 @@ button.inactive {
     border: 2px solid var(--neutral-dark);
 }
 
-
-
 ul.list, ol.list {
     display: initial;
     padding: 0;
@@ -137,15 +155,39 @@ ul.list, ol.list {
     display: initial;
     padding: 0;
     list-style: initial;
+}
+
+ol.list li {
+    margin-left: 3rem;
 }
 
 ul.list li {
     color: var(--secondary-color);
+    margin-left: 2rem;  
+}
+
+ul.list li, ol.list li {
+    margin-bottom: -1.5rem;
+}
+
+ul.list {
+	position: relative;
+	list-style: none;
+	margin-left: 0;
+    padding-left: 1.5rem;
+}
+ul.list li:before {
+    content: "+";
+    font-weight: 700;
+	position: absolute;
+    left: 2rem;
+    margin-top: 0.25rem;
 }
 
 ol.list li {
     list-style: decimal;
     color: var(--secondary-color);
+    padding-left: -1rem;
 }
 
 .list li p {
@@ -167,36 +209,37 @@ ol.list li {
 /**** HERO ****/
 header {
     height: 100vh;
-    min-height: 32rem;
-    max-height: 44rem;
+    min-height: 38rem;
+    max-height: 42rem;
     width: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--neutral-light);
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    outline: 1.333rem solid var(--white);
-    outline-offset: -1.25rem;background-image: url("../img/planet-small.svg");
+    /*outline: 1.333rem solid var(--white);
+    outline-offset: -1.25rem;*/
+    /*background-image: url("../img/hero-bg.svg");
     background-repeat: no-repeat; 
     background-position: center 20%;
-    background-size: 10rem;
+    background-size: 10rem;*/
+    background-image: url("../img/hero-bg-small.svg");
+    background-position: center 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*margin-top: calc(var(--nav-bar-height) - 5rem);*/
+    margin-top: 1.5rem;
+}
 
+header h1, header h2, header h5 {
+    color: var(--neutral-light);
 }
 
 header .text {
     width: 80%;
+    max-width: 24rem;
     margin: 0 auto;
-    /*padding-top: var(--nav-bar-height);*/
-}
-
-#scroll-down {
-    display: none;
-    width: 14rem;
-    margin: 0 auto;
-    margin-top: 3rem;
-    text-align: center;
-    color: var(--secondary-color);
 }
 
 header .clouds {
@@ -225,25 +268,66 @@ header .clouds .right {
     visibility: hidden;
 }
 
+.swirl-1 .small, 
+.swirl-2 .small,
+.swirl-1 .large, 
+.swirl-2 .large,
+.swirl-1 .medium,
+.swirl-2 .medium,
+.swirl-1 .small-medium {
+    position: absolute;
+}
+
+.swirl-1 .large, 
+.swirl-2 .large,
+.swirl-1 .medium,
+.swirl-2 .medium,
+.swirl-1 .small-medium {
+    display: none;
+}
+
+.swirl-1 .small img {
+    width: 100vw;
+}
+
+.swirl-2 .small img {
+    width: 80vw;
+}
+
+.swirl-1 .small {
+    top: 5vh;
+}
+
+.swirl-2 .small {
+    right: 0rem;
+    bottom: 0vh;
+}
+
 /**** NAV BAR ****/
 nav {
-    z-index: 3;
+    display: none;
+    z-index: 4;
     position: fixed;
+    top: 0;
     width: 100%;
     height: var(--nav-bar-height);
     color: var(--secondary-color);
-    background-color: var(--white);
+    background-color: var(--neutral-light);
 }
 
 nav .link {
     text-decoration: none;
 }
 
+#logo {
+    margin-left: 2rem;
+}
+
 #home {
     /*position: absolute;*/
     width: 100%;
     text-align: center;
-    margin-top: 1.5rem;
+    margin-top: 1.75rem;
 }
 
 #home img{
@@ -339,11 +423,14 @@ li.project {
 }
 
 #snapsack .project-img {
-    background: var(--snapsack-bg)
+    /*background: url(../img/project-bg-1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 50%;*/
 }
 
 #assorted .project-img{
-    background: #FFCE99;
+    /*background: #FFCE99;*/
 }
 
 .project h3 {
@@ -354,7 +441,7 @@ li.project {
     width: 100%;
     height: 50vh;
     min-height: 20rem;
-    box-shadow: var(--shadow);
+    /*box-shadow: var(--shadow);*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -386,6 +473,24 @@ footer h2,
 footer h4,
 footer p {
     color: white;
+}
+
+footer h4 {
+    margin-bottom: 0rem;
+}
+
+.footer-swirl {
+    position: relative;
+    display: none;
+}
+
+.footer-swirl img {
+    width: 80vw;
+    max-width: 15rem;
+    position: absolute;
+    right: 0rem;
+    bottom: 4rem;
+
 }
 
 .orbit {
@@ -428,7 +533,7 @@ footer p {
 .copyright {
     width: 100%;
     height: 5rem;
-    background: var(--white);
+    background: var(--neutral-light);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -442,11 +547,20 @@ footer p {
     color: var(--neutral-dark);
 }
 
+
 @media only screen and (min-width: 320px) {
 
- /**** HERO ****/
- header {
-    background-position: 80% 18%;
+/**** HERO ****/
+header {
+    /*background-position: 80% 18%;*/
+}
+
+header .clouds .left {
+    width: 80%;
+}
+
+#scroll-down {
+    top: 72%;
 }
 
 /**** NAV BAR ****/
@@ -464,6 +578,10 @@ nav {
     left: 50%;
 }
 
+#logo {
+    margin-top: 1.75rem;
+}
+
 #home img{
     height: 3rem;
 }
@@ -479,31 +597,72 @@ nav {
 
     /**** HERO ****/
     header {
-       background-size: 13rem;
-   }
+       /*background-size: 13rem;*/
+    }
 
    header .clouds .left {
        width: 75%;
    }
+
+   #scroll-down {
+    top: 65%;
+}
 }
 
 @media only screen and (min-width: 500px) {
 
-    h1 {
+    /*h1 {
         font-size: 2.25em;
         margin-bottom: -0.1em;
-    }
+    }*/
 
     /**** HERO ****/
-    header {
+    /*header {
         background-image: url("../img/planet.svg");
         background-size: 14rem;
         background-position: 90% calc(var(--nav-bar-height) - 2rem);
+    }*/
+
+    header {
+        background-image: url("../img/hero-bg-med.svg");
+    }
+
+    #scroll-down {
+        top: 65%;
     }
 
     header .clouds .left {
         width: 55%;    
         max-height: cacl( 50% * 40rem);
+    }
+
+    header .text {
+        width: 65%;
+    }
+
+    .swirl-1 .small {
+        display: none;
+    }
+
+    .swirl-1 .small-medium {
+        display: initial;
+    }
+
+    .swirl-1 .small-medium img {
+        width: 100vw;
+    }
+    
+    .swirl-2 .small img {
+        width: 60vw;
+    }
+    
+    .swirl-1 .small-medium {
+        top: 2vh;
+    }
+    
+    .swirl-2 .small {
+        right: 0rem;
+        bottom: 0vh;
     }
 
     /**** PROJECTS ****/
@@ -516,22 +675,29 @@ nav {
     .project-img {
         max-height: 24rem;
     }
+
+    /**** FOOTER ****/
+    .galaxy-footer img {
+        width: 32rem;
+        bottom: -1.5rem;
+        left: 22rem;
+    }
 }
 
 @media only screen and (min-width: 768px) {
 
-    h1 {
-        font-size: 3em;
-        margin-bottom: -0.1em;
-    }
-
-
     /**** HERO ****/
     header {
-        min-height: 36rem;
-        max-height: 44rem;
-        background-size: 16rem;
-        background-position: 90% calc(var(--nav-bar-height) - 1rem);
+        /*margin-top: calc(var(--nav-bar-height) - 2rem);*/
+    }
+
+    header {
+        background-image: url("../img/hero-bg-med.svg");
+        background-size: cover;
+    }
+
+    #scroll-down {
+        top: 65%;
     }
 
     header .clouds .left {
@@ -544,6 +710,26 @@ nav {
         right: 0;
     }
 
+    header .text {
+        width: 65%;
+    }
+
+    .swirl-1 .small-medium {
+        top: -1vh;
+    }
+
+    .swirl-2 .small img {
+        width: 45vw;
+    }
+
+    /*header h2 {
+        width: 90%;
+    }
+
+    header h5 {
+        max-width: 36rem;
+    }*/
+
     /*header .clouds .right {
         display: block;
         position: absolute;
@@ -555,7 +741,6 @@ nav {
 
     /**** NAV BAR ****/
     nav {
-        display: none;
         height: 5rem;
     }
 
@@ -594,22 +779,105 @@ nav {
     /**** FOOTER ****/
     .orbit {
        float: right;
-       margin-top: -7rem;
+       margin-top: -6.5rem;
     }
 
     footer h4, footer h2, footer p {
         width: 45%;
+        min-width: 22rem;
         max-width: 32rem;
     }
 }
 
 @media only screen and (min-width: 900px) {
-   
-    /**** HERO ****/
-   header {
-       background-size: 18rem;
-   }
 
+    h1 {
+        font-size: 3em;
+        margin-bottom: -0.1em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+    .main-heading {
+        margin-top: 8rem;
+    }
+
+    .heading-divider {
+        width: 8rem;
+        height: 4px;
+    }
+   
+    #logo {
+        margin-top: 1.75rem;
+    }
+
+    /**** HERO ****/
+    header h2 {
+       width: 100%;
+    }
+
+    header .clouds .left {
+        max-width: 32rem;
+    }
+
+    header h5 {
+        max-width: 42rem;
+    }
+
+    header .clouds .right {
+        max-width: 48rem;
+    }
+
+    header {
+        background-image: url("../img/hero-bg.svg");
+        background-size: cover;
+        background-position-y: 50%;
+        min-height: 40rem;
+    }
+
+    header .text {   
+        max-width: 32rem;
+    }
+
+    .swirl-1 .large, 
+    .swirl-2 .large,
+    .swirl-1 .small,
+    .swirl-2 .small,
+    .swirl-1 .small-medium {
+        display: none;
+    }
+
+    .swirl-1 .medium,
+    .swirl-2 .medium {
+        display: block;
+    } 
+
+    .swirl-1 .medium img {
+        width: 100vw;
+    }
+
+    .swirl-2 .medium img {
+        width: 50vw;
+    }
+
+    .swirl-1 .medium {
+        top: 2vh;
+    }
+
+    .swirl-2 .medium {
+        right: 0rem;
+        bottom: 4vh;
+    }
 
     /**** BODY ****/
     .project {
@@ -641,25 +909,76 @@ nav {
     #contact {
         max-width: 50rem;
     }
+
+    .orbit {
+        float: right;
+        margin-top: -8rem;
+    }
+
+    footer h4, footer h2, footer p {
+        width: 45%;
+        min-width: 28rem;
+    }
+
+    .galaxy-footer img {
+        width: 40rem;
+        bottom: -4rem;
+        left: 85%;
+    }
 }
 
 @media only screen and (min-width: 1366px) {
    
     /**** HERO ****/
    header {
-       background-size: 20rem;
-       background-position: 90% calc(var(--nav-bar-height) + 3rem);
+        background-image: url("../img/hero-bg.svg");
+        max-width: 100rem;
+        max-height: 56rem;
+        margin: 0 auto;
    }
+
+   .swirl-1 .small,
+   .swirl-2 .small,
+   .swirl-1 .small-medium,
+   .swirl-1 .medium,
+   .swirl-2 .medium {
+       display: none;
+   }
+
+   .swirl-1 .large, 
+   .swirl-2 .large {
+       display: block;
+   } 
+
+   .swirl-1 .large img {
+        width: 100%;
+    }
+
+   .swirl-1 .large {
+        top: 4rem;
+    }
+
+   .swirl-2 .large {
+       right: 0rem;
+       bottom: 4rem;
+   }
+
+   /**** FOOTER ****/
+   .galaxy-footer img {
+        width: 40rem;
+        bottom: -4rem;
+        right: 90%;
+    }
 }
 
 @media only screen and (min-width: 1500px) {
    
     /**** HERO ****/
-   header .clouds .right {
+   /*header .clouds .right {
         max-width: 60rem;
     }
 
     header .clouds .left {
         max-width: 40rem;
-    }
+    }*/
 }

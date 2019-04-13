@@ -1,7 +1,26 @@
-/* make keyframes that tell the start state and the end state of our object */
+html {
+  scroll-behavior: smooth;
+}
+
+
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+@keyframes float {
+	0% {
+		/*box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/
+		transform: translatey(0px);
+	}
+	50% {
+		/*box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);*/
+		transform: translatey(-8px);
+	}
+	100% {
+		/*box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/
+		transform: translatey(0px);
+	}
+}
 
 .fade-in {
   opacity:0;  /* make things invisible upon start */
@@ -42,14 +61,6 @@
     animation-delay: 2.5s;
 }
 
-@media only screen and (min-width: 768px) {
-    /*.fade-in.last {
-        -webkit-animation-delay: 3s;
-        -moz-animation-delay: 3s;
-        animation-delay: 3s;
-    }*/
-}
-
 .link {
     -moz-transition: all .25s ease-in;
     -o-transition: all .25s ease-in;
@@ -64,6 +75,10 @@ button.active {
     transition: all .25s ease-in;
 }
 
-button.active:hover {
-    
+#scroll-down {
+  animation: float 2s ease-in-out infinite;
+}
+
+.back-to-top {
+  animation: float 2s ease-in-out infinite;
 }

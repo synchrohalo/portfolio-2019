@@ -7,20 +7,25 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animated.css">
-    <link href="https://fonts.googleapis.com/css?family=Chivo|Space+Mono:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:400,400i|Space+Mono:400,400i,700,700i" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
   </head>
   <body>
     <nav>
         <div id="home">
-            <a href="index.html" ><img src="img/logo.svg" /></a>
+            <!--<a href="index.html" ><img src="img/logo.svg" /></a>-->
+        </div>
+        <div id="logo">
+            <a href="index.html" >
+                <h4>Joanne Arboleda</h4>
+            </a>
         </div>
         <div class="menu">
 
             <div class="desktop-menu">
                 <ul>
-                    <li><p class="link">About</p></li>
+                    <li><a href="pages/about.html"><p class="link">About</p></a></li>
                     <li><a href="#contact"><p class="link">Contact</p></a></li>
                     <li><a href="arboleda-joanne-resume-2017.pdf" target="_blank"><p class="link">Resume</p></a></li>
                 </ul>
@@ -29,9 +34,9 @@
             <div class="mobile-menu">
                 <img class="icon" src="img/close.svg" />
                 <ul>
-                    <li><p class="link">About</p></li>
-                    <li><p class="link">Contact</p></li>
-                    <li><p class="link">Resume</p></li>
+                    <li><a href="pages/about.html"><p class="link">About</p></a></li>
+                    <li><a href="#contact"><p class="link">Contact</p></a></li>
+                    <li><a href="arboleda-joanne-resume-2017.pdf" target="_blank"><p class="link">Resume</p></a></li>
                 </ul>
             </div>
 
@@ -40,15 +45,45 @@
     </nav>
 
     <header>
+        <div class="swirl-1">
+            <div class="medium">
+                <img src="img/hero-swirl.svg" />
+            </div>
+            <div class="small-medium">
+                <img src="img/hero-swirl-med.svg" />
+            </div>
+            <div class="small">
+                <img src="img/hero-swirl-small.svg" />
+            </div>
+            <div class="large">
+                <img src="img/hero-swirl-large.svg" />
+            </div>
+        </div>
+
+        <div class="swirl-2">
+            <div class="medium">
+                <img src="img/hero-swirl-2.svg" />
+            </div>
+            <div class="small">
+                <img src="img/hero-swirl-2-small.svg" />
+            </div>
+            <div class="large">
+                <img src="img/hero-swirl-2-large.svg" />
+            </div>
+        </div>
+
+
         <div class="text">
-            <h1 class="fade-in one">Greetings, I'm Joanne.</h1>
-            <h2 class="fade-in two">UX/UI Designer & Doodler in the SF Bay Area</h2>
+            <h1 class="fade-in one">Greetings, I'm Joanne</h1>
+            <h2 class="fade-in two">UX/UI Designer and Doodler</h2>
             <h5 class="fade-in three">While you're around, I'd be happy to show you what I've made.</h5>
         </div>
 
-        <span id="scroll-down" class="italic"><h5>See my works</h5></span>
+        <a href="#work">
+            <div id="scroll-down" class="link italic"><p>See my work &darr;</p>
+        </a>
 
-        <div class="clouds">
+        <!--<div class="clouds">
             <div class="left fade-in three">
                 <img src="img/swirl-left.svg" />
             </div>
@@ -56,11 +91,11 @@
             <div class="right fade-in four">
                 <img src="img/swirl-right.svg" />
             </div>
-        </div>
+        </div>-->
     </header>
 
     <main>
-        <section>
+        <section id="work">
             <div class="main-heading">
                 <h2>Projects</h2>
                 <div class="heading-divider"></div>
@@ -96,28 +131,31 @@
         </section>
     </main>
 
+    <!---- FOOTER ---->
     <footer>
+
         <div id="contact">
             <h4>Thanks for looking.</h4>
             <h2>Follow along my orbit.</h2>
             
             <div class="orbit">
-                <img src="img/orbit.svg" />
+                <img src="img/orbit-grain.svg" />
                 
                 <div class="icons">
-                        <a href="mailto:joanne.b.arboleda@gmail.com" target="_blank"><img id="mail" src="img/icons/mail.svg" /></a>
+                    <a href="mailto:joanne.b.arboleda@gmail.com" target="_blank"><img id="mail" src="img/icons/mail.svg" />
+                    </svg></a>
                 </div>
 
                 <div class="icons">
-                        <a href="https://dribbble.com/joannearboleda" target="_blank"><img id="dribbble" src="img/icons/dribbble.svg" /></a>
+                    <a href="https://dribbble.com/joannearboleda" target="_blank"><img id="dribbble" src="img/icons/dribbble.svg" /></a>
                 </div>
 
                 <div class="icons">
-                        <a href="https://www.linkedin.com/in/joanne-arboleda-79141167/" target="_blank"><img id="linkedin" src="img/icons/linkedin.svg" /></a>
+                    <a href="https://www.linkedin.com/in/joanne-arboleda-79141167/" target="_blank"><img id="linkedin" src="img/icons/linkedin.svg" /></a>
                 </div>
 
                 <div class="icons">
-                        <a href="https://github.com/synchrohalo" target="_blank"><img id="github" src="img/icons/github.svg" /></a>
+                    <a href="https://github.com/synchrohalo" target="_blank"><img id="github" src="img/icons/github.svg" /></a>
                 </div>
             </div>
 
@@ -125,11 +163,36 @@
         </div>
 
         <div class="copyright">
-            <p>Designed & coded with 💖 <br />by Joanne Arboleda &copy; 2019</p>
+            <p>Designed & coded with 💖<br />&copy; 2019 Joanne Arboleda</p>
         </div>
+
+        
     </footer>
+
+    <!--<div class="footer-swirl">
+        <img src="img/footer-galaxy.svg" />
+    </div>-->
   </body>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/script.js"></script>
+
+  <script>
+
+    $( document ).ready(function() {
+
+        $(window).scroll(function(){
+            var newScroll = $(window).scrollTop();
+
+            if( newScroll < ( $( "#work" ).offset().top * 0.1 ) ) {
+                $("nav").fadeOut( 200 );
+            } else {
+                $("nav").fadeIn( 200 );
+            }
+
+            currentScroll = newScroll;
+        });    
+    });
+  
+  </script>
 </html>

@@ -1,10 +1,12 @@
-header.project-page {
+header.project-page, header.about {
     height: initial;
     max-height: initial;
     background-image: none;   
-    background: var(--neutral-light); 
-    /*padding-top: calc(var(--nav-bar-height) + 2rem);
-    padding-bottom: 2rem;*/
+    background: var(--white); 
+}
+
+header.project-page {
+    /*background: #f6e022;*/
 }
 
 header.project-page img {
@@ -35,28 +37,29 @@ header.project-page button {
     margin-bottom: 0.5rem;
 }
 
+.back-to-top p{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
 .summary-list {
     width: 20%;
     min-width: 10rem;
     max-width: 15rem;
     margin: 0 auto;
     margin-bottom: 3rem;
-    /*background-color: yellow;*/
 }
 
 .summary-list h3 {
     margin-bottom: 1rem;
 }
 
-.list-in-text h4 {
-    margin-bottom: 1rem;
+.summary-list .list li p {
+    line-height: 150%;
 }
 
-.list-in-text {
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
+.list-container {
+    /*margin-bottom: 2rem;*/
 }
 
 .block {
@@ -74,7 +77,7 @@ main button {
 }
 
 main h3 {
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 .block .text {
@@ -90,11 +93,16 @@ main h3 {
     display: block;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 img.small-img {
     max-width: 28rem;
+}
+
+img.smallest-img {
+    max-width: 20rem;
 }
 
 #snapsack-logo {
@@ -102,7 +110,7 @@ img.small-img {
 }
 
 .img-border {
-    border: 1px solid var(--neutral-light);
+    border: 2px solid var(--neutral-light);
 }
 
 .text p {
@@ -113,9 +121,30 @@ img.small-img {
     margin-top: -.5rem;
 }
 
-/*h4 {
-    margin-bottom: -4rem;
-}*/
+.list-in-text h4 {
+    margin-bottom: 0rem;
+}
+
+.list-in-text.ordered h4 {
+    margin-bottom: 1rem;
+}
+
+.list-in-text {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: -2rem;
+    /*margin-bottom: 1.5rem;
+    margin-top: 1.5rem;*/
+}
+
+.list-in-text.ordered {
+    margin-bottom: 0rem;
+}
+
+h4 {
+    color: var(--secondary-color);
+    margin-top: 1rem;
+}
 
 .raised {
     width: 90%;
@@ -123,19 +152,20 @@ img.small-img {
     margin: 0 auto;
     box-shadow: var(--shadow);
     padding-top: 2rem;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: var(--white);
 }
 
 .wide-raised {
     max-width: 56rem;
+    display: flex;
 }
 
 .problem-solution {
     display: inline-flex;
     flex-wrap: wrap;
-    align-content: center;
-    align-items: flex-start;
     flex-direction: row;
     width: 100%;
 }
@@ -143,6 +173,15 @@ img.small-img {
 .raised .small-section {
     width: 85%;
     margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.raised img {
+    margin-bottom: -1rem;
+}
+
+.small-section h3 {
+    margin-top: 0rem;
 }
 
 .step-title {
@@ -185,6 +224,17 @@ img.small-img {
     background-size: cover;
     background-attachment: fixed;
     margin-bottom: 2rem;
+    background-repeat: no-repeat;
+}
+
+.wide-img#user-flows {
+    height: auto;
+    display: flex;
+}
+
+.wide-img .raised {
+    width: 80%;
+    padding: 1.5rem;
 }
 
 #user-flows {
@@ -223,6 +273,35 @@ img.small-img {
     margin: 0 auto;
     align-content: center;
     align-items: center;
+}
+
+#road-list ol {
+    margin: 0 0 1.5em;
+    padding: 0;
+    counter-reset: item;
+}
+  
+#road-list.list-in-text {
+    width: 100%;
+    /*margin-top: 2.5rem;*/
+}
+
+#road-list ol > li {
+    margin: 0;
+    padding: 0 0 0 4em;
+    list-style-type: none;
+    counter-increment: item;
+    display: flex;
+}
+  
+#road-list ol > li:before {
+    width: 1em;
+    padding-right: 0.5em;
+    margin-left: -4rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: right;
+    content: counter(item) ".";
 }
 
 .color-text p {
@@ -283,6 +362,7 @@ img.small-img {
     min-width: 14rem;
     max-width: 16rem;
     display: inline-block;
+    margin-bottom: 2rem;
 }
 
 @media only screen and (min-width: 400px) {
@@ -292,23 +372,48 @@ img.small-img {
 }
 
 @media only screen and (min-width: 500px) {
-
     .block {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
+    }
+
+    .list-in-text {
+        margin-top: 2rem;
     }
 }
 
 @media only screen and (min-width: 720px) {
+    .back-to-top {
+        display: initial;    
+        z-index: 2;
+        position: fixed;
+        bottom: 1rem;
+        right: 2rem;
+        color: var(--secondary-color);
+    }
+
     .summary-list {
         width: 100%;
-        min-width: 36rem;
-        display: inline-flex;   
+        min-width: 28rem;
+        max-width: 40rem;
+        display: flex;
+        margin-bottom: 3rem;
+        margin-top: 0rem;
     }
 
     .inline-list {
-        width: 14rem;
+        width: 50%;
+        min-width: 12rem;
+        max-width: 16rem;
+        display: inline-flex;
+        flex-direction: column;
+        align-content: center;
+        margin: 0 auto; 
+    }
+
+    .list-container {
         margin: 0 auto;
+        margin-bottom: 1rem;
     }
     
     .stat {
@@ -321,14 +426,42 @@ img.small-img {
     }
 
     .list-in-text {
-        margin-bottom: 2rem;
-        margin-top: 2rem;
+        margin-top: 2.5rem;
+    }
+
+    .wide-img .raised {
+        width: 80%;
+        padding: 2rem;
+        padding-top: 3rem;
+    }
+
+    #problems-folders {
+        margin-top: -2rem;
+    }
+
+    #moodboard {
+        background-size: contain;
+        background-position: center;
+        width: 75%;
+        margin: 0 auto;
     }
 }
 
 @media only screen and (min-width: 1100px) {
+    .step {
+        position: absolute;
+    }
 
-    .wide-raised {
+    .step-title {
+        font-size: 1.668em;
+        position: relative;
+        width: 16rem;
+        left: -4rem;
+        bottom: 3.75rem;
+    }
+
+    #hifi-title {
+        bottom: 2.25rem;
     }
 
     .raised .small-section {
@@ -359,4 +492,17 @@ img.small-img {
         width: 25%;
         display: inline-block;
     }*/
+}
+
+@media only screen and (min-width: 1700px) {
+
+    .step-title {
+        left: 8rem;
+    }
+
+    .wide-img {
+        max-width: 64rem;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
 }

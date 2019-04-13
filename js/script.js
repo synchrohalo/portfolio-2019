@@ -3,6 +3,11 @@ $( document ).ready(function() {
         $( ".mobile-menu" ).fadeIn( 200 );
 
         $( "body" ).css( "overflow", "hidden" );
+
+        $( ".mobile-menu .link" ).click(function() {
+            $( ".mobile-menu" ).fadeOut( 200 );
+            $( "body" ).css( "overflow", "visible" );
+        });
     });
 
     $( ".mobile-menu .icon" ).click(function() {
@@ -12,7 +17,10 @@ $( document ).ready(function() {
     });
 
     var currentScroll = $(window).scrollTop();
-    var contactPos = $( "footer" ).scrollTop();
+    //var contactPos = $( "footer" ).scrollTop();
+
+    //var worksPos = $( "#work" ).offset().top;
+    //console.log(worksPos);
 
     $(window).scroll(function(){
         //$(".clouds .left").css("opacity", 1 - $(window).scrollTop() / 300);
@@ -21,11 +29,11 @@ $( document ).ready(function() {
 
         //console.log( newScroll );
 
-        if( newScroll < currentScroll ) {
+        /*if( newScroll < (currentScroll) ) {
             $("nav").fadeIn( 200 );
         } else {
             $("nav").fadeOut( 200 );
-        }
+        }*/
 
         /*if( currentScroll == contactPos ) {
             console.log(contactPos);
