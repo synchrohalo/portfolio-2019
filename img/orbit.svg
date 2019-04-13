@@ -10,16 +10,15 @@
 	.st4{fill:none;stroke:#FFFFFF;}
 	.st5{fill:#29232F;}
 </style>
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="17.04" y1="84.6688" x2="594.04" y2="282.6688">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="83.0774" y1="52.6708" x2="379.8391" y2="593.8226">
 	<stop  offset="0" style="stop-color:#F2D2D6"/>
-	<stop  offset="4.815709e-02" style="stop-color:#EECED4"/>
-	<stop  offset="9.250607e-02" style="stop-color:#E3C3CF"/>
-	<stop  offset="0.1354" style="stop-color:#D0B0C6"/>
-	<stop  offset="0.1773" style="stop-color:#B696B9"/>
-	<stop  offset="0.2182" style="stop-color:#9575A9"/>
+	<stop  offset="6.053946e-02" style="stop-color:#EED3D6"/>
+	<stop  offset="0.1163" style="stop-color:#E3D5D7"/>
+	<stop  offset="0.1701" style="stop-color:#D1D9D8"/>
+	<stop  offset="0.2225" style="stop-color:#B6DEDA"/>
+	<stop  offset="0.225" style="stop-color:#B5DEDA"/>
 	<stop  offset="0.2574" style="stop-color:#6D4D96"/>
 	<stop  offset="0.3871" style="stop-color:#326FB3"/>
-	<stop  offset="0.4844" style="stop-color:#B5DEDA"/>
 	<stop  offset="0.7526" style="stop-color:#FDF7F7"/>
 </linearGradient>
 <ellipse class="st0" cx="120" cy="120" rx="66" ry="66.5"/>
