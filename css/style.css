@@ -1,10 +1,10 @@
 :root {
     --primary-color: #FAD9DB;
-    --secondary-color: #8866B2;
+    --secondary-color: #6D4D96;
     --complement1: #49ADA4;
     --complement2: #2378BA;
     --neutral-dark :#29232F;
-    --neutral-light: #DDD8E3;
+    --neutral-light: #FAF3F0;
     --white: #fff;
     --snapsack-bg: #FCF6C0;
     --shadow: 0px 2px 4px rgba(41, 25, 47, 0.25);
@@ -15,6 +15,7 @@
 
 body {
     width: 100%;
+    font-size: 12pt;
 }
 
 h1, 
@@ -42,7 +43,7 @@ p {
 
 h1 {
     font-size: 2em;
-    font-weight: 700;
+    /*font-weight: 700;*/
 }
 
 h2 {
@@ -207,8 +208,8 @@ header {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    outline: 1.333rem solid var(--white);
-    outline-offset: -1.25rem;background-image: url("../img/planet-small.svg");
+    /*outline: 1.333rem solid var(--white);
+    outline-offset: -1.25rem;*/background-image: url("../img/planet-small.svg");
     background-repeat: no-repeat; 
     background-position: center 20%;
     background-size: 10rem;
@@ -253,7 +254,7 @@ nav {
     width: 100%;
     height: var(--nav-bar-height);
     color: var(--secondary-color);
-    background-color: var(--white);
+    background-color: var(--neutral-light);
 }
 
 nav .link {
@@ -556,6 +557,10 @@ nav {
 }
 
 @media only screen and (min-width: 768px) {
+
+    body {
+        font-size: 11pt;
+    }
 
     h1 {
         font-size: 3em;

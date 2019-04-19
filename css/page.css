@@ -1,0 +1,84 @@
+:root {
+    --text-margin: 80%;
+    --space-bottom: 2rem;
+}
+
+header.page, header.about {
+    height: initial;
+    max-height: initial;
+    background-image: none;   
+    background: var(--white); 
+}
+
+header.page {
+    padding-top: var(--nav-bar-height);
+    background-image: url(../img/snapsack/snapsack-bg-small.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 80%; 
+    text-align: center;
+}
+
+.page img {
+    width: var(--text-margin);
+    max-width: 40rem;
+    margin: 0 auto;
+    padding-bottom: var(--space-bottom);
+}
+
+.page h1, .page h3, .page p  {
+    width: var(--text-margin);
+    max-width: 38rem;
+    padding-bottom: var(--space-bottom);
+    margin: 0 auto;
+}
+
+.page h1 {
+    text-align: center;
+}
+
+.page p {
+    text-align: left;
+}
+
+.page button {
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+}
+
+.page h3 {
+    color: var(--secondary-color);
+}
+
+.two-col {
+    margin: 0 auto;
+    background: var(--neutral-light);
+    padding-bottom: 1rem;
+    padding-top: var(--space-bottom);
+}
+
+@media only screen and (min-width: 500px) {
+    header.page {
+        background-image: url(../img/snapsack/snapsack-bg.svg);
+        background-position-y: 70%; 
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .two-col {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .col-1, .col-2 {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .two-col {
+        max-width: 72rem;
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+}
