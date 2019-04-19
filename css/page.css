@@ -1,6 +1,11 @@
 :root {
     --text-margin: 80%;
     --space-bottom: 2rem;
+    --max-width: 40rem;
+}
+
+.purple {
+    color: var(--secondary-color);
 }
 
 header.page, header.about {
@@ -21,14 +26,14 @@ header.page {
 
 .page img {
     width: var(--text-margin);
-    max-width: 40rem;
+    max-width: var(--max-width);
     margin: 0 auto;
     padding-bottom: var(--space-bottom);
 }
 
-.page h1, .page h3, .page p  {
+.page h1, .page h3, .page h4, .page p  {
     width: var(--text-margin);
-    max-width: 38rem;
+    max-width: var(--max-width);
     padding-bottom: var(--space-bottom);
     margin: 0 auto;
 }
@@ -46,15 +51,23 @@ header.page {
     margin-bottom: 0.5rem;
 }
 
-.page h3 {
+.summary h3 {
     color: var(--secondary-color);
 }
 
 .two-col {
     margin: 0 auto;
-    background: var(--neutral-light);
     padding-bottom: 1rem;
     padding-top: var(--space-bottom);
+}
+
+.space-between {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+.problem-solution {
+    background: var(--neutral-light);
 }
 
 .summary .lists {
@@ -86,12 +99,38 @@ header.page {
     width: 100%;
 }
 
+.highlights {
+    background: var(--neutral-light);
+}
+
+.highlights h1 {
+    color: var(--secondary-color);
+    margin-bottom: -2rem;
+    text-align: left;
+    font-size: 3.75rem;
+}
+
+.highlights .info-bit {
+    min-height: 14rem;
+    width: 16rem;
+    margin: 0 auto;
+}
+
+.teal {
+    color: var(--complement1);
+}
+
 
 
 @media only screen and (min-width: 500px) {
     header.page {
         background-image: url(../img/snapsack/snapsack-bg.svg);
         background-position-y: 70%; 
+    }
+
+    .highlights .two-col{
+        width: 65%;
+        max-width: var(--max-width);
     }
 }
 
