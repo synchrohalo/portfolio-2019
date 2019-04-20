@@ -302,6 +302,16 @@ img.large-img {
         width: 65%;
         max-width: var(--max-width);
     }
+
+    /*** MOBILE MOCKUPS ***/
+    .mockups .two-col {
+        width: 100%;
+    }
+
+    .mockups .col-1, .mockups .col-2 {
+        width: 50%;
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -325,6 +335,15 @@ img.large-img {
 
     .feedback .col-2 {
         width: 100%;
+    }
+    
+    /*** MOBILE MOCKUPS ***/
+    .mockups .two-col {
+        max-width: var(--max-width);
+    }
+
+    .mockups .col-1, .mockups .col-2 {
+        width: 50%;
     }
 
     .summary .list h4 {
