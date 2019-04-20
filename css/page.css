@@ -61,7 +61,7 @@ header.page {
 
 .page img {
     width: 85%;
-    max-width: 48rem;
+    max-width: 40rem;
     margin: 0 auto;
 }
 
@@ -196,20 +196,29 @@ img.full-width {
     max-width: 100%;
 }
 
+/*** QUOTES ***/
 .quote {
-    width: 50%;
+    width: 90%;
+    max-width: 40rem;
     margin: 0 auto;
     display: inline-flex;
     flex-direction: row;
     align-items: flex-start;
+    margin-top: var(--space-bottom);
 }
 
 .quote img {
-    width: 10%;
+    width: 2rem;
 }
 
 .quote h3 {
     width: 80%;
+}
+
+.quote p {
+    color: var(--secondary-color);
+    text-align: right;
+    margin-top: -1.5rem;
 }
 
 
@@ -245,6 +254,10 @@ img.full-width {
 
     .highlights .info-bit {
         min-height: 12rem;
+    }
+
+    .quote img {
+        width: 4rem;
     }
 }
 
