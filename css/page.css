@@ -50,6 +50,7 @@ header.page img {
 
 .page h4 {
     color: var(--secondary-color);
+    margin-top: var(--space-bottom);
 }
 
 .page button {
@@ -227,6 +228,68 @@ img.large-img {
 .border {
     border: 1px solid var(--secondary-color);
 }
+
+/*** PALETTE ***/
+
+.palette {
+    width: 100%;
+    max-width: 36rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.palette li {
+    width: 12rem;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.color-text {
+    margin-top: 3rem;
+}
+
+.color-text p {
+    margin-top: -2rem;
+    text-align: center;
+}
+
+.color-circle {
+    width: 5rem;
+    height: 5rem;
+    margin: 0 auto;
+    background: black;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+#F6E022 {
+    background: #F6E022;
+}
+
+#BF4D3C {
+    background: #BF4D3C;
+}
+
+#c43045F {
+    background: #43045F;
+}
+
+#FCF6C0 {
+    background: #FCF6C0;
+    border: 1px solid #1D2B2B;
+}
+
+#c77647A {
+    background: #77647A;
+}
+
+#c1D2B2B {
+    background: #1D2B2B;
+}
+
 
 
 @media only screen and (min-width: 500px) {
