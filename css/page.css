@@ -194,6 +194,11 @@ img.full-width {
     max-width: 100%;
 }
 
+img.large-img {
+    width: 100%;
+    max-width: 56rem;
+}
+
 /*** QUOTES ***/
 .quote {
     width: 90%;
