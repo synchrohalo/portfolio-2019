@@ -50,7 +50,7 @@ header.page img {
 
 .page h4 {
     color: var(--secondary-color);
-    margin-top: var(--space-bottom);
+    /*margin-top: var(--space-bottom);*/
 }
 
 .page button {
@@ -91,7 +91,7 @@ header.page img {
     background: var(--neutral-light);
 }
 
-.summary .lists {
+.summary .breakdown {
     /*background: yellow;*/
     width: 100%;
     max-width: 48rem;
@@ -102,22 +102,22 @@ header.page img {
     margin-bottom: var(--space-bottom);
 }
 
-.summary .list {
+.summary .breakdown-list {
     width: var(--text-margin);
     margin: 0 auto;
 }
 
-.summary .list h4, .summary .list p {
+.summary .breakdown-list h4, .summary .breakdown-list p {
     display: inline-flex;
 }
 
-.summary .list h4 {
+.summary .breakdown-list h4 {
     width: 100%;
     color: var(--secondary-color);
     margin-bottom: -1.5rem;
 }
 
-.summary .list p {
+.summary .breakdown-list p {
     width: 100%;
 }
 
@@ -290,7 +290,11 @@ img.large-img {
     background: #1D2B2B;
 }
 
-
+.preference .two-col {
+    justify-content: end;
+    background: var(--neutral-light);
+    margin-bottom: var(--space-bottom);
+}
 
 @media only screen and (min-width: 500px) {
     header.page {
@@ -346,11 +350,21 @@ img.large-img {
         width: 50%;
     }
 
-    .summary .list h4 {
+    /*** PREFERENCE TESTING ***/
+    .preference .two-col {
+        align-items: flex-start;
+    }
+
+    .preference .two-col h4, .preference .two-col h2 {
+        text-align: center;
+
+    }
+
+    .summary .breakdown-list h4 {
         width: 25%;
     }
 
-    .summary .list p {
+    .summary .breakdown-list p {
         width: 70%;
     }
 
@@ -371,5 +385,9 @@ img.large-img {
         flex-direction: row;
         align-items: center;
         justify-content: center;
+    }
+
+    .preference .two-col {
+        align-items: flex-start;
     }
 }
