@@ -156,10 +156,17 @@ ul.list, ol.list {
     list-style: initial;
 }
 
+ol.list li {
+    margin-left: 3rem;
+}
+
 ul.list li {
     color: var(--secondary-color);
-    margin-left: 2rem;
-    margin-bottom: -1.25rem;    
+    margin-left: 2rem;  
+}
+
+ul.list li, ol.list li {
+    margin-bottom: -1.5rem;
 }
 
 ul.list {
@@ -179,7 +186,7 @@ ul.list li:before {
 ol.list li {
     list-style: decimal;
     color: var(--secondary-color);
-    padding-left: 0.75rem;
+    padding-left: -1rem;
 }
 
 .list li p {
