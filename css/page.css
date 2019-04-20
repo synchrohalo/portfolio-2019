@@ -24,11 +24,9 @@ header.page {
     text-align: center;
 }
 
-.page img {
-    width: var(--text-margin);
-    max-width: var(--max-width);
+header.page img {
     margin: 0 auto;
-    padding-bottom: var(--space-bottom);
+    margin-bottom: var(--space-bottom);
 }
 
 .page h1, .page h3, .page h4, .page p  {
@@ -60,9 +58,9 @@ header.page {
 }
 
 .page img {
-    width: 85%;
-    max-width: 40rem;
-    margin: 0 auto;
+    width: var(--text-margin);
+    max-width: var(--max-width);
+    margin-bottom: var(--space-bottom);
 }
 
 .page img.small-img {
@@ -201,7 +199,7 @@ img.full-width {
     width: 90%;
     max-width: 40rem;
     margin: 0 auto;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
     margin-top: var(--space-bottom);
@@ -219,6 +217,10 @@ img.full-width {
     color: var(--secondary-color);
     text-align: right;
     margin-top: -1.5rem;
+}
+
+.border {
+    border: 1px solid var(--secondary-color);
 }
 
 
