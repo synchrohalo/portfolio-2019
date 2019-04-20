@@ -50,6 +50,10 @@ header.page {
     text-align: left;
 }
 
+.page h4 {
+    color: var(--secondary-color);
+}
+
 .page button {
     margin: 0 auto;
     margin-bottom: 0.5rem;
@@ -172,6 +176,7 @@ header.page {
     height: auto;
     min-height: 24rem;
     margin-top: var(--space-bottom);
+    margin-bottom: var(--space-bottom);
 }
 
 .user-stories .full-span-img {
@@ -180,10 +185,33 @@ header.page {
     background-repeat: no-repeat;
 }
 
+.sketches .full-span-img {
+    background: url(../img/snapsack/dashboard-sketches.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 img.full-width {
     width: 100%;
     max-width: 100%;
 }
+
+.quote {
+    width: 50%;
+    margin: 0 auto;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.quote img {
+    width: 10%;
+}
+
+.quote h3 {
+    width: 80%;
+}
+
 
 @media only screen and (min-width: 500px) {
     header.page {
