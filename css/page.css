@@ -38,11 +38,15 @@ header.page {
     margin: 0 auto;
 }
 
+.page {
+    text-align: center;
+}
+
 .page h1 {
     text-align: center;
 }
 
-.page p {
+.page h3, .page h4, .page h5, .page p {
     text-align: left;
 }
 
@@ -51,8 +55,22 @@ header.page {
     margin-bottom: 0.5rem;
 }
 
+.page img {
+    width: 85%;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.page img.small-img {
+    max-width: 24rem;
+}
+
 .summary h3 {
     color: var(--secondary-color);
+}
+
+.substep {
+    margin-bottom: 4rem;
 }
 
 .two-col {
@@ -93,6 +111,7 @@ header.page {
 .summary .list h4 {
     width: 100%;
     color: var(--secondary-color);
+    margin-bottom: -1.5rem;
 }
 
 .summary .list p {
@@ -101,17 +120,17 @@ header.page {
 
 .highlights {
     background: var(--neutral-light);
+    margin-bottom: var(--space-bottom);
 }
 
 .highlights h1 {
     color: var(--secondary-color);
     margin-bottom: -2rem;
     text-align: left;
-    font-size: 3.75rem;
+    font-size: 3rem;
 }
 
 .highlights .info-bit {
-    min-height: 14rem;
     width: 16rem;
     margin: 0 auto;
 }
@@ -150,6 +169,10 @@ header.page {
 
     .summary .list p {
         width: 70%;
+    }
+
+    .highlights .info-bit {
+        min-height: 17rem;
     }
 }
 
