@@ -1,7 +1,7 @@
 :root {
     --text-margin: 80%;
     --space-bottom: 2rem;
-    --max-width: 40rem;
+    --max-width: 38rem;
 }
 
 .purple {
@@ -70,7 +70,7 @@ header.page {
 }
 
 .substep {
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
 }
 
 .two-col {
@@ -139,7 +139,27 @@ header.page {
     color: var(--complement1);
 }
 
+.focus {
+    width: 90%;
+    max-width: 40rem;
+    margin: 0 auto;
+    margin-bottom: var(--space-bottom);
+}
 
+.focus h5 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.focus-body {
+    background: var(--neutral-light);
+    border-left: 8px solid var(--secondary-color);
+    padding-top: var(--space-bottom);
+}
+
+.focus p {
+    width: 90%;
+}
 
 @media only screen and (min-width: 500px) {
     header.page {
@@ -172,7 +192,7 @@ header.page {
     }
 
     .highlights .info-bit {
-        min-height: 17rem;
+        min-height: 12rem;
     }
 }
 
