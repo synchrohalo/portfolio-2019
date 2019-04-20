@@ -245,6 +245,19 @@ img.full-width {
     .col-1, .col-2 {
         width: 50%;
     }
+ 
+    .col-1 {
+        height: 100%;
+    }
+
+    /*** FEEDBACK ***/
+    .feedback .col-1 {
+        width: 100%;
+    }
+
+    .feedback .col-2 {
+        width: 100%;
+    }
 
     .summary .list h4 {
         width: 25%;
@@ -268,5 +281,8 @@ img.full-width {
         max-width: 72rem;
         padding-right: 4rem;
         padding-left: 4rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 }
