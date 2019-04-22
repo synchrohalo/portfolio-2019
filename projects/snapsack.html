@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/animated.css">
     <link rel="stylesheet" href="../css/page.css">
-    <link href="https://fonts.googleapis.com/css?family=Chivo|Space+Mono:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:400,400i|Space+Mono:400,400i,700,700i" rel="stylesheet">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
   </head>
@@ -490,18 +490,20 @@
                         
                     There was an even split, however, when it came to how file thumbnails were displayed.<p>
 
-                    <h4>File thumbnails</h4>
-                    <div class="two-col">
-                        <div class="col-1">
-                            <h4>A</h4>
-                            <img class="border" src="../img/snapsack/preference-2a.png" />
-                            
-                            <h2>50%</h2>
-                        </div>
-                        <div class="col-2">
-                            <h4>B</h4>
-                            <img class="border" src="../img/snapsack/preference-2b.png" />
-                            <h2>50%</h2>
+                    <div class="file-thumbnails">
+                        <h4>File thumbnails</h4>
+                        <div class="two-col">
+                            <div class="col-1">
+                                <h4>A</h4>
+                                <img class="border" src="../img/snapsack/preference-2a.png" />
+                                
+                                <h2>50%</h2>
+                            </div>
+                            <div class="col-2">
+                                <h4>B</h4>
+                                <img class="border" src="../img/snapsack/preference-2b.png" />
+                                <h2>50%</h2>
+                            </div>
                         </div>
                     </div>
 
@@ -511,7 +513,113 @@
                             <p>After reading the testers’ comments, I realized that most people who chose B did so because the select state was more “obvious”. Perhaps I changed too many variables for this particular test, but I came to the conclusion that maybe what I need to fix is the <em>visibility of the select state</em>.</p>
                         </div>
                     </div>
-            </div>
+                </div>
+
+                <!-- MOCKUP TEST -->
+                <div class="substep mockup-test">
+                    <h3>Mockup user testing</h3>
+                    <p>I tested three individuals with my new prototypes, one remotely and two in-person. I asked them to complete several tasks:</p>
+
+                    <div class="focus">
+                        <h5>User testing script</h5>
+                        <div class="focus-body focus-list">
+                            <ul class="list">
+                                <li><p>Create an account and go through the onboarding tour.</p></li>
+                                <li><p>Upload files to your Snapsack.</p></li>
+                                <li><p>Add a new label to <span class="italic">Pasta Place Logo</span>.</p></li>
+                                <li><p>Share your <span class="italic">Japan 2017</span> photo album with a friend.</p></li>
+                                <li><p>Edit <span class="italic">Portfolio ideas</span> and tag someone in a comment.</p></li>
+                                <li><p>Star <span class="italic">Portfolio ideas</span>.</p></li>
+                                <li><p>Move stray photo of uni sushi to your <span class="italic">Camera</span> folder.</p></li>
+                                <li><p>Remove <span class="italic">eyvind earle (copy)</span> from your Snapsack.</p></li>
+                                <li><p>Filter your view to show me only items labeled <span class="italic">Branding</span> and <span class="italic">Complete</span>.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <img class="small-img" src="../img/snapsack/user-test.png" />
+
+                    <!-- FEEDBACK -->
+                    <div class="feedback">
+                        <div class="two-col">
+                            <div class="col-1">
+                                <img class="border" src="../img/snapsack/mockup-feedback1.png" />
+                            </div>
+
+                            <div class="col-2">
+                                <div class="focus">
+                                    <h5>Law of proximity (pt. 2)</h5>
+                                    <div class="focus-body">
+                                        <p>One tester was felt “confused” about actions appearing on the other side when a file is selected. This was consistent with earlier wireframe problems regarding the proximity of <span class="italic">Edit labels</span> with the files.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="two-col">
+                            <div class="col-1">
+                                <img class="border" src="../img/snapsack/mockup-feedback2.png" />
+                            </div>
+
+                            <div class="col-2">
+                                <div class="focus">
+                                    <h5>Multiple label filtering</h5>
+                                    <div class="focus-body">
+                                        <p>Another tester pointed out that filtering by multiple labels might be a “rare” use case, especially since I included the option to show items with all selected labels, which he considered “advanced.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <p>In spite of these criticisms, I’ve received some positive comments regarding the organizational features of Snapsack.</p>
+
+                    <div class="quote">   
+                        <img src="../img/snapsack/quote.svg" />
+                        <div class="text">
+                            <h3 class="italic">This looks like it has a lot of color, colored labels, categories, which help me to organize better.</h3>
+                            <p>- Tester B on the labeling system</p>
+                        </div>
+                    </div>
+
+                    <div class="quote">   
+                        <img src="../img/snapsack/quote.svg" />
+                        <div class="text">
+                            <h3 class="italic">I like this idea of having to select a folder so I know where I’m uploading the file to.</h3>
+                            <p>- Tester C on folder selection upon file upload</p>
+                        </div>
+                    </div>
+
+                    <a href="#" target="_blank"><button class="active animated">View testing notes</button></a>
+                </div>
+
+                <!-- FINAL -->
+                <div class="substep final">
+                    <h3>Final</h3>
+                    <p>In previous iterations, <em>I failed to use proximity to guide users in making an association between the target item and its actions</em>. This was a recurring issue, whether it was about where Filter by label should go or where Edit labels should be placed. </p>
+
+                    <img class="small-img" src="../img/snapsack/folder-menu.png" />
+
+                    <div class="focus">
+                        <h5>Main changes</h5>
+                        <div class="focus-body focus-list">
+                            <ul class="list">
+                                <li><p><em>Proximity</em> - Moved the file menu in a popup closer to the selected file.</p></li>
+                                <li><p><em>Select state</em> - Changed the thumbnail background to the palette’s primary yellow color and the checkboxes to the dark neutral color to make the selected file more visible</p></li>
+                                <li><p><em>Filename</em> - Decreased text size and added more space so that the text could wrap into two lines if needed.</p></li>
+                                <li><p><em>Overflow menu icon</em> - Added as a companion to the popup menu shown above. The label and star icons were moved to the top as a result of this change.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="final-mockups">
+                        <img class="" src="../img/snapsack/final-mockups.png" />
+                    </div>
+
+                    <a href="https://www.figma.com/proto/z9SxR1o3QCLH4OvyBTIHBf/Snapsack-Mockups-Revised?node-id=88%3A0&viewport=32%2C27%2C0.0625&scaling=contain" target="_blank"><button class="active animated">View desktop prototype</button></a>
+                    <a href="https://www.figma.com/proto/z9SxR1o3QCLH4OvyBTIHBf/Snapsack-Mockups-Revised?node-id=363%3A0&viewport=981%2C1262%2C0.5&scaling=scale-down" target="_blank"><button class="active animated">View mobile prototype</button></a>
+                </div>
             </section>
 
 
