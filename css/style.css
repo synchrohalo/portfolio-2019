@@ -209,8 +209,8 @@ ol.list li {
 /**** HERO ****/
 header {
     height: 100vh;
-    min-height: 32rem;
-    max-height: 44rem;
+    min-height: 38rem;
+    max-height: 42rem;
     width: 100%;
     background-color: var(--neutral-light);
     position: relative;
@@ -271,14 +271,16 @@ header .clouds .right {
 .swirl-1 .large, 
 .swirl-2 .large,
 .swirl-1 .medium,
-.swirl-2 .medium {
+.swirl-2 .medium,
+.swirl-1 .small-medium {
     position: absolute;
 }
 
 .swirl-1 .large, 
 .swirl-2 .large,
 .swirl-1 .medium,
-.swirl-2 .medium {
+.swirl-2 .medium,
+.swirl-1 .small-medium {
     display: none;
 }
 
@@ -291,7 +293,7 @@ header .clouds .right {
 }
 
 .swirl-1 .small {
-    top: 0vh;
+    top: 5vh;
 }
 
 .swirl-2 .small {
@@ -603,7 +605,7 @@ nav {
     }*/
 
     header {
-        background-image: url("../img/hero-bg.svg");
+        background-image: url("../img/hero-bg-med.svg");
     }
 
     #scroll-down {
@@ -615,15 +617,19 @@ nav {
         max-height: cacl( 50% * 40rem);
     }
 
+    header .text {
+        width: 65%;
+    }
+
     .swirl-1 .small {
         display: none;
     }
 
-    .swirl-1 .medium {
+    .swirl-1 .small-medium {
         display: initial;
     }
 
-    .swirl-1 .medium img {
+    .swirl-1 .small-medium img {
         width: 100vw;
     }
     
@@ -631,8 +637,8 @@ nav {
         width: 60vw;
     }
     
-    .swirl-1 .medium {
-        top: 10vh;
+    .swirl-1 .small-medium {
+        top: 2vh;
     }
     
     .swirl-2 .small {
@@ -697,7 +703,7 @@ nav {
     }*/
 
     header {
-        background-image: url("../img/hero-bg.svg");
+        background-image: url("../img/hero-bg-med.svg");
         background-size: cover;
     }
 
@@ -717,6 +723,14 @@ nav {
 
     header .text {
         width: 65%;
+    }
+
+    .swirl-1 .small-medium {
+        top: -1vh;
+    }
+
+    .swirl-2 .small img {
+        width: 45vw;
     }
 
     /*header h2 {
@@ -796,10 +810,6 @@ nav {
 @media only screen and (min-width: 900px) {
    
     /**** HERO ****/
-    header {
-       background-size: 18rem;
-    }
-
     header h2 {
        width: 100%;
     }
@@ -818,8 +828,9 @@ nav {
 
     header {
         background-image: url("../img/hero-bg.svg");
-        background-position: 50%;
         background-size: cover;
+        background-position-y: 50%;
+        min-height: 44rem;
     }
 
     header .text {
@@ -829,7 +840,8 @@ nav {
     .swirl-1 .large, 
     .swirl-2 .large,
     .swirl-1 .small,
-    .swirl-2 .small {
+    .swirl-2 .small,
+    .swirl-1 .small-medium {
         display: none;
     }
 
@@ -847,12 +859,12 @@ nav {
     }
 
     .swirl-1 .medium {
-        top: 5vh;
+        top: 2vh;
     }
 
     .swirl-2 .medium {
         right: 0rem;
-        bottom: 0vh;
+        bottom: 4vh;
     }
 
     /**** BODY ****/
@@ -906,10 +918,38 @@ nav {
 @media only screen and (min-width: 1366px) {
    
     /**** HERO ****/
-   /*header {
-       background-size: 20rem;
-       background-position: 90% calc(var(--nav-bar-height) + 3rem);
-   }*/
+   header {
+        background-image: url("../img/hero-bg.svg");
+        max-width: 100rem;
+        max-height: 56rem;
+        margin: 0 auto;
+   }
+
+   .swirl-1 .small,
+   .swirl-2 .small,
+   .swirl-1 .small-medium,
+   .swirl-1 .medium,
+   .swirl-2 .medium {
+       display: none;
+   }
+
+   .swirl-1 .large, 
+   .swirl-2 .large {
+       display: block;
+   } 
+
+   .swirl-1 .large img {
+        width: 100%;
+    }
+
+   .swirl-1 .large {
+        top: 4rem;
+    }
+
+   .swirl-2 .large {
+       right: 0rem;
+       bottom: 4rem;
+   }
 
    /**** FOOTER ****/
    .galaxy-footer img {
