@@ -26,11 +26,11 @@ $( document ).ready(function() {
 
         //console.log( newScroll );
 
-        if( newScroll < (currentScroll) ) {
+        /*if( newScroll < (currentScroll) ) {
             $("nav").fadeIn( 200 );
         } else {
             $("nav").fadeOut( 200 );
-        }
+        }*/
 
         /*if( currentScroll == contactPos ) {
             console.log(contactPos);

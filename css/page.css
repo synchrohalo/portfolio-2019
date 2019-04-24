@@ -4,6 +4,10 @@
     --max-width: 38rem;
 }
 
+body, button {
+    background-color: var(--white);
+}
+
 .purple {
     color: var(--secondary-color);
 }
@@ -29,6 +33,8 @@ header.page img {
     margin-bottom: var(--space-bottom);
 }
 
+
+
 .page h1, .page h3, .page h4, .page p  {
     width: var(--text-margin);
     max-width: var(--max-width);
@@ -41,6 +47,7 @@ header.page img {
 }
 
 .page h1 {
+    color: var(--neutral-dark);
     text-align: center;
 }
 
