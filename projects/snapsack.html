@@ -17,9 +17,15 @@
 
     <!------ NAV ------>
     <nav>
-        <div id="home">
+        <!--<div id="home">
             <a href="../index.html" ><img src="../img/logo.svg" /></a>
-            <!--<a href="../index.html"><h4>jo</h4></a>-->
+            <a href="../index.html"><h4>jo</h4></a>
+        </div>-->
+
+        <div id="logo">
+            <a href="../index.html" >
+                <h4>Joanne Arboleda</h4>
+            </a>
         </div>
         <div class="menu">
 
@@ -731,4 +737,22 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="../js/script.js"></script>
+
+  <script>
+    $( document ).ready(function() {
+
+        $(window).scroll(function(){
+            var newScroll = $(window).scrollTop();
+
+            if( newScroll < ( $( ".process" ).offset().top * 0.1 ) ) {
+                $("nav").fadeOut( 200 );
+            } else {
+                $("nav").fadeIn( 200 );
+            }
+
+            currentScroll = newScroll;
+        });    
+    });
+    
+    </script>
 </html>

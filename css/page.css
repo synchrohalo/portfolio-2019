@@ -20,7 +20,8 @@ header.page, header.about {
 }
 
 header.page {
-    padding-top: var(--nav-bar-height);
+    /*padding-top: var(--nav-bar-height);*/
+    padding-top: 2rem;
     background-image: url(../img/snapsack/snapsack-bg-small.svg);
     background-repeat: no-repeat;
     background-size: contain;

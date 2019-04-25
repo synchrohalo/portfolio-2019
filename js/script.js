@@ -17,7 +17,10 @@ $( document ).ready(function() {
     });
 
     var currentScroll = $(window).scrollTop();
-    var contactPos = $( "footer" ).scrollTop();
+    //var contactPos = $( "footer" ).scrollTop();
+
+    //var worksPos = $( "#work" ).offset().top;
+    //console.log(worksPos);
 
     $(window).scroll(function(){
         //$(".clouds .left").css("opacity", 1 - $(window).scrollTop() / 300);

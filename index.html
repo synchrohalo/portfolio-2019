@@ -12,10 +12,15 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <!--<nav>
+    <nav>
         <div id="home">
             <!--<a href="index.html" ><img src="img/logo.svg" /></a>-->
-        <!--</div>
+        </div>
+        <div id="logo">
+            <a href="index.html" >
+                <h4>Joanne Arboleda</h4>
+            </a>
+        </div>
         <div class="menu">
 
             <div class="desktop-menu">
@@ -37,7 +42,7 @@
 
             <img class="icon" id="menu-icon" src="img/menu.svg" />
         </div>
-    </nav>-->
+    </nav>
 
     <header>
         <div class="swirl-1">
@@ -74,10 +79,9 @@
             <h5 class="fade-in three">While you're around, I'd be happy to show you what I've made.</h5>
         </div>
 
-        <a href="#work">
+        <!--<a href="#work">
             <div id="scroll-down" class="link italic"><p>See my work &darr;</p>
-            </div>
-        </a>
+        </a>-->
 
         <!--<div class="clouds">
             <div class="left fade-in three">
@@ -127,8 +131,9 @@
         </section>
     </main>
 
-    <!---- FOOTER  --->
+    <!---- FOOTER ---->
     <footer>
+
         <div id="contact">
             <h4>Thanks for looking.</h4>
             <h2>Follow along my orbit.</h2>
@@ -160,9 +165,36 @@
         <div class="copyright">
             <p>Designed & coded with 💖<br />&copy; 2019 Joanne Arboleda</p>
         </div>
+
+        
     </footer>
+
+    <!--<div class="footer-swirl">
+        <img src="img/footer-galaxy.svg" />
+    </div>-->
   </body>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/script.js"></script>
+
+  <script>
+
+$( document ).ready(function() {
+
+    $(window).scroll(function(){
+        var newScroll = $(window).scrollTop();
+
+        
+
+        if( newScroll < ( $( "#work" ).offset().top * 0.5 ) ) {
+            $("nav").fadeOut( 200 );
+        } else {
+            $("nav").fadeIn( 200 );
+        }
+        
+        currentScroll = newScroll;
+    });    
+});
+  
+  </script>
 </html>
