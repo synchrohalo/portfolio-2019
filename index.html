@@ -79,9 +79,9 @@
             <h5 class="fade-in three">While you're around, I'd be happy to show you what I've made.</h5>
         </div>
 
-        <!--<a href="#work">
+        <a href="#work">
             <div id="scroll-down" class="link italic"><p>See my work &darr;</p>
-        </a>-->
+        </a>
 
         <!--<div class="clouds">
             <div class="left fade-in three">
@@ -179,22 +179,20 @@
 
   <script>
 
-$( document ).ready(function() {
+    $( document ).ready(function() {
 
-    $(window).scroll(function(){
-        var newScroll = $(window).scrollTop();
+        $(window).scroll(function(){
+            var newScroll = $(window).scrollTop();
 
-        
+            if( newScroll < ( $( "#work" ).offset().top * 0.1 ) ) {
+                $("nav").fadeOut( 200 );
+            } else {
+                $("nav").fadeIn( 200 );
+            }
 
-        if( newScroll < ( $( "#work" ).offset().top * 0.5 ) ) {
-            $("nav").fadeOut( 200 );
-        } else {
-            $("nav").fadeIn( 200 );
-        }
-        
-        currentScroll = newScroll;
-    });    
-});
+            currentScroll = newScroll;
+        });    
+    });
   
   </script>
 </html>
