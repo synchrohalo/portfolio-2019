@@ -287,7 +287,7 @@ header .clouds .right {
 }
 
 .swirl-1 .small img {
-    width: 100vw;
+    width: 100%;
 }
 
 .swirl-2 .small img {
@@ -649,7 +649,7 @@ nav {
     }
 
     .swirl-1 .small-medium img {
-        width: 100vw;
+        width: 100%;
     }
     
     .swirl-2 .small img {
@@ -863,7 +863,7 @@ nav {
     } 
 
     .swirl-1 .medium img {
-        width: 100vw;
+        width: 100%;
     }
 
     .swirl-2 .medium img {
