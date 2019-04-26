@@ -12,7 +12,7 @@ body, button {
     color: var(--secondary-color);
 }
 
-header.page, header.about {
+header.page {
     height: initial;
     max-height: initial;
     background-image: none;   
@@ -34,7 +34,15 @@ header.page img {
     margin-bottom: var(--space-bottom);
 }
 
+header.about {
+    background-color: var(--neutral-light);
+    background-image: none;
+    margin-top: -1rem;
+}
 
+.about h1, .about h2 {
+    color: var(--neutral-dark);
+}
 
 .page h1, .page h3, .page h4, .page p  {
     width: var(--text-margin);
