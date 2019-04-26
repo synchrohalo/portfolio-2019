@@ -12,10 +12,13 @@ body, button {
     color: var(--secondary-color);
 }
 
-header.page {
+header.page, header.about {
     height: initial;
     max-height: initial;
     background-image: none;   
+}
+
+header.page {
     background: var(--white); 
 }
 
@@ -35,13 +38,29 @@ header.page img {
 }
 
 header.about {
+    margin: 0;
     background-color: var(--neutral-light);
     background-image: none;
-    margin-top: -1rem;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: var(--space-bottom);
 }
 
-.about h1, .about h2 {
+header.about img {
+    max-width: 42rem;
+    text-align: center;
+}
+
+header.about .text {
+    max-width: 40rem;
+}
+
+.about h1, .about h2, .about p {
     color: var(--neutral-dark);
+}
+
+.about p {
+    text-align: left;
 }
 
 .page h1, .page h3, .page h4, .page p  {
