@@ -50,15 +50,15 @@
 
 
     <!------ HERO ------>
-    <header class="about">
+    <header id="about">
         <div class="text fade-in one">
-            <h1 class="">Hello there, I'm Joanne</h1>
+            <h1 class="">Hello there, my name is Joanne.</h1>
         </div>
         <div class="fade-in one">
             <img src="../img/mi.svg" alt="Smiling girl with medium-length dark hair" />
         </div>
         <div class="text fade-in two">
-            <h2>A UX/UI Designer based in <br />the SF Bay Area</h2>
+            <h2>I'm a UX/UI Designer based in <br />the SF Bay Area</h2>
             <p class="">With a background in Computer Science and a passion for meaningful illustration, I design with a pinch of reason, a dash of humanity, and a whole lot of curiosity.</p>
         </div>
     </header>
@@ -77,7 +77,7 @@
                 <h3>The road to design</h3>
                 <p>Like most people, my journey to becoming a designer wasn’t linear. And, like many designers, my journey began with art.</p> 
                 
-                <p>Growing up, I loved to draw. I made picture books to go along with my short stories (typeset in Comic Sans MS, I'm certain). From making pixel art on Microsoft Paint to drawing avatars on Photoshop for Gaia Online gold, I was proactive in learning how to create digital art before I’d even learned how to do algebra.</p>
+                <p>Growing up, I loved to draw. I made picture books to go along with my short stories (typeset in Comic Sans MS, probably). From making pixel art on Microsoft Paint to drawing avatars on Photoshop for Gaia Online gold, I was proactive in learning how to create digital art before I’d even learned how to do algebra.</p>
 
                 <p>Over time, I discovered I had <em>a penchant for using simplistic art to convey ideas and feelings</em> rather than illustrating literal images. Perhaps it’s due to a shortcoming in both my writing and drawing abilities, but I found that I was able to express myself better this way.</p>
             
@@ -125,6 +125,12 @@
 
                 <p>A current goal of mine to is watch 100 movies I haven’t seen before by the end of 2019. I gladly welcome suggestions (especially ones accessible through <a class="link" href="https://netflix.com" target="_blank">Netflix</a>, <a class="link" href="https://www.hulu.com/welcome" target="_blank">Hulu</a>, or <a class="link" href="https://www.amazon.com/Prime-Video/b?ie=UTF8&node=2676882011" target="_blank">Amazon Prime</a>). 
                 </p>
+
+                <a href="#about">
+                    <div class="back-to-top">
+                        <p class="link italic">&#8593; Back to top</p>
+                    </div>
+                </a>
             </div>
         </article>
     </main>
@@ -169,14 +175,15 @@
 
   <script>
     $( document ).ready(function() {
+        $( ".back-to-top" ).css( "display", "none" );
 
         $(window).scroll(function(){
             var newScroll = $(window).scrollTop();
 
-            if( newScroll < ( $( ".main-heading" ).offset().top * 0.1 ) ) {
-                $("nav").fadeOut( 200 );
+            if( newScroll < ( $( ".road-to-design" ).offset().top * 0.1 ) ) {
+                $(".back-to-top").fadeOut( 200 );
             } else {
-                $("nav").fadeIn( 200 );
+                $(".back-to-top").fadeIn( 200 );
             }
 
             currentScroll = newScroll;

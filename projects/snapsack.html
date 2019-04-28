@@ -740,14 +740,15 @@
 
   <script>
     $( document ).ready(function() {
+        $( ".back-to-top" ).css( "display", "none" );
 
         $(window).scroll(function(){
             var newScroll = $(window).scrollTop();
 
             if( newScroll < ( $( ".process" ).offset().top * 0.1 ) ) {
-                $("nav").fadeOut( 200 );
+                $(".back-to-top").fadeOut( 200 );
             } else {
-                $("nav").fadeIn( 200 );
+                $(".back-to-top").fadeIn( 200 );
             }
 
             currentScroll = newScroll;

@@ -12,7 +12,7 @@ body, button {
     color: var(--secondary-color);
 }
 
-header.page, header.about {
+header.page, header#about {
     height: initial;
     max-height: initial;
     background-image: none;   
@@ -24,7 +24,7 @@ header.page {
 
 header.page {
     /*padding-top: var(--nav-bar-height);*/
-    padding-top: 2rem;
+    padding-top: 8rem;
     background-image: url(../img/snapsack/snapsack-bg-small.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -37,29 +37,29 @@ header.page img {
     margin-bottom: var(--space-bottom);
 }
 
-header.about {
+header#about {
     margin: 0;
     background-color: var(--neutral-light);
     background-image: none;
     text-align: center;
-    padding-top: 4rem;
+    padding-top: 8rem;
     padding-bottom: var(--space-bottom);
 }
 
-header.about img {
+header#about img {
     max-width: 42rem;
     text-align: center;
 }
 
-header.about .text {
+header#about .text {
     max-width: 40rem;
 }
 
-.about h1, .about h2, .about p {
+#about h1, #about h2, #about p {
     color: var(--neutral-dark);
 }
 
-.about p {
+#about p {
     text-align: left;
 }
 

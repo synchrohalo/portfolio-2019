@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    $( "nav" ).css( "display", "none" );
+    //$( "nav" ).css( "display", "none" );
 
     $( "#menu-icon" ).click(function() {
         $( ".mobile-menu" ).fadeIn( 200 );
