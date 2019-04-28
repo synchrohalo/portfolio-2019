@@ -313,7 +313,10 @@ nav .icon:hover {
 nav h4 {
     font-family: 'Space Mono', monospace;
     font-style: italic;
-    color: var(--secondary-color);
+}
+
+nav h4.link {
+    color: var(--neutral-dark);
 }
 
 .mobile-menu {
