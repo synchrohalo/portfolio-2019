@@ -14,8 +14,7 @@
 }
 
 html {
-    /*-webkit-font-size-adjust: 100%;
-    font-size-adjust: 100%;*/
+    -webkit-text-size-adjust: 100%;
 }
 
 body {
