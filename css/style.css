@@ -701,6 +701,24 @@ nav {
         display: none;
     }
 
+    .mobile-menu .icon {
+        display: initial;
+    }
+
+    .mobile-menu p:hover{
+        background: var(--neutral-dark);
+    }
+
+    .mobile-menu ul {
+        width: 105%; /* what is adding the extra width? */
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .desktop-menu {
         position: absolute;
         top: 0;
