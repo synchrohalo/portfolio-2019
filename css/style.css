@@ -14,7 +14,8 @@
 }
 
 html {
-    -webkit-text-size-adjust: 100%;
+    -webkit-font-size-adjust: 100%;
+    font-size-adjust: 100%;
 }
 
 body {
@@ -569,11 +570,6 @@ nav {
 
     #scroll-down {
         top: 65%;
-    }
-
-    header .clouds .left {
-        width: 55%;    
-        max-height: cacl( 50% * 40rem);
     }
 
     header .text {
