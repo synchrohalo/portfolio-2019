@@ -310,6 +310,12 @@ nav .icon:hover {
     cursor: pointer;
 }
 
+nav h4 {
+    font-family: 'Space Mono', monospace;
+    font-style: italic;
+    color: var(--secondary-color);
+}
+
 .mobile-menu {
     display: none;
     position: fixed;
