@@ -47,6 +47,7 @@ header#about {
 }
 
 header#about img {
+    width: 100%;
     max-width: 42rem;
     text-align: center;
 }
