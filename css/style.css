@@ -556,18 +556,6 @@ nav {
 
 @media only screen and (min-width: 500px) {
 
-    /*h1 {
-        font-size: 2.25em;
-        margin-bottom: -0.1em;
-    }*/
-
-    /**** HERO ****/
-    /*header {
-        background-image: url("../img/planet.svg");
-        background-size: 14rem;
-        background-position: 90% calc(var(--nav-bar-height) - 2rem);
-    }*/
-
     header {
         background-image: url("../img/hero-bg-med.svg");
     }
@@ -631,9 +619,6 @@ nav {
 @media only screen and (min-width: 768px) {
 
     /**** HERO ****/
-    header {
-        /*margin-top: calc(var(--nav-bar-height) - 2rem);*/
-    }
 
     header {
         background-image: url("../img/hero-bg-med.svg");
@@ -665,23 +650,6 @@ nav {
     .swirl-2 .small img {
         width: 45vw;
     }
-
-    /*header h2 {
-        width: 90%;
-    }
-
-    header h5 {
-        max-width: 36rem;
-    }*/
-
-    /*header .clouds .right {
-        display: block;
-        position: absolute;
-        bottom: -1.333rem;
-        right: -24rem;
-        width: 100vw;
-        max-width: 24rem;
-    }*/
 
     /**** NAV BAR ****/
     nav {
@@ -788,16 +756,8 @@ nav {
        width: 100%;
     }
 
-    header .clouds .left {
-        max-width: 32rem;
-    }
-
     header h5 {
         max-width: 42rem;
-    }
-
-    header .clouds .right {
-        max-width: 48rem;
     }
 
     header {
@@ -934,13 +894,5 @@ nav {
 }
 
 @media only screen and (min-width: 1500px) {
-   
-    /**** HERO ****/
-   /*header .clouds .right {
-        max-width: 60rem;
-    }
 
-    header .clouds .left {
-        max-width: 40rem;
-    }*/
 }

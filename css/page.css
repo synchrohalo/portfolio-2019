@@ -38,7 +38,8 @@ header.page img {
 }
 
 header#about {
-    margin: 0;
+    margin: 0 auto;
+    max-width: initial;
     background-color: var(--neutral-light);
     background-image: none;
     text-align: center;
@@ -434,7 +435,7 @@ img.large-img {
 
     .final-mockups img {
         width: 65%;
-        max-width: 80rem;
+        max-width: 64rem;
     }
 
     .back-to-top {
@@ -467,5 +468,19 @@ img.large-img {
 
     .preference .two-col {
         align-items: flex-start;
+    }
+}
+
+@media only screen and (min-width: 1520px) {
+    header.page {
+        background-image: url(../img/snapsack/snapsack-bg-large.svg);
+        background-position-y: 70%; 
+    }
+
+    .final-mockups {
+        background: url(../img/snapsack/final-bg-large.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: 50%;
     }
 }
