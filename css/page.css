@@ -87,7 +87,7 @@ header#about .text {
 
 .page h4 {
     color: var(--secondary-color);
-    /*margin-top: var(--space-bottom);*/
+    margin-top: var(--space-bottom);
 }
 
 .page button {
@@ -103,6 +103,10 @@ header#about .text {
 
 .page img.small-img {
     max-width: 24rem;
+}
+
+.breakdown h4 {
+    margin-top: initial;
 }
 
 .summary h3 {
@@ -187,7 +191,8 @@ header#about .text {
     width: 90%;
     max-width: 40rem;
     margin: 0 auto;
-    margin-bottom: var(--space-bottom);
+    /*margin-bottom: var(--space-bottom);*/
+    margin-bottom: 4rem;
 }
 
 .focus h5 {
@@ -468,6 +473,16 @@ img.large-img {
 
     .preference .two-col {
         align-items: flex-start;
+    }    
+    
+    h3.step-title {
+        font-size: 1.5rem;
+        margin-top: 0.25rem;
+    }
+
+    .step-title {
+        position: absolute;
+        left: 2rem;
     }
 }
 
@@ -482,5 +497,11 @@ img.large-img {
         background-size: contain;
         background-repeat: no-repeat;
         background-position-y: 50%;
+    }
+
+    .step-title {
+        position: relative;
+        left: -20rem;
+        top: 4rem;
     }
 }
