@@ -2,22 +2,30 @@ html {
   scroll-behavior: smooth;
 }
 
-
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
 @keyframes float {
 	0% {
-		/*box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/
 		transform: translatey(0px);
 	}
 	50% {
-		/*box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);*/
 		transform: translatey(-8px);
 	}
 	100% {
-		/*box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/
+		transform: translatey(0px);
+	}
+}
+
+@keyframes grow {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-8px);
+	}
+	100% {
 		transform: translatey(0px);
 	}
 }
@@ -61,24 +69,21 @@ html {
     animation-delay: 2.5s;
 }
 
-.link {
+.fade-to-color {
     -moz-transition: all .25s ease-in;
     -o-transition: all .25s ease-in;
     -webkit-transition: all .25s ease-in;
     transition: all .25s ease-in;
 }
 
-button.active {
-    -moz-transition: all .25s ease-in;
-    -o-transition: all .25s ease-in;
-    -webkit-transition: all .25s ease-in;
-    transition: all .25s ease-in;
-}
-
-#scroll-down {
+.float {
   animation: float 2s ease-in-out infinite;
 }
 
-.back-to-top {
-  animation: float 2s ease-in-out infinite;
+.active .project-img img {
+  transition: transform 1s ease;
+}
+
+.active .project-img img:hover {
+  transform: translateY(-1.5rem);
 }
