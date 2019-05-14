@@ -111,6 +111,10 @@ footer .link {
     color: var(--primary-color);
 }
 
+#scroll-down.link p:hover {
+    color: var(--complement1);
+}
+
 p {
     line-height: 175%;
     margin-bottom: 1rem;

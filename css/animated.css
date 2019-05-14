@@ -69,7 +69,7 @@ html {
     animation-delay: 2.5s;
 }
 
-.fade-to-color {
+.link, #scroll-down.link p {
     -moz-transition: all .25s ease-in;
     -o-transition: all .25s ease-in;
     -webkit-transition: all .25s ease-in;
