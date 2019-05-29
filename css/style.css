@@ -217,7 +217,7 @@ header h1, header h2, header h5 {
 }
 
 header .text {
-    width: 80%;
+    width: 70%;
     max-width: 24rem;
     margin: 0 auto;
 }
@@ -554,8 +554,23 @@ nav {
    }
 
    #scroll-down {
-    top: 68%;
+        top: 70%;
 }
+}
+
+@media only screen and (min-width: 400px) {
+    header .text {
+        width: 80%;
+        max-width: 16rem;
+    }
+
+    .swirl-1 .small {
+        top: -2vh;
+    }
+
+    #scroll-down {
+        top: 72%;
+    }
 }
 
 @media only screen and (min-width: 500px) {
@@ -569,11 +584,12 @@ nav {
     }
 
     #scroll-down {
-        top: 65%;
+        top: 70%;
     }
 
     header .text {
         width: 65%;
+        max-width: 24rem;
     }
 
     .swirl-1 .small {
@@ -589,11 +605,11 @@ nav {
     }
     
     .swirl-2 .small img {
-        width: 60vw;
+        width: 50vw;
     }
     
     .swirl-1 .small-medium {
-        top: 2vh;
+        top: -2vh;
     }
     
     .swirl-2 .small {
