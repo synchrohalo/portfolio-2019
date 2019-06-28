@@ -220,13 +220,17 @@ header h1, header h2, header h5 {
 }
 
 header .text {
-    width: 85%;
-    max-width: 24rem;
+    width: 90%;
+    max-width: 32rem;
     margin: 0 auto;
     text-align: center;
 }
 
 header .hero-img.large {
+    display: none;
+}
+
+header .hero-img.med {
     display: none;
 }
 
@@ -342,7 +346,7 @@ nav h4.link {
     left: 0;
     height: 100vh;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 1);
     /*background-image: url("../img/planet-small.svg");*/
     background-repeat: no-repeat;
     background-size: 14rem;
@@ -390,7 +394,7 @@ section {
     width: 4rem;
     height: 2px;
     margin: 0 auto;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 .main-heading {
@@ -575,8 +579,8 @@ nav {
 
 @media only screen and (min-width: 400px) {
     header .text {
-        width: 80%;
-        max-width: 16rem;
+        width: 90%;
+        max-width: 32rem;
     }
 
     .swirl-1 .small {
@@ -590,8 +594,33 @@ nav {
 
 @media only screen and (min-width: 500px) {
 
+    h1 {
+        font-size: 2.75em;
+        margin-bottom: -0.1em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    h4 {
+        font-size: 1.25em;
+    }
+    
     header {
         /*background-image: url("../img/hero-bg-med.svg");*/
+    }
+
+    header .hero-img.small {
+        display: none;
+    }
+    
+    header .hero-img.med {
+        display: block;
     }
 
     .mobile-menu {
@@ -603,8 +632,8 @@ nav {
     }
 
     header .text {
-        width: 65%;
-        max-width: 24rem;
+        width: 75%;
+        max-width: 32rem;
     }
 
     .swirl-1 .small {
@@ -688,6 +717,10 @@ nav {
 
     header .hero-img.large {
         display: block;
+    }
+
+    header .hero-img.med {
+        display: none;
     }
 
     .swirl-1 .small-medium {
@@ -904,6 +937,7 @@ nav {
         max-width: 100rem;
         /*max-height: 56rem;*/
         margin: 0 auto;
+        margin-top: var(--nav-bar-height);
    }
 
    /*.swirl-1 .small,
