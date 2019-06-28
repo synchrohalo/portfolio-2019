@@ -4,7 +4,7 @@
     --max-width: 38rem;
 }
 
-body, button {
+body {
     background-color: var(--white);
 }
 
@@ -20,16 +20,12 @@ header.page, header#about {
 
 header.page {
     background: var(--white); 
-}
-
-header.page {
-    /*padding-top: var(--nav-bar-height);*/
-    padding-top: 8rem;
     background-image: url(../img/snapsack/snapsack-bg-small.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 80%; 
     text-align: center;
+    /*margin-top: 0rem;*/
 }
 
 header.page img {
@@ -43,8 +39,8 @@ header#about {
     background-color: var(--white);
     background-image: none;
     text-align: center;
-    padding-top: 8rem;
-    padding-bottom: var(--space-bottom);
+    /*padding-top: 8rem;
+    padding-bottom: var(--space-bottom);*/
 }
 
 header#about img {
@@ -107,6 +103,12 @@ nav {
 
 .page .link {
     background: var(--primary-color);
+    font-style: italic;
+}
+
+.page .link:hover {
+    color: var(--neutral-dark);
+    background-color: var(--white);
 }
 
 .page img.small-img {
@@ -395,12 +397,12 @@ img.large-img {
 
 @media only screen and (min-width: 768px) {
     nav {
-        position: static;
+        position: fixed;
     }
 
     header.page {
         /*padding-top: var(--nav-bar-height);*/
-        padding-top: 0;
+        /*padding-top: 0;*/
     }
 
     .two-col {
