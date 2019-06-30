@@ -360,9 +360,9 @@ nav h4.link {
     overflow: hidden;
 }
 
-.mobile-menu p {
+.mobile-menu h3 {
     color: var(--neutral-dark);
-    line-height: 400%;
+    line-height: 250%;
     text-decoration: none;
 }
 
