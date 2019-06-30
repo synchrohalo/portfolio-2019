@@ -373,6 +373,11 @@ img.large-img {
     background: none;
 }
 
+.back-to-top .link:hover {
+    color: var(--neutral-light-2);
+    background-color: initial;
+}
+
 @media only screen and (min-width: 500px) {
     header.page {
         background-image: url(../img/snapsack/snapsack-bg.svg);
