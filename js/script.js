@@ -1,6 +1,4 @@
 $( document ).ready(function() {
-    //$( "nav" ).css( "display", "none" );
-
     $( "#menu-icon" ).click(function() {
         $( ".mobile-menu" ).fadeIn( 200 );
 
@@ -19,9 +17,17 @@ $( document ).ready(function() {
     });
 
     var currentScroll = $(window).scrollTop();
+    //var contactPos = $( "footer" ).scrollTop();
+
+    //var worksPos = $( "#work" ).offset().top;
+    //console.log(worksPos);
 
     $(window).scroll(function(){
+        //$(".clouds .left").css("opacity", 1 - $(window).scrollTop() / 300);
         var newScroll = $(window).scrollTop();
+        //console.log( currentScroll );
+
+        //console.log( newScroll );
 
         /*if( newScroll < (currentScroll) ) {
             $("nav").fadeIn( 200 );
