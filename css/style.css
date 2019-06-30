@@ -131,7 +131,7 @@ em {
 button {
     display: block;
     font-size: 0.889em;
-    font-family: 'Work Sans', monospace;
+    font-family: 'Work Sans', sans-serif;
     background: var(--complement1);
     padding: 0.75rem 1.25rem 0.75rem 1.25rem;
     width: 60%;
