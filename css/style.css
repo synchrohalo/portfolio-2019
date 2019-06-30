@@ -152,6 +152,7 @@ button.active:hover {
 }
 
 button.inactive {
+    background-color: var(--white);
     color: var(--neutral-dark);
     border: 2px solid var(--neutral-dark);
 }
