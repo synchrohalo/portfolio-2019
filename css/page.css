@@ -4,7 +4,7 @@
     --max-width: 38rem;
 }
 
-body, button {
+body {
     background-color: var(--white);
 }
 
@@ -20,16 +20,12 @@ header.page, header#about {
 
 header.page {
     background: var(--white); 
-}
-
-header.page {
-    /*padding-top: var(--nav-bar-height);*/
-    padding-top: 8rem;
     background-image: url(../img/snapsack/snapsack-bg-small.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 80%; 
     text-align: center;
+    /*margin-top: 0rem;*/
 }
 
 header.page img {
@@ -40,11 +36,11 @@ header.page img {
 header#about {
     margin: 0 auto;
     max-width: initial;
-    background-color: var(--neutral-light);
+    background-color: var(--white);
     background-image: none;
     text-align: center;
-    padding-top: 8rem;
-    padding-bottom: var(--space-bottom);
+    /*padding-top: 8rem;
+    padding-bottom: var(--space-bottom);*/
 }
 
 header#about img {
@@ -54,7 +50,7 @@ header#about img {
 }
 
 header#about .text {
-    max-width: 40rem;
+    max-width: var(--text-margin);
 }
 
 #about h1, #about h2, #about p {
@@ -63,6 +59,10 @@ header#about .text {
 
 #about p {
     text-align: left;
+}
+
+nav {
+    background-color: var(--white);
 }
 
 .page h1, .page h3, .page h4, .page p  {
@@ -99,6 +99,16 @@ header#about .text {
     width: var(--text-margin);
     max-width: var(--max-width);
     margin-bottom: var(--space-bottom);
+}
+
+.page .link {
+    background: var(--primary-color);
+    font-style: italic;
+}
+
+.page .link:hover {
+    color: var(--neutral-dark);
+    background-color: var(--white);
 }
 
 .page img.small-img {
@@ -272,7 +282,8 @@ img.large-img {
 }
 
 .border {
-    border: 1px solid var(--secondary-color);
+    border: 3px solid var(--neutral-light-2);
+    border-radius: 8px;
 }
 
 /*** PALETTE ***/
@@ -358,6 +369,15 @@ img.large-img {
     color: var(--secondary-color);
 }
 
+.back-to-top .link {
+    background: none;
+}
+
+.back-to-top .link:hover {
+    color: var(--neutral-light-2);
+    background-color: initial;
+}
+
 @media only screen and (min-width: 500px) {
     header.page {
         background-image: url(../img/snapsack/snapsack-bg.svg);
@@ -381,6 +401,15 @@ img.large-img {
 }
 
 @media only screen and (min-width: 768px) {
+    nav {
+        position: fixed;
+    }
+
+    header.page {
+        /*padding-top: var(--nav-bar-height);*/
+        /*padding-top: 0;*/
+    }
+
     .two-col {
         display: flex;
         flex-direction: row;
