@@ -97,7 +97,6 @@ nav {
 }
 
 .page img {
-    width: var(--text-margin);
     max-width: var(--max-width);
     margin-bottom: var(--space-bottom);
 }
