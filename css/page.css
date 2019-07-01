@@ -96,15 +96,16 @@ nav {
 }
 
 .page img {
-    max-width: 24rem;
+    width: 80%;
+    /*max-width: 24rem;*/
     margin-bottom: var(--space-bottom);
 }
 
-.page .link {
+main .link {
     font-style: italic;
 }
 
-.page .link:hover {
+main .link:hover {
     color: var(--neutral-dark);
     background-color: var(--white);
 }
@@ -348,6 +349,10 @@ img.large-img {
 .preference .two-col {
     justify-content: end;
     margin-bottom: var(--space-bottom);
+}
+
+.preference h2 {
+    color: var(--neutral-medium);
 }
 
 .file-thumbnails {
