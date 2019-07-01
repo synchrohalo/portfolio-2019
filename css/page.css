@@ -9,7 +9,7 @@ body {
 }
 
 .purple {
-    color: var(--secondary-color);
+    color: var(--neutral-medium);
 }
 
 header.page, header#about {
@@ -97,12 +97,12 @@ nav {
 
 .page img {
     width: var(--text-margin);
-    max-width: var(--max-width);
+    max-width: 24rem;
+    /*max-width: var(--max-width);*/
     margin-bottom: var(--space-bottom);
 }
 
 .page .link {
-    background: var(--primary-color);
     font-style: italic;
 }
 
@@ -178,7 +178,7 @@ nav {
 }
 
 .highlights h1 {
-    color: var(--secondary-color);
+    color: var(--neutral-medium);
     margin-bottom: -2rem;
     text-align: left;
     font-size: 3rem;
@@ -212,7 +212,7 @@ nav {
 
 .focus-body {
     background: var(--neutral-light);
-    border-left: 8px solid var(--secondary-color);
+    border-left: 8px solid var(--neutral-medium);
     padding-top: var(--space-bottom);
 }
 
@@ -366,7 +366,7 @@ img.large-img {
 
 .back-to-top p{
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--neutral-medium);
 }
 
 .back-to-top .link {
@@ -374,8 +374,12 @@ img.large-img {
 }
 
 .back-to-top .link:hover {
-    color: var(--neutral-light-2);
+    color: var(--neutral-dark);
     background-color: initial;
+}
+
+.step-title {
+    font-family: "Space Mono", monospace;
 }
 
 @media only screen and (min-width: 500px) {
@@ -408,6 +412,10 @@ img.large-img {
     header.page {
         /*padding-top: var(--nav-bar-height);*/
         /*padding-top: 0;*/
+    }
+
+    header.page img {
+        max-width: var(--max-width);
     }
 
     .two-col {
