@@ -218,10 +218,6 @@ header {
     margin-top: var(--nav-bar-height);
 }
 
-header h1, header h2, header h5 {
-    /*color: var(--neutral-light);*/
-}
-
 header .text {
     width: 90%;
     max-width: 32rem;
