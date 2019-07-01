@@ -97,15 +97,16 @@ nav {
 }
 
 .page img {
-    max-width: 24rem;
+    width: 80%;
+    /*max-width: 24rem;*/
     margin-bottom: var(--space-bottom);
 }
 
-.page .link {
+main .link {
     font-style: italic;
 }
 
-.page .link:hover {
+main .link:hover {
     color: var(--neutral-dark);
     background-color: var(--white);
 }
