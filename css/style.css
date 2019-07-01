@@ -430,6 +430,10 @@ li.project {
     background-color: var(--snapsack-bg);
 }
 
+#jingle .project-img {
+    background-color: #BEE4FF;
+}
+
 #assorted .project-img {
     background-color: #FFE6EE;
 }
