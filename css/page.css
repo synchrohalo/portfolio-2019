@@ -20,13 +20,21 @@ header.page, header#about {
 
 header.page {
     background: var(--white); 
-    background-image: url(../img/snapsack/snapsack-bg-small.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 80%; 
     text-align: center;
     /*margin-top: 0rem;*/
 }
+
+#snapsack-header.page {
+    background-image: url(../img/snapsack/snapsack-bg-small.svg);
+}
+
+#jingle-header.page {
+    background-image: url(../img/jingle/jingle-bg-small.svg);
+}
+
 
 header.page img {
     margin: 0 auto;
@@ -388,8 +396,15 @@ img.large-img {
 
 @media only screen and (min-width: 500px) {
     header.page {
-        background-image: url(../img/snapsack/snapsack-bg.svg);
         background-position-y: 70%; 
+    }
+
+    #snapsack-header.page {
+        background-image: url(../img/snapsack/snapsack-bg.svg);
+    }
+
+    #jingle-header.page {
+        background-image: url(../img/jingle/jingle-bg.svg);
     }
 
     .highlights .two-col{
@@ -529,8 +544,15 @@ img.large-img {
 
 @media only screen and (min-width: 1520px) {
     header.page {
-        background-image: url(../img/snapsack/snapsack-bg-large.svg);
         background-position-y: 70%; 
+    }
+
+    #snapsack-header.page {
+        background-image: url(../img/snapsack/snapsack-bg-large.svg);
+    }
+
+    #jingle-header.page {
+        background-image: url(../img/jingle/jingle-bg-large.svg);
     }
 
     .final-mockups {
