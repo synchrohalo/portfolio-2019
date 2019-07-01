@@ -31,7 +31,6 @@ header.page {
 header.page img {
     margin: 0 auto;
     margin-bottom: var(--space-bottom);
-    height: auto;
 }
 
 header#about {
@@ -97,7 +96,6 @@ nav {
 }
 
 .page img {
-    width: var(--text-margin);
     max-width: var(--max-width);
     margin-bottom: var(--space-bottom);
 }
