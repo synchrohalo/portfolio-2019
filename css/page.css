@@ -97,7 +97,9 @@ nav {
 }
 
 .page img {
-    max-width: var(--max-width);
+    width: var(--text-margin);
+    max-width: 24rem;
+    /*max-width: var(--max-width);*/
     margin-bottom: var(--space-bottom);
 }
 
@@ -411,6 +413,10 @@ img.large-img {
     header.page {
         /*padding-top: var(--nav-bar-height);*/
         /*padding-top: 0;*/
+    }
+
+    header.page img {
+        max-width: var(--max-width);
     }
 
     .two-col {
