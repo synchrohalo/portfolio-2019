@@ -430,6 +430,10 @@ li.project {
     background-color: var(--snapsack-bg);
 }
 
+#assorted .project-img {
+    background-color: #FFE6EE;
+}
+
 .project-img img {
     width: 100%;
 }
