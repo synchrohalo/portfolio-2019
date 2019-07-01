@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Joanne Arboleda | Portfolio</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/animated.css">
     <link rel="stylesheet" href="../css/page.css">
-    <link href="https://fonts.googleapis.com/css?family=Chivo:400,400i|Space+Mono:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i|Work+Sans:500,600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
   </head>
@@ -22,44 +22,44 @@
             <a href="../index.html"><h4>jo</h4></a>
         </div>-->
 
-        <div id="logo">
-            <a href="../index.html" >
-                <h4>Joanne Arboleda</h4>
+        <!--<div id="logo">
+            <a href="../index.html">
+                <h4 class="link">Joanne Arboleda</h4>
             </a>
-        </div>
+        </div>-->
         <div class="menu">
 
             <div class="desktop-menu">
                 <ul>
-                    <li><a href="../pages/about.html"><p class="link">About</p></a></li>
+                    <li><a href="../index.html#work"><p class="link">Work</p></a></li>
+                    <li><a target="_blank" href="../arboleda-joanne-resume-2019.pdf"><p class="link">Resume</p></a></li>
                     <li><a href="#contact"><p class="link">Contact</p></a></li>
-                    <li><a href="../arboleda-joanne-resume-2017.pdf" target="_blank"><p class="link">Resume</p></a></li>
                 </ul>
             </div>
-
+    
             <div class="mobile-menu">
-                <img class="icon" src="../img/close.svg" />
+                <img class="icon" src="../img/close.svg" alt="Icon to close menu" />
                 <ul>
-                    <li><a href="../pages/about.html"><p class="link">About</p></a></li>
+                    <li><a href="../index.html#work"><p class="link">Work</p></a></li>
+                    <li><a target="_blank" href="../arboleda-joanne-resume-2019.pdf"><p class="link">Resume</p></a></li>
                     <li><a href="#contact"><p class="link">Contact</p></a></li>
-                    <li><a href="../arboleda-joanne-resume-2017.pdf" target="_blank"><p class="link">Resume</p></a></li>
                 </ul>
             </div>
 
-            <img class="icon" id="menu-icon" src="../img/menu.svg" />
+            <img class="icon" id="menu-icon" src="../img/menu.svg" alt="Menu icon" />
         </div>
     </nav>
 
 
     <!------ HERO ------>
     <header id="snapsack-header" class="page">  
-        <h1>Snapsack</h1>
+        <h1>Cloud storage app</h1>
         <p>I was entrusted to create a cloud storage app, with the task of discovering in what ways a new competitor could enter the cloud storage app market. The result was an app similar to Google Drive and Dropbox, but with the added functionality of labels and a warmer, friendlier interface.</p>
 
-        <img src="../img/snapsack/header.png" alt="A collection of example screens from a cloud storage app project, including a landing page and a mobile and desktop dashboard">
+        <img src="../img/snapsack/header.png" alt="Example screens from cloud storage app project, including a landing page and the dashboard">
 
-        <a href="https://www.figma.com/proto/z9SxR1o3QCLH4OvyBTIHBf/Snapsack-Mockups-Revised?node-id=88%3A0&viewport=32%2C27%2C0.0625&scaling=contain" target="_blank"><button class="active animated">View desktop prototype</button></a>
-        <a href="https://www.figma.com/proto/z9SxR1o3QCLH4OvyBTIHBf/Snapsack-Mockups-Revised?node-id=363%3A0&viewport=981%2C1262%2C0.5&scaling=scale-down" target="_blank"><button class="active animated">View mobile prototype</button></a>
+        <a href="https://www.figma.com/proto/z9SxR1o3QCLH4OvyBTIHBf/Snapsack-Mockups-Revised?node-id=88%3A0&viewport=32%2C27%2C0.0625&scaling=contain" target="_blank"><button class="active fade-to-color">View desktop prototype</button></a>
+        <a href="https://www.figma.com/proto/z9SxR1o3QCLH4OvyBTIHBf/Snapsack-Mockups-Revised?node-id=363%3A0&viewport=981%2C1262%2C0.5&scaling=scale-down" target="_blank"><button class="active fade-to-color">View mobile prototype</button></a>
     </header>
 
     <!------ CASE STUDY ------>
@@ -89,15 +89,17 @@
                 </div>
             </section>
 
-            <section class="space-between problem-solution two-col">
-                <div class="col-1">
-                    <h3>The problem</h3>
-                    <p>Upon learning that users were not likely to sort their files into folders despite finding organization an important feature for cloud storage apps, I sought to find the answer to the question, <em>how can cloud storage platforms be improved such that users will be more likely keep their digital spaces organized?</em></p>
-                </div>
+            <section class="space-between problem-solution">
+                <div class="two-col">
+                    <div class="col-1">
+                        <h3>The problem</h3>
+                        <p>Upon learning that users were not likely to sort their files into folders despite finding organization an important feature for cloud storage apps, I sought to find the answer to the question, <em>how can cloud storage platforms be improved such that users will be more likely keep their digital spaces organized?</em></p>
+                    </div>
 
-                <div class="col-2">
-                    <h3>The solution</h3>
-                    <p>Enter Snapsack, a multi-purpose cloud storage app with a focus on organization. <em>A labeling system allows users to visually categorize their files and folders at a glance.</em> Filtering gives users the ability to sift through files that may be buried deep within nested folders or see all types of files and folders associated with a label.</p>
+                    <div class="col-2">
+                        <h3>The solution</h3>
+                        <p>Enter Snapsack, a multi-purpose cloud storage app with a focus on organization. <em>A labeling system allows users to visually categorize their files and folders at a glance.</em> Filtering gives users the ability to sift through files that may be buried deep within nested folders or see all types of files and folders associated with a label.</p>
+                    </div>
                 </div>
             </section>
         </article>
@@ -124,21 +126,21 @@
                             <div class="col-1">
                                 <div class="info-bit">
                                     <h1>100%</h1>
-                                    <p>use <span class="teal"><em>Google Drive</em></span>, whether or not with another app.</p>
+                                    <p>use <em>Google Drive</em>, whether or not with another app.</p>
                                 </div>
                                 <div class="info-bit">
                                     <h1>87.5%</h1>
-                                    <p>see <span class="teal"><em>Uploading Files</em></span> as the most important feature.</p>
+                                    <p>see <em>Uploading Files</em> as the most important feature.</p>
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="info-bit">
                                     <h1>69.2%</h1>
-                                    <p>use <span class="teal"><em>Content Creation</em></span> Frequently or Very Frequently, making it the most frequently used feature.</p>
+                                    <p>use <em>Content Creation</em> Frequently or Very Frequently, making it the most frequently used feature.</p>
                                 </div>
                                 <div class="info-bit">
                                     <h1>62.5%</h1>
-                                    <p>see <span class="teal"><em>organizing content</em></span> as Important, despite the fact that a larger amount of people hardly organize their files.</p>
+                                    <p>see <em>organizing content</em> as Important, despite the fact that a larger amount of people hardly organize their files.</p>
                                 </div>
                             </div>
                         </div>
@@ -146,13 +148,13 @@
 
                     <p>I found myself fixated on the last point. It seemed that users were out of the habit of keeping their digital spaces organized.</p>
 
-                    <a href="https://docs.google.com/document/d/1x2cigILTb_v-c3x2Z_cDNFoa9e18BhRqFHxJMBj8hPY/edit?usp=sharing" target="_blank"><button class="active animated">View survey analysis</button></a>
+                    <a href="https://docs.google.com/document/d/1x2cigILTb_v-c3x2Z_cDNFoa9e18BhRqFHxJMBj8hPY/edit?usp=sharing" target="_blank"><button class="active fade-to-color">View survey analysis</button></a>
                 </div>
 
                 <div class="substep competitive-analysis">
                     <h3>Competitive analysis</h3>
                     <img class="small-img" src="../img/snapsack/competitive-analysis.png" alt="Google Drive and Dropbox logos" />
-                    <p>To scope out the competition I selected two cloud storage platforms I was familiar with: Google Drive and Dropbox.</p>
+                    <p>To scope out the competition I selected two cloud storage platforms with which I was familiar: Google Drive and Dropbox.</p>
 
                     <div class="focus">
                         <h5>Takeaways</h5>
@@ -164,7 +166,7 @@
 
                     <p>Could I improve a cloud storage app in terms of organization? This discovery was pertinent to my growing interest in how to encourage people to organize their digital spaces.</p>
 
-                    <a href="https://docs.google.com/document/d/1_qHdIWPJKACfKrlxc6nsNFnLsxjDe-MwLvjP4x-MUuc/edit?usp=sharing" target="_blank"><button class="active animated">View full analysis</button></a>
+                    <a href="https://docs.google.com/document/d/1_qHdIWPJKACfKrlxc6nsNFnLsxjDe-MwLvjP4x-MUuc/edit?usp=sharing" target="_blank"><button class="active fade-to-color">View full analysis</button></a>
                 </div>
 
                 <div class="substep user-stories">
@@ -187,7 +189,7 @@
                         </div>
                     </div>
 
-                    <a href="https://docs.google.com/document/d/1klKQovFh2btFt1jukEkDONbQ79wj_YgzsvXTpaCYBgc/edit?usp=sharing" target="_blank"><button class="active animated">View all user stories</button></a>
+                    <a href="https://docs.google.com/document/d/1klKQovFh2btFt1jukEkDONbQ79wj_YgzsvXTpaCYBgc/edit?usp=sharing" target="_blank"><button class="active fade-to-color">View all user stories</button></a>
 
                     <div class="full-span-img space-between">
                         <img src="" alt="" />
@@ -224,7 +226,7 @@
 
                     <img src="../img/snapsack/label-flows.png" alt="User flows depicting how filtering by label and organizing by label would work" />
 
-                    <a href="https://drive.google.com/file/d/1USLU_fPShS7UQTIA1nxudqI-N4RGjVtC/view" target="_blank"><button class="active animated">View all user flows</button></a>
+                    <a href="https://drive.google.com/file/d/1USLU_fPShS7UQTIA1nxudqI-N4RGjVtC/view" target="_blank"><button class="active fade-to-color">View all user flows</button></a>
                 </div>
                 
                 <div class="substep sitemap">
@@ -234,7 +236,7 @@
                     <img class="full-width" src="../img/snapsack/sitemap.png" alt="A chart denoting how to navigate the Snapsack website from landing page to dashboard" />
 
 
-                    <a href="https://drive.google.com/file/d/1K_-5Y0rwIbGITZU6IYfhyq4UWgZhIXIw/view?usp=sharing" target="_blank"><button class="active animated">View sitemap</button></a>
+                    <a href="https://drive.google.com/file/d/1K_-5Y0rwIbGITZU6IYfhyq4UWgZhIXIw/view?usp=sharing" target="_blank"><button class="active fade-to-color">View sitemap</button></a>
                 </div>
             </section>
 
@@ -315,7 +317,7 @@
                         </div>
                     </div>
 
-                    <a href="https://www.figma.com/file/Pm8hQQkgYx18Q3v5H8jHzYR7/Snapsack-Wireframes?node-id=0%3A1" target="_blank"><button class="active animated">View wireframes</button></a>
+                    <a href="https://www.figma.com/file/Pm8hQQkgYx18Q3v5H8jHzYR7/Snapsack-Wireframes?node-id=0%3A1" target="_blank"><button class="active fade-to-color">View wireframes</button></a>
                 </div>
 
                 <!-- WIREFRAME TEST -->
@@ -326,7 +328,7 @@
                     <div class="feedback">
                         <div class="two-col">
                             <div class="col-1">
-                                <img class="border" src="../img/snapsack/dashboard-wireframe-test1.png" alt="A barebones dashboard with the Filter by Label function circled and an arrow pointing from it to the search bar at the top" />
+                                <img class="border" src="../img/snapsack/dashboard-wireframe-test1.png" alt="Dashboard with the Filter by Label function circled and an arrow pointing to the search bar at the top" />
                             </div>
 
                             <div class="col-2">
@@ -341,7 +343,7 @@
 
                         <div class="two-col">
                             <div class="col-1">
-                                <img class="border" src="../img/snapsack/dashboard-wireframe-test2.png" alt="A barebones dashboard with a selected file circled and an arrow pointing from it to the Edit label function on the far right" />
+                                <img class="border" src="../img/snapsack/dashboard-wireframe-test2.png" alt="Dashboard with a selected file circled and an arrow pointing to the Edit label function on the far right" />
                             </div>
 
                             <div class="col-2">
@@ -401,42 +403,36 @@
                             <div class="color-circle" id="F6E022"></div>
                             <div class="color-text">
                                 <p>Hex: #F6E022</p>
-                                <p>RGB: 246, 224, 34</p>
                             </div>
                         </li>
                         <li>
                             <div class="color-circle" id="BF4D3C"></div> 
                             <div class="color-text">
                                 <p>Hex: #BF4D3C</p>
-                                <p>RGB: 191, 77, 60</p>
                             </div>
                         </li>
                         <li>
                             <div class="color-circle" id="c43045F"></div>
                             <div class="color-text">
                                 <p>Hex: #43045F</p>
-                                <p>RGB: 67, 4, 95</p>
                             </div>
                         </li>
                         <li>
                             <div class="color-circle" id="c77647A"></div>
                             <div class="color-text">
                                 <p>Hex: #77647A</p>
-                                <p>RGB: 119, 100, 122</p>
                             </div>
                         </li>
                         <li>
                             <div class="color-circle" id="FCF6C0"></div>
                             <div class="color-text">
                                 <p>Hex: #FCF6C0</p>
-                                <p>RGB: 252, 246, 192</p>
                             </div>
                         </li>
                         <li>
                             <div class="color-circle" id="c1D2B2B"></div>
                             <div class="color-text">
                                 <p>Hex: #1D2B2B</p>
-                                <p>RGB: 29, 43, 43</p>
                             </div>
                         </li>
                     </ul>
@@ -452,7 +448,7 @@
                         </div>
                     </div>
 
-                    <a href="https://drive.google.com/file/d/1-0DL6m86oc76sVGgXJzdOR18fbMBD0FF/view?usp=sharing" target="_blank"><button class="active animated">View branding guide</button></a>
+                    <a href="https://drive.google.com/file/d/1-0DL6m86oc76sVGgXJzdOR18fbMBD0FF/view?usp=sharing" target="_blank"><button class="active fade-to-color">View branding guide</button></a>
                 </div>
 
                 <div class="substep mockups">
@@ -503,13 +499,13 @@
                         <div class="two-col">
                             <div class="col-1">
                                 <h4>A</h4>
-                                <img class="border" src="../img/snapsack/preference-2a.png" alt="Smaller thumbnail sizes, light yellow background on a selected file" />
+                                <img class="border" src="../img/snapsack/preference-2a.png" alt="Smaller thumbnails, light yellow background on a selected file" />
                                 
                                 <h2>50%</h2>
                             </div>
                             <div class="col-2">
                                 <h4>B</h4>
-                                <img class="border" src="../img/snapsack/preference-2b.png" alt="Larger thumbnail sizes with border around thumbnails and filenames, grey-pruple background on a selected file" />
+                                <img class="border" src="../img/snapsack/preference-2b.png" alt="Larger thumbnails, with border around image and filenames, grey-pruple background on a selected file" />
                                 <h2>50%</h2>
                             </div>
                         </div>
@@ -599,7 +595,7 @@
                         </div>
                     </div>
 
-                    <a href="https://docs.google.com/document/d/14rCI_VeI10Ctv31SfFLQgQWqvO5eII6amDBXY6Cj_z0/edit?usp=sharing" target="_blank"><button class="active animated">View testing notes</button></a>
+                    <a href="https://docs.google.com/document/d/14rCI_VeI10Ctv31SfFLQgQWqvO5eII6amDBXY6Cj_z0/edit?usp=sharing" target="_blank"><button class="active fade-to-color">View testing notes</button></a>
                 </div>
 
                 <!-- FINAL -->
@@ -607,7 +603,7 @@
                     <h3>Final</h3>
                     <p>In previous iterations, <em>I failed to use proximity to guide users in making an association between the target item and its actions</em>. This was a recurring issue, whether it was about where Filter by label should go or where Edit labels should be placed. </p>
 
-                    <img class="small-img" src="../img/snapsack/folder-menu.png" alt="File menu now appears next to selected file, which has a bright yellow background to make select state more apparent" />
+                    <img class="small-img" src="../img/snapsack/folder-menu.png" alt="Menu now appears next to selected file with bright yellow background to indicate select state" />
 
                     <div class="focus">
                         <h5>Main changes</h5>
@@ -624,8 +620,8 @@
                     <div class="final-mockups">
                         <img class="" src="../img/snapsack/final-mockups.png" alt="Group of final, edited digital screens" />
 
-                        <a href="https://www.figma.com/proto/z9SxR1o3QCLH4OvyBTIHBf/Snapsack-Mockups-Revised?node-id=88%3A0&viewport=32%2C27%2C0.0625&scaling=contain" target="_blank"><button class="active animated">View desktop prototype</button></a>
-                        <a href="https://www.figma.com/proto/z9SxR1o3QCLH4OvyBTIHBf/Snapsack-Mockups-Revised?node-id=363%3A0&viewport=981%2C1262%2C0.5&scaling=scale-down" target="_blank"><button class="active animated">View mobile prototype</button></a>
+                        <a href="https://www.figma.com/proto/z9SxR1o3QCLH4OvyBTIHBf/Snapsack-Mockups-Revised?node-id=88%3A0&viewport=32%2C27%2C0.0625&scaling=contain" target="_blank"><button class="active fade-to-color">View desktop prototype</button></a>
+                        <a href="https://www.figma.com/proto/z9SxR1o3QCLH4OvyBTIHBf/Snapsack-Mockups-Revised?node-id=363%3A0&viewport=981%2C1262%2C0.5&scaling=scale-down" target="_blank"><button class="active fade-to-color">View mobile prototype</button></a>
                     </div>
 
                     
@@ -681,7 +677,7 @@
                     <p>I used iPhone mockups from <a href="http://www.designbolts.com/2017/09/14/free-vector-apple-iphone-8-mockup-ai-eps/" class="link" target="_blank">here</a>. Macbook Pro mockups are from <a href="https://www.pixeden.com/psd-mock-up-templates/macbook-pro-retina-psd-mockup" class="link" target="_blank">here</a>. Icons were provided by <a href="https://fontawesome.com/" class="link" target="_blank">FontAwesome</a>, <a href="https://icons8.com/" class="link" target="_blank">Icons8</a>, and <a href="https://material.io/tools/icons/?style=baseline" class="link" target="_blank">material.io</a>. The label color palette was borrowed from <a href="http://alumni.media.mit.edu/~wad/color/palette.html" class="link" target="_blank">here</a>.</p>
 
                     <a href="#snapsack-header">
-                        <div class="back-to-top">
+                        <div class="back-to-top float">
                             <p class="link italic">&#8593; Back to top</p>
                         </div>
                     </a>
@@ -702,36 +698,31 @@
             <h2>Follow along my orbit.</h2>
             
             <div class="orbit">
-                <img src="../img/orbit.svg" />
+                <img src="../img/orbit.svg" alt="Pink and teal planet with social media icons circling around" />
                 
                 <div class="icons">
-                        <a href="mailto:joanne.b.arboleda@gmail.com" target="_blank"><img id="mail" src="../img/icons/mail.svg" /></a>
+                        <a href="mailto:joanne.b.arboleda@gmail.com" target="_blank"><img id="mail" src="../img/icons/mail.svg" alt="Email icon" /></a>
                 </div>
 
                 <div class="icons">
-                        <a href="https://dribbble.com/joannearboleda" target="_blank"><img id="dribbble" src="../img/icons/dribbble.svg" /></a>
+                    <a href="https://dribbble.com/synchrohalo" target="_blank"><img id="dribbble" src="../img/icons/dribbble.svg" alt="Dribbble icon" /></a>
                 </div>
 
                 <div class="icons">
-                        <a href="https://www.linkedin.com/in/joanne-arboleda-79141167/" target="_blank"><img id="linkedin" src="../img/icons/linkedin.svg" /></a>
+                        <a href="https://www.linkedin.com/in/joanne-arboleda-79141167/" target="_blank"><img id="linkedin" src="../img/icons/linkedin.svg" alt="LinkedIn icon" /></a>
                 </div>
 
                 <div class="icons">
-                    <a href="https://github.com/synchrohalo" target="_blank"><img id="github" src="../img/icons/github.svg" /></a>
+                    <a href="https://github.com/synchrohalo" target="_blank"><img id="github" src="../img/icons/github.svg" alt="GitHub icon" /></a>
                 </div>
             </div>
 
             <p>Like my work? Shoot me an email at <a href="mailto:joanne.b.arboleda@gmail.com" target="_blank"><span class="link">joanne.b.arboleda@gmail.com</span></a> if you think I might be a good fit for your project or team.</p>
         </div>
 
-        <!--<div class="galaxy-footer">
-            <img src="../img/footer-galaxy.svg" alt="Pink swirly decorative element with white star" />
-        </div>-->
-
         <div class="copyright">
             <p>Designed & coded with 💖<br />&copy; 2019 Joanne Arboleda</p>
         </div>
-        
     </footer>
   </body>
 
@@ -740,19 +731,30 @@
 
   <script>
     $( document ).ready(function() {
+        $( ".back-to-top" ).css( "display", "none" );
 
         $(window).scroll(function(){
             var newScroll = $(window).scrollTop();
 
             if( newScroll < ( $( ".process" ).offset().top * 0.1 ) ) {
-                $("nav").fadeOut( 200 );
+                $(".back-to-top").fadeOut( 200 );
             } else {
-                $("nav").fadeIn( 200 );
+                $(".back-to-top").fadeIn( 200 );
             }
 
             currentScroll = newScroll;
         });    
     });
     
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140330130-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-140330130-1');
     </script>
 </html>
