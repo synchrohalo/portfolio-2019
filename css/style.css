@@ -8,6 +8,7 @@
     --neutral-dark: #3F3B43;
     --neutral-light: #FAF3F0;
     --neutral-light-2: #D0CAD7;
+    --neutral-medium: #898293;
     --white: #fff;
     --snapsack-bg: #FCF6C0;
     --shadow: 0px 2px 4px rgba(41, 25, 47, 0.25);
@@ -87,7 +88,7 @@ a {
 .link {
     text-decoration: underline;
     cursor: pointer;
-    color: var(--neutral-dark);
+    color: var(--neutral-medium);
 }
 
 .link:hover {
@@ -294,7 +295,7 @@ nav .link {
 }
 
 nav .link:hover {
-    color: var(--neutral-light-2);
+    color: var(--neutral-dark);
 }
 
 #logo {
@@ -399,7 +400,7 @@ section {
     width: 4rem;
     height: 4px;
     margin: 0 auto;
-    background-color: var(--neutral-light-2);
+    background-color: var(--neutral-medium);
 }
 
 .main-heading {
