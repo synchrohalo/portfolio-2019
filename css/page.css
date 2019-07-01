@@ -98,6 +98,7 @@ nav {
 .page img {
     width: 80%;
     /*max-width: 24rem;*/
+    max-width: var(--max-width);
     margin-bottom: var(--space-bottom);
 }
 
@@ -418,7 +419,7 @@ img.large-img {
     }
 
     header.page img {
-        max-width: var(--max-width);
+        /*max-width: var(--max-width);*/
     }
 
     .two-col {
