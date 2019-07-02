@@ -440,6 +440,7 @@ img.large-img {
 
 .step-title {
     font-family: "Space Mono", monospace;
+    font-size: 1.5rem;
 }
 
 @media only screen and (min-width: 500px) {
@@ -474,8 +475,8 @@ img.large-img {
         margin: 0 auto;
     }
 
-    #jingle-case-study .feedback .two-col {
-        /*width: 100%;*/
+    #jingle-case-study .mockups .two-col {
+        max-width: 24rem;
     }
 
     #jingle-case-study .feedback .col-1 {
@@ -528,6 +529,10 @@ img.large-img {
 
     .mockups .col-1, .mockups .col-2 {
         width: 50%;
+    }
+
+    #jingle-case-study .mockups .two-col {
+        max-width: var(--max-width);
     }
 
     /*** PREFERENCE TESTING ***/
