@@ -123,6 +123,11 @@ main .link:hover {
     max-width: 24rem;
 }
 
+#jingle-case-study img.small-img {
+    width: var(--text-margin);
+    /*max-width: 16rem;*/
+}
+
 .breakdown h4 {
     margin-top: initial;
 }
@@ -355,6 +360,31 @@ img.large-img {
     background: #1D2B2B;
 }
 
+#E0517E {
+    background: #E0517E;
+}
+
+#FFDAD3 {
+    background: #FFDAD3;
+}
+
+#BEE4FF {
+    background: #BEE4FF;
+}
+
+#fff {
+    background: #fff;
+    border: 1px solid #776868;
+}
+
+#c3E3232 {
+    background: #3E3232;
+}
+
+#c776868 {
+    background: #776868;
+}
+
 .preference .two-col {
     justify-content: end;
     margin-bottom: var(--space-bottom);
@@ -407,6 +437,10 @@ img.large-img {
         background-image: url(../img/jingle/jingle-bg.svg);
     }
 
+    #jingle-case-study img.small-img {
+        max-width: 20rem;
+    }
+
     .highlights .two-col{
         width: 65%;
         max-width: var(--max-width);
@@ -418,7 +452,7 @@ img.large-img {
     }
 
     .mockups .col-1, .mockups .col-2 {
-        width: 50%;
+        width: var(--text-margin);
         margin: 0 auto;
     }
 }
@@ -539,6 +573,10 @@ img.large-img {
     .step-title {
         position: absolute;
         left: 2rem;
+    }
+
+    #jingle-case-study img.small-img {
+        max-width: 16rem;
     }
 }
 
