@@ -400,7 +400,20 @@ img.large-img {
 }
 
 .final-mockups {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+
+#snapsack-case-study .final-mockups {
     background: url(../img/snapsack/mobile-final-bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+
+#jingle-case-study .final-mockups {
+    background: url(../img/jingle/mobile-final-bg.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: 50%;
@@ -439,6 +452,12 @@ img.large-img {
 
     #jingle-case-study img.small-img {
         max-width: 20rem;
+    }
+
+    #jingle-case-study .feedback .col-1 {
+        width: var(--text-margin);
+        max-width: 20rem;
+        margin: 0 auto;
     }
 
     .highlights .two-col{
@@ -544,7 +563,20 @@ img.large-img {
     }
 
     .final-mockups {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: 50%;
+    }
+
+    #snapsack-case-study .final-mockups {
         background: url(../img/snapsack/final-bg.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: 50%;
+    }
+
+    #jingle-case-study .final-mockups {
+        background: url(../img/jingle/final-bg.svg);
         background-size: contain;
         background-repeat: no-repeat;
         background-position-y: 50%;
@@ -575,7 +607,8 @@ img.large-img {
         left: 2rem;
     }
 
-    #jingle-case-study img.small-img {
+    #jingle-case-study img.small-img,
+    #jingle-case-study .feedback .col-1  {
         max-width: 16rem;
     }
 }
@@ -594,7 +627,20 @@ img.large-img {
     }
 
     .final-mockups {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: 50%;
+    }
+
+    #snapsack-case-study .final-mockups {
         background: url(../img/snapsack/final-bg-large.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: 50%;
+    }
+
+    #jingle-case-study .final-mockups {
+        background: url(../img/jingle/final-bg-large.svg);
         background-size: contain;
         background-repeat: no-repeat;
         background-position-y: 50%;

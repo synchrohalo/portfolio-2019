@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="152" height="315" viewBox="0 0 152 315">
+  <g id="Group_781" data-name="Group 781" transform="translate(-41 -440)">
+    <text id="Heading_1" data-name="Heading 1" transform="translate(41 473)" fill="#3e3232" font-size="32" font-family="FugazOne-Regular, Fugaz One" letter-spacing="0.005em"><tspan x="0" y="0">Heading 1</tspan></text>
+    <text id="Screen_title" data-name="Screen title" transform="translate(41 516)" fill="#3e3232" font-size="20" font-family="FugazOne-Regular, Fugaz One" letter-spacing="0.005em"><tspan x="0" y="0">Screen title</tspan></text>
+    <text id="Heading_2" data-name="Heading 2" transform="translate(41 566)" fill="#3e3232" font-size="28" font-family="Karla-Bold, Karla" font-weight="700"><tspan x="0" y="0">Heading 2</tspan></text>
+    <text id="Heading_3" data-name="Heading 3" transform="translate(41 611)" fill="#3e3232" font-size="24" font-family="Karla-Bold, Karla" font-weight="700"><tspan x="0" y="0">Heading 3</tspan></text>
+    <text id="Heading_4" data-name="Heading 4" transform="translate(41 651)" fill="#3e3232" font-size="20" font-family="Karla-Bold, Karla" font-weight="700"><tspan x="0" y="0">Heading 4</tspan></text>
+    <text id="Heading_5" data-name="Heading 5" transform="translate(41 686)" fill="#3e3232" font-size="18" font-family="Karla-Bold, Karla" font-weight="700"><tspan x="0" y="0">Heading 5</tspan></text>
+    <text id="Body" transform="translate(41 720)" fill="#3e3232" font-size="16" font-family="Karla-Regular, Karla"><tspan x="0" y="0">Body</tspan></text>
+    <text id="Small_body" data-name="Small body" transform="translate(41 751)" fill="#3e3232" font-size="14" font-family="Karla-Regular, Karla"><tspan x="0" y="0">Small body</tspan></text>
+  </g>
+</svg>

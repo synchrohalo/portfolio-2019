@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="157" height="154.705" viewBox="0 0 157 154.705">
+  <g id="Group_780" data-name="Group 780" transform="translate(-31 -22.627)">
+    <g id="Group_778" data-name="Group 778" transform="translate(32 101.332)">
+      <g id="Group_749" data-name="Group 749">
+        <text id="Jingle" transform="translate(0 54)" fill="#e0517e" font-size="52" font-family="FugazOne-Regular, Fugaz One" letter-spacing="0.005em"><tspan x="0" y="0">Jingle</tspan></text>
+      </g>
+      <circle id="Ellipse_80" data-name="Ellipse 80" cx="8.534" cy="8.534" r="8.534" transform="translate(36.575 10.566)" fill="#fff"/>
+    </g>
+    <g id="Group_779" data-name="Group 779" transform="translate(88.585 24.627)">
+      <path id="Polygon_17" data-name="Polygon 17" d="M16.187,0,32.374,40.467H0Z" transform="translate(41.811 77.069) rotate(180)" fill="#fff" stroke="#e0517e" stroke-linejoin="round" stroke-width="4"/>
+      <circle id="Ellipse_79" data-name="Ellipse 79" cx="2.833" cy="2.833" r="2.833" transform="translate(22.816 23.066)" fill="#e0517e" stroke="#e0517e" stroke-width="4"/>
+      <g id="Group_751" data-name="Group 751" transform="translate(0)">
+        <path id="Union_26" data-name="Union 26" d="M25.554,31.167c-1.946,0-25.989.019-25.548,0,.247-.011.233-3.541,4.155-6.8C4.565,20.458,6.112.146,25.494,0h.21C45.228.147,46.655,20.755,47.047,24.447c3.824,3.238,3.812,6.708,4.057,6.719.153.007-2.649.009-6.452.009C37.506,31.176,26.825,31.168,25.554,31.167Z" transform="translate(0 5.725)" fill="#e0517e" stroke="#e0517e" stroke-linejoin="round" stroke-width="3"/>
+        <circle id="Ellipse_76" data-name="Ellipse 76" cx="2.833" cy="2.833" r="2.833" transform="translate(22.816)" fill="#fff" stroke="#e0517e" stroke-width="4"/>
+        <ellipse id="Ellipse_77" data-name="Ellipse 77" cx="14.973" cy="4.451" rx="14.973" ry="4.451" transform="translate(10.676 4.448)" fill="rgba(255,255,255,0.5)"/>
+        <circle id="Ellipse_78" data-name="Ellipse 78" cx="3.237" cy="3.237" r="3.237" transform="translate(10.676 14.164)" fill="rgba(255,255,255,0.5)"/>
+      </g>
+    </g>
+    <circle id="Ellipse_90" data-name="Ellipse 90" cx="5.69" cy="5.69" r="5.69" transform="translate(71.014 114.337)" fill="#bee4ff" stroke="#bee4ff" stroke-width="4"/>
+  </g>
+</svg>
