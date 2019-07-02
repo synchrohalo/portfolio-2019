@@ -123,10 +123,15 @@ main .link:hover {
     max-width: 24rem;
 }
 
-#jingle-case-study img {
+/*#jingle-case-study img {
     width: var(--text-margin);
     max-width: 16rem;
-}
+}*/
+
+/*#jingle-case-study .substep img {
+    width: var(--text-margin);
+    max-width: 16rem;
+}*/
 
 .breakdown h4 {
     margin-top: initial;
@@ -470,7 +475,7 @@ img.large-img {
     }
 
     #jingle-case-study .feedback .two-col {
-        width: 100%;
+        /*width: 100%;*/
     }
 
     #jingle-case-study .feedback .col-1 {
@@ -619,7 +624,7 @@ img.large-img {
 
 @media only screen and (min-width: 1520px) {
     header.page {
-        background-position-y: 70%; 
+        background-position-y: 70%;
     }
 
     #snapsack-header.page {
