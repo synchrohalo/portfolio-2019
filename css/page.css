@@ -595,6 +595,12 @@ img.large-img {
         background-repeat: no-repeat;
         background-position-y: 50%;
     }
+
+
+    #jingle-case-study img.small-img,
+    #jingle-case-study .feedback .col-1  {
+        max-width: 16rem;
+    }
 }
 
 @media only screen and (min-width: 1080px) {
