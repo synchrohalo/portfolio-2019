@@ -304,6 +304,12 @@ img.large-img {
     border-radius: 8px;
 }
 
+video:focus {
+    outline: 0;
+    box-shadow: var(--focus);
+    border-color: var(--primary-color);
+}
+
 /*** PALETTE ***/
 
 .palette {
