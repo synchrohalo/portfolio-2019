@@ -443,6 +443,12 @@ img.large-img {
     font-size: 1.5rem;
 }
 
+video {
+    width: var(--text-margin);
+    max-width: 14rem;
+    margin-bottom: var(--space-bottom);
+}
+
 @media only screen and (min-width: 500px) {
     header.page {
         background-position-y: 70%; 
