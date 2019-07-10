@@ -296,6 +296,7 @@ nav .link {
     text-decoration: none;
     font-family: "Work Sans", sans-serif;
     font-weight: 500;
+    border-bottom: 3px solid var(--complement1);
 }
 
 nav .link:hover {
@@ -367,7 +368,8 @@ nav h4.link {
 
 .mobile-menu h3 {
     color: var(--neutral-dark);
-    line-height: 300%;
+    /*line-height: 300%;*/
+    margin-bottom: 2.5rem;
     text-decoration: none;
 }
 
@@ -404,7 +406,7 @@ section {
     width: 4rem;
     height: 4px;
     margin: 0 auto;
-    background-color: var(--neutral-medium);
+    background-color: var(--neutral-light-2);
 }
 
 .main-heading {
@@ -554,9 +556,17 @@ nav {
     height: 5rem;
 }
 
-.menu ul, #home, .menu li{
+/*.menu ul, #home, .menu li{
     padding-right: 1.5rem;
     line-height: 5rem;
+}*/
+
+.menu ul{
+    line-height: 5rem;
+}
+
+.menu li{
+    padding-right: 2.5rem;
 }
 
 #home {
