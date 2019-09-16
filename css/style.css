@@ -187,15 +187,15 @@ ul.list li, ol.list li {
 
 ul.list {
 	position: relative;
-	list-style: none;
+	list-style-type: "+";
 }
-ul.list li:before {
+/*ul.list li:before {
     content: "+";
     font-weight: 700;
 	position: absolute;
     left: 2rem;
     margin-top: 0.25rem;
-}
+}*/
 
 ol.list li {
     list-style: decimal;
