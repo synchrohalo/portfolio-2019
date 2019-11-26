@@ -632,16 +632,6 @@ video {
     .preference .two-col {
         align-items: flex-start;
     }    
-    
-    h3.step-title {
-        font-size: 1.5rem;
-        margin-top: 0.25rem;
-    }
-
-    .step-title {
-        position: absolute;
-        left: 2rem;
-    }
 
     /*#jingle-case-study img.small-img,
     #jingle-case-study .feedback .col-1  {
@@ -650,6 +640,18 @@ video {
 
     #jingle-case-study img.small-img {
         max-width: 16rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    h3.step-title {
+        font-size: 1.5rem;
+        margin-top: 0.25rem;
+    }
+
+    .step-title {
+        position: absolute;
+        left: 2rem;
     }
 }
 
