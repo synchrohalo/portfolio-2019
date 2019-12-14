@@ -35,6 +35,10 @@ header.page {
     background-image: url(../img/jingle/jingle-bg-small.svg);
 }
 
+#buddie-header.page {
+    background-image: url(../img/buddie/buddie-bg-small.svg);
+}
+
 
 header.page img {
     margin: 0 auto;
@@ -73,7 +77,7 @@ nav {
     background-color: var(--white);
 }
 
-.page h1, .page h3, .page h4, .page p  {
+.page h1, .page h3, .page h4, .page p, .colors h5  {
     width: var(--text-margin);
     max-width: var(--max-width);
     padding-bottom: var(--space-bottom);
@@ -264,6 +268,21 @@ main .link:hover {
     background-repeat: no-repeat;
 }
 
+.illustration .full-span-img {
+    background: url(../img/buddie/illustration-sketches.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 4rem;
+}
+
+#buddie-case-study .illustration img {
+    max-width: 20rem;
+}
+
+#buddie-case-study .type img {
+    /*max-width: 20rem;*/
+}
+
 img.full-width {
     width: 100%;
     max-width: 100%;
@@ -301,7 +320,13 @@ img.large-img {
 
 .border {
     border: 3px solid var(--neutral-light-2);
-    border-radius: 8px;
+    border-radius: 16px;
+}
+
+#buddie-case-study .border,
+#jingle-case-study .border {
+    border: 3px solid var(--neutral-light-2);
+    border-radius: 32px;
 }
 
 video:focus {
@@ -320,6 +345,7 @@ video:focus {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
+    margin-bottom: var(--space-bottom);
 }
 
 .palette li {
@@ -396,6 +422,48 @@ video:focus {
     background: #776868;
 }
 
+#c435900 {
+    background: #435900;
+}
+
+#B2BF88 {
+    background: #B2BF88;
+}
+
+#FEF9EB {
+    background: #FEF9EB;
+    border: 1px solid #B2BF88;
+}
+
+#c293040 {
+    background: #293040;
+}
+
+#EBEDF0 {
+    background: #EBEDF0;
+    border: 1px solid #B2BF88;
+}
+
+#c4D5661 {
+    background: #4D5661;
+}
+
+#EFC371 {
+    background: #EFC371;
+}
+
+#AA55B1{
+    background:#AA55B1;
+}
+
+#ACE0D3 {
+    background: #ACE0D3;
+}
+
+#c9E95CE {
+    background: #9E95CE;
+}
+
 .preference .two-col {
     justify-content: end;
     margin-bottom: var(--space-bottom);
@@ -430,6 +498,13 @@ video:focus {
     background-position-y: 50%;
 }
 
+#buddie-case-study .final-mockups {
+    background: url(../img/buddie/mobile-final-bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+
 .back-to-top p{
     text-decoration: none;
     color: var(--neutral-medium);
@@ -455,6 +530,14 @@ video {
     margin-bottom: var(--space-bottom);
 }
 
+img.app {
+    max-width: 16rem;
+}
+
+.style-guide {
+    margin-bottom: 4rem;
+}
+
 @media only screen and (min-width: 500px) {
     header.page {
         background-position-y: 70%; 
@@ -468,6 +551,10 @@ video {
         background-image: url(../img/jingle/jingle-bg.svg);
     }
 
+    #buddie-header.page {
+        background-image: url(../img/buddie/buddie-bg.svg);
+    }
+
     #jingle-case-study img.small-img {
         max-width: 16rem;
     }
@@ -478,11 +565,11 @@ video {
     }
 
     /*** MOBILE MOCKUPS ***/
-    .mockups .two-col {
+    .mockups .two-col, .hifi-test .two-col {
         width: 100%;
     }
 
-    .mockups .col-1, .mockups .col-2 {
+    .mockups .col-1, .mockups .col-2, .hifi-test .col-1, .hifi-test .col-2 {
         width: var(--text-margin);
         margin: 0 auto;
     }
@@ -535,11 +622,11 @@ video {
     }
     
     /*** MOBILE MOCKUPS ***/
-    .mockups .two-col {
+    .mockups .two-col, .hifi-test .two-col {
         max-width: var(--max-width);
     }
 
-    .mockups .col-1, .mockups .col-2 {
+    .mockups .col-1, .mockups .col-2, .hifi-test .col-1, .hifi-test .col-2 {
         width: 50%;
     }
 
@@ -608,6 +695,13 @@ video {
         background-position-y: 50%;
     }
 
+    #buddie-case-study .final-mockups {
+        background: url(../img/buddie/final-bg.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: 50%;
+    }
+
 
     /*#jingle-case-study img.small-img,
     #jingle-case-study .feedback .col-1  {
@@ -668,6 +762,10 @@ video {
         background-image: url(../img/jingle/jingle-bg-large.svg);
     }
 
+    #buddie-header.page {
+        background-image: url(../img/buddie/buddie-bg-large.svg);
+    }
+
     .final-mockups {
         background-size: contain;
         background-repeat: no-repeat;
@@ -683,6 +781,13 @@ video {
 
     #jingle-case-study .final-mockups {
         background: url(../img/jingle/final-bg-large.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: 50%;
+    }
+
+    #buddie-case-study .final-mockups {
+        background: url(../img/buddie/final-bg-large.svg);
         background-size: contain;
         background-repeat: no-repeat;
         background-position-y: 50%;
