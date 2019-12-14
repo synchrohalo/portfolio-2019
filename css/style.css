@@ -439,6 +439,10 @@ li.project {
     background-color: #BEE4FF;
 }
 
+#buddie .project-img {
+    background-color: #9E95CE;
+}
+
 #assorted .project-img {
     background-color: #FFE6EE;
 }
@@ -918,7 +922,7 @@ nav {
         display: flex;
     }
 
-    .project:nth-child(2) {
+    .project:nth-child(even) {
         flex-direction: row-reverse;
     }
 
