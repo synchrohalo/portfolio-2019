@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="537" height="800" viewBox="0 0 537 800">
+  <defs>
+    <clipPath id="clip-logo_3">
+      <rect width="537" height="800"/>
+    </clipPath>
+  </defs>
+  <g id="logo_3" data-name="logo – 3" clip-path="url(#clip-logo_3)">
+    <circle id="Ellipse_8" data-name="Ellipse 8" cx="144" cy="144" r="144" transform="translate(186 108)" fill="#efc371"/>
+    <g id="Group_7" data-name="Group 7" transform="translate(-1105 -2393)">
+      <path id="Path_1" data-name="Path 1" d="M88.883-82.377C129.314-82.377,313,70.067,313,156.5a156.5,156.5,0,0,1-313,0C0,70.067,48.453-82.377,88.883-82.377Z" transform="translate(1169 2624)" fill="#b2bf88"/>
+      <path id="Path_2" data-name="Path 2" d="M1571.067,2454.422s-9.02,24.689,4.158,24.689,17.073-24.689,17.073-24.689" transform="translate(-260 349.078)" fill="none" stroke="#262d3b" stroke-width="8"/>
+      <path id="Path_3" data-name="Path 3" d="M1571.067,2454.422s-9.02,24.689,4.158,24.689,17.073-24.689,17.073-24.689" transform="translate(-166 349.078)" fill="none" stroke="#262d3b" stroke-width="8"/>
+      <path id="Path_4" data-name="Path 4" d="M1508.676,2910.782s-19.145,41.495,15.74,41.495,36.594-41.495,36.594-41.495" transform="translate(-175 -62)" fill="none" stroke="#262d3b" stroke-width="8"/>
+      <path id="Path_5" data-name="Path 5" d="M1193.355,2608.395c28.679,27.429,127.429,116.138,249.136,84.948" transform="translate(8.4 7.395)" fill="none" stroke="#262d3b" stroke-width="6"/>
+      <path id="Path_15" data-name="Path 15" d="M1288.023,2695.4s-45.936-113.971,23.613-193.978" transform="translate(-1359.693 1518.044) rotate(-41)" fill="none" stroke="#262d3b" stroke-width="6"/>
+    </g>
+    <text id="buddie" transform="translate(269 667)" fill="#262d3b" font-size="100" font-family="HKGrotesk-SemiBold, HK Grotesk" font-weight="600" letter-spacing="0.024em"><tspan x="-160.1" y="0">buddie</tspan></text>
+  </g>
+</svg>

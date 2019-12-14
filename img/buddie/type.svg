@@ -1,14 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="207" height="224" viewBox="0 0 207 224">
-  <g id="Group_603" data-name="Group 603" transform="translate(-6 -20)">
-    <text id="Heading" transform="translate(151 42)" fill="#293040" font-size="24" font-family="HKGrotesk-SemiBoldLegacy, HK Grotesk" font-weight="600"><tspan x="-44.109" y="0">Heading</tspan></text>
-    <text id="Nav_bar" data-name="Nav bar" transform="translate(135 104.746)" fill="#293040" font-size="16" font-family="HKGrotesk-SemiBoldLegacy, HK Grotesk" font-weight="600"><tspan x="-27.516" y="0">Nav bar</tspan></text>
-    <text id="Instructions" transform="translate(160 76.182)" fill="#293040" font-size="20" font-family="HKGrotesk-SemiBoldLegacy, HK Grotesk" font-weight="600"><tspan x="-52.876" y="0">Instructions</tspan></text>
-    <text id="Label" transform="translate(107 193.376)" fill="#293040" font-size="14" font-family="Amiko-Regular, Amiko"><tspan x="0" y="0">LABEL</tspan></text>
-    <text id="Button" transform="translate(107 217)" fill="#293040" font-size="12" font-family="Amiko-Regular, Amiko"><tspan x="0" y="0">BUTTON</tspan></text>
-    <text id="Paragraph" transform="translate(107 239)" fill="#293040" font-size="12" font-family="Amiko-Regular, Amiko"><tspan x="0" y="0">Paragraph</tspan></text>
-    <text id="Tab" transform="translate(107 130.869)" fill="#293040" font-size="14" font-family="HKGrotesk-SemiBoldLegacy, HK Grotesk" font-weight="600"><tspan x="0" y="0">Tab</tspan></text>
-    <text id="Text_field" data-name="Text field" transform="translate(107 166.101)" fill="#293040" font-size="16" font-family="Amiko-Regular, Amiko"><tspan x="0" y="0">Text field</tspan></text>
-    <text id="HK_Grotesk" data-name="HK Grotesk" transform="translate(87 41)" fill="#4d5661" font-size="12" font-family="Amiko-Regular, Amiko"><tspan x="-80.16" y="0">HK GROTESK</tspan></text>
-    <text id="Amiko" transform="translate(87 165)" fill="#4d5661" font-size="12" font-family="Amiko-Regular, Amiko"><tspan x="-42.48" y="0">AMIKO</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="248" viewBox="0 0 180 248">
+  <defs>
+    <clipPath id="clip-Artboard_10">
+      <rect width="180" height="248"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_10" data-name="Artboard – 10" clip-path="url(#clip-Artboard_10)">
+    <g id="Group_603" data-name="Group 603" transform="translate(-56 4)">
+      <text id="Heading" transform="translate(151 42)" fill="#293040" font-size="24" font-family="HKGrotesk-SemiBoldLegacy, HK Grotesk" font-weight="600"><tspan x="-44.109" y="0">Heading</tspan></text>
+      <text id="Heading_3" data-name="Heading 3" transform="translate(107 104.746)" fill="#293040" font-size="16" font-family="HKGrotesk-SemiBoldLegacy, HK Grotesk" font-weight="600"><tspan x="0" y="0">Heading 3</tspan></text>
+      <text id="Heading_2" data-name="Heading 2" transform="translate(107 76.182)" fill="#262d3b" font-size="20" font-family="HKGrotesk-SemiBoldLegacy, HK Grotesk" font-weight="600"><tspan x="0" y="0">Heading 2</tspan></text>
+      <text id="Label" transform="translate(107 193.376)" fill="#293040" font-size="14" font-family="Amiko-Regular, Amiko"><tspan x="0" y="0">LABEL</tspan></text>
+      <text id="Button" transform="translate(107 217)" fill="#293040" font-size="12" font-family="Amiko-Regular, Amiko"><tspan x="0" y="0">BUTTON</tspan></text>
+      <text id="Paragraph" transform="translate(107 239)" fill="#293040" font-size="12" font-family="Amiko-Regular, Amiko"><tspan x="0" y="0">Paragraph</tspan></text>
+      <text id="Tab" transform="translate(107 130.869)" fill="#293040" font-size="14" font-family="HKGrotesk-SemiBoldLegacy, HK Grotesk" font-weight="600"><tspan x="0" y="0">Tab</tspan></text>
+      <text id="Text_field" data-name="Text field" transform="translate(107 166.101)" fill="#293040" font-size="16" font-family="Amiko-Regular, Amiko"><tspan x="0" y="0">Text field</tspan></text>
+      <text id="HK_Grotesk" data-name="HK Grotesk" transform="translate(90 25) rotate(-90)" fill="#4d5661" font-size="12" font-family="Amiko-Regular, Amiko"><tspan x="-80.16" y="0">HK GROTESK</tspan></text>
+      <text id="Amiko" transform="translate(90 153) rotate(-90)" fill="#4d5661" font-size="12" font-family="Amiko-Regular, Amiko"><tspan x="-42.48" y="0">AMIKO</tspan></text>
+    </g>
   </g>
 </svg>

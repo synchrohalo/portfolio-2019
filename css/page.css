@@ -538,6 +538,11 @@ img.app {
     margin-bottom: 4rem;
 }
 
+.style-guide .large-img {
+    width: 100%;
+    max-width: 56rem;
+}
+
 @media only screen and (min-width: 500px) {
     header.page {
         background-position-y: 70%; 
