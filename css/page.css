@@ -275,10 +275,6 @@ main .link:hover {
     margin-bottom: 4rem;
 }
 
-#buddie-case-study .illustration img {
-    max-width: 20rem;
-}
-
 #buddie-case-study .type img {
     /*max-width: 20rem;*/
 }
@@ -535,6 +531,7 @@ img.app {
 }
 
 .style-guide {
+    padding-top: 3rem;
     margin-bottom: 4rem;
 }
 
