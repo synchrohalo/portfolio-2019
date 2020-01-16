@@ -55,7 +55,8 @@ p {
 
 h1 {
     font-size: 2.25em;
-    font-weight: 600;
+    font-weight: 500;
+    line-height: 100%;
 }
 
 h2 {
@@ -240,6 +241,20 @@ header .hero-img.med {
     display: none;
 }
 
+header h1 {
+    padding-bottom: 0.75rem;
+}
+
+header h3 {
+    width: 85%;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+header .text {
+    margin-bottom: 3rem;
+}
+
 /*.swirl-1 .small, 
 .swirl-2 .small,
 .swirl-1 .large, 
@@ -378,7 +393,7 @@ nav h4.link {
 }
 
 .mobile-menu ul {
-    width: 105%; /* what is adding the extra width? */
+    width: 110%; /* what is adding the extra width? */
     height: 100vh;
     text-align: center;
     display: flex;
@@ -403,10 +418,16 @@ section {
 }
 
 .heading-divider {
-    width: 4rem;
+    
+    /*width: 4rem;
     height: 4px;
     margin: 0 auto;
-    background-color: var(--neutral-light-2);
+    background-color: var(--neutral-light-2);*/
+}
+
+.main-heading img {
+    text-align: center;
+    margin: 0 auto;
 }
 
 .main-heading {
@@ -604,6 +625,15 @@ nav {
        width: 75%;
    }
 
+   /*header h1, header h3 {
+        text-align: left;
+        margin: 0 auto;
+   }*/
+
+   header h3 {
+        width: 75%;
+    }
+
    #scroll-down {
         top: 70%;
 }
@@ -613,6 +643,16 @@ nav {
     header .text {
         width: 90%;
         max-width: 32rem;
+    }
+
+    header h1, header h3 {
+        text-align: center;
+        margin: 0 auto;
+   }
+
+    header h3 {
+        width: 100%;
+        margin: 0 auto;
     }
 
     .swirl-1 .small {
@@ -628,7 +668,6 @@ nav {
 
     h1 {
         font-size: 2.75em;
-        /*margin-bottom: -0.1em;*/
         margin-bottom: .1em;
     }
 
@@ -660,6 +699,10 @@ nav {
         background-size: 16rem;
     }
 
+    .mobile-menu ul {
+        width: 105%; /* what is adding the extra width? */
+    }
+
     #scroll-down {
         top: 70%;
     }
@@ -667,6 +710,10 @@ nav {
     header .text {
         width: 75%;
         max-width: 32rem;
+    }
+
+    header h3 {
+        width: 75%;
     }
 
     .swirl-1 .small {
@@ -713,6 +760,16 @@ nav {
     }
 }
 
+@media only screen and (min-width:600px) {
+    header .hero-img.large {
+        display: block;
+    }
+
+    header .hero-img.med {
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 768px) {
 
     /**** HERO ****/
@@ -738,6 +795,11 @@ nav {
 
     header .text {
         width: 70%;
+    }
+
+    header h3 {
+        width: 75%;
+        margin: 0 auto;
     }
 
     .hero-img {
@@ -859,6 +921,8 @@ nav {
     .heading-divider {
         width: 4rem;
         height: 4px;
+        margin: 0 auto;
+        background-color: var(--neutral-light-2);
     }
    
     #logo {
@@ -866,8 +930,9 @@ nav {
     }
 
     /**** HERO ****/
-    header h2 {
-       width: 100%;
+    header h3 {
+       width: 85%;
+       margin: 0 auto;
     }
 
     header h5 {
@@ -929,6 +994,10 @@ nav {
     .project-desc, .project-img {
         width: calc(50% - 3rem);
         vertical-align: middle;
+    }
+
+    .project-desc .italic {
+        /*color: #736289;*/
     }
 
     .project-img {
